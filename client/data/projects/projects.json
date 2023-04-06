@@ -1,0 +1,18 @@
+[
+  {
+    "title": "MileEASY",
+    "description": "MBTI 검사를 통해 자신의 성향의 맞게 여행지를 추천해주는 웹 사이트입니다.",
+    "date": "2022-12-01",
+    "category": "EJS",
+    "path": "express",
+    "featured": false
+  },
+  {
+    "title": "LIBRARY",
+    "description": "알라딘 Open API를 이용한 도서 데이터 검색 사이트",
+    "date": "2023-01-01",
+    "category": "Mysql",
+    "path": "AWS",
+    "featured": false
+  }
+]
