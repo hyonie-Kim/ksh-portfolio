@@ -8,8 +8,11 @@ type CustomProps = {
 };
 const CustomLink: React.FC<CustomProps> = ({ href, title, className }) => {
   return (
-    <Link href={href} className={`${className}`}>
+    <Link href={href} className={`${className} relative group`}>
       {title}
+      <span className="h-[1px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300">
+        &nbsp;
+      </span>
     </Link>
   );
 };
