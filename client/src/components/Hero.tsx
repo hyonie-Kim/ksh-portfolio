@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import profileImage from "../../public/images/IMG_KSH.jpg";
+import ContactBtn from "./ContactBtn";
 
 export default function Hero() {
   return (
@@ -23,6 +24,7 @@ export default function Hero() {
           Contact Me
         </button>
       </Link>
+      <ContactBtn />
     </section>
   );
 }
