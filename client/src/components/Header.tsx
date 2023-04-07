@@ -10,7 +10,7 @@ const CustomLink: React.FC<CustomProps> = ({ href, title, className }) => {
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
-      <span className="h-[1px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300">
+      <span className="h-[2px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300">
         &nbsp;
       </span>
     </Link>
@@ -19,9 +19,9 @@ const CustomLink: React.FC<CustomProps> = ({ href, title, className }) => {
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-4">
+    <header className="flex justify-between items-center px-32 py-8 font-medium">
       <Link href="/">
-        <h1 className="text-3xl font-bold">{"Hyonie's Portforio"}</h1>
+        <h1 className="text-3xl font-bold">{"Hyonie's Portfolio"}</h1>
       </Link>
 
       <nav className="flex gap-4">

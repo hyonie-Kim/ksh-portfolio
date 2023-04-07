@@ -13,19 +13,14 @@ export default function Hero() {
           className="mx-auto rounded-full"
           src={profileImage}
           alt="ProfileImage"
-          width={350}
-          height={350}
+          width={450}
+          height={450}
           priority
         />
         <div className="text-center">
           <h2 className="text-3xl font-bold mt-2">{"김세현/Kim Se Hyeon"}</h2>
           <h3 className="text-xl font-semibold">Front-end developer</h3>
-          <p>프론트엔드 개발자를 희망합니다</p>
-          <Link href="/contact">
-            <button className="bg-yellow-500 rounded-xl py-1 px-4 mt-2">
-              Contact Me
-            </button>
-          </Link>
+          {/* <p>프론트엔드 개발자를 희망합니다</p> */}
         </div>
       </div>
       <div className="w-1/2 flex flex-col items-center self-center">
@@ -40,13 +35,19 @@ export default function Hero() {
           목표로 하고 있습니다. 믿음직한 신입 개발자로서 도움이 되어 든든한
           팀원이 되겠습니다.
         </p>
-        <div>
+        <div className="flex items-center self-start mt-2">
           <Link
             href="/"
             target={"_blank"}
             className="flex items-center bg-black text-lime-50 p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-lime-50 hover:text-black border-2 border-solid border-transparent hover:border-black"
           >
             이력서
+          </Link>
+          <Link
+            href="/contact"
+            className="ml-4 text-lg font-medium text-black underline"
+          >
+            Contact
           </Link>
         </div>
       </div>
