@@ -5,8 +5,8 @@ import { getAllProject } from "@/service/project";
 export default async function MainProject() {
   const projects = await getAllProject();
   return (
-    <section>
-      <h2>MainProject</h2>
+    <section className="my-4">
+      <h2 className="text-2xl font-bold my-2">MainProject</h2>
       <ProjectGrid projects={projects} />
     </section>
   );

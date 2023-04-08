@@ -11,6 +11,11 @@ export type Project = {
   featured: boolean;
 };
 
+export async function getFeaturedProject(): Promise<Project[]> {
+  return getAllProject() //
+    .then((project) => project.filter((project) => project.featured));
+}
+
 // 비동기로 동작하는 함수
 // 프로젝트의 배열을 반환하는 프로미스
 export async function getAllProject(): Promise<Project[]> {

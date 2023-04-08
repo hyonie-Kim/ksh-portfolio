@@ -1,5 +1,14 @@
+import SelectProject from "@/components/SelectProject";
+import { getAllProject } from "@/service/project";
 import React from "react";
 
-export default function ProjectPage() {
-  return <p>나의프로젝트들</p>;
+export default async function ProjectPage() {
+  const projects = await getAllProject();
+  const projectList = projects.map((project) => project.title);
+  return (
+    <SelectProject
+      projects={projects}
+      projectList={projectList}
+    ></SelectProject>
+  );
 }
