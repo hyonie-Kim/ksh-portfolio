@@ -28,6 +28,7 @@ export default function Hero() {
           text=" 유연한 자세로 빠르게🏃🏻‍♀️ 성장하는 개발자가 되도록 노력하겠습니다!"
           className="!text-6xl !text-left"
         />
+
         <p className="my-4 text-base font-medium">
           끊임없이 새로운 기술과 도구를 학습하며, 문제를 찾아내고 해결하는
           능력을 갖추고 있습니다. 또한, 팀과의 협업과 소통을 중요시하며, 서로의
