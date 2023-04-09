@@ -1,8 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import profileImage from "../../public/images/IMG_KSH.jpg";
-
 import AnimatedText from "./AnimatedText";
 import Profile from "./Profile";
 

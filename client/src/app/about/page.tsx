@@ -1,4 +1,4 @@
-import Profile from "@/components/Profile";
+import Profile from "@/components/About/Profile";
 import React from "react";
 
 const TITLE_CLASS = "text-2xl font-bold text-gray-800 my-2";

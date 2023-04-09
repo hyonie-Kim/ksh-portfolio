@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profileImage from "../../public/images/IMG_KSH.jpg";
+import profileImage from "../../../public/images/IMG_KSH.jpg";
 
 type Props = {
   className: string;

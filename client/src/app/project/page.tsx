@@ -1,4 +1,4 @@
-import SelectProject from "@/components/SelectProject";
+import SelectProject from "@/components/Project/SelectProject";
 import { getAllProject } from "@/service/projects";
 import React from "react";
 

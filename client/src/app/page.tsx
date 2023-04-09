@@ -1,6 +1,6 @@
-import CarouselProject from "@/components/CarouselProject";
-import Hero from "@/components/Hero";
-import MainProject from "@/components/MainProject";
+import CarouselProject from "@/components/Project/CarouselProject";
+import Hero from "@/components/About/Hero";
+import MainProject from "@/components/Project/MainProject";
 
 export default function HomePage() {
   return (

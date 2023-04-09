@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/Contact/ContactForm";
 import React from "react";
 import { SiTistory, SiGithub } from "react-icons/si";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import MultiCarousel from "./MultiCarousel";
 import { getAllProject } from "@/service/projects";
+import MultiCarousel from "./MultiCarousel";
 
 export default async function CarouselProject() {
   const projects = await getAllProject();

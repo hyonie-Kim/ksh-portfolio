@@ -1,4 +1,4 @@
-import MarkdownViewer from "@/components/MarkdownViewer";
+import MarkdownViewer from "@/components/Project/MarkdownViewer";
 import { getProjectData } from "@/service/projects";
 import React from "react";
 
