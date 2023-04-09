@@ -1,5 +1,5 @@
 import SelectProject from "@/components/SelectProject";
-import { getAllProject } from "@/service/project";
+import { getAllProject } from "@/service/projects";
 import React from "react";
 
 export default async function ProjectPage() {

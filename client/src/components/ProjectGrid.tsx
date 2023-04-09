@@ -1,4 +1,4 @@
-import { Project } from "@/service/project";
+import { Project } from "@/service/projects";
 import React from "react";
 import ProjectCard from "./ProjectCard";
 

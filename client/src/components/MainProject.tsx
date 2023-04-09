@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectGrid from "./ProjectGrid";
-import { getAllProject } from "@/service/project";
+import { getAllProject } from "@/service/projects";
 
 export default async function MainProject() {
   const projects = await getAllProject();

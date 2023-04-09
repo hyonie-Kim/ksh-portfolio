@@ -16,7 +16,9 @@ export default function ProjectList({ projectList, selected, onClick }: Props) {
       <ul>
         {projectList.map((title) => (
           <li
-            className="cursor-pointer hover:text-sky-500"
+            className={`cursor-pointer hover:text-sky-500 ${
+              title === selected && "text-sky-600"
+            }`}
             key={title}
             onClick={() => onClick(title)}
           >

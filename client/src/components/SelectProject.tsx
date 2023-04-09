@@ -1,5 +1,5 @@
 "use client";
-import { Project } from "@/service/project";
+import { Project } from "@/service/projects";
 import React, { useState } from "react";
 import ProjectGrid from "./ProjectGrid";
 import ProjectList from "./ProjectList";

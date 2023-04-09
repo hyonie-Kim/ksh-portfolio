@@ -4,7 +4,7 @@
     "description": "MBTI 검사를 통해 자신의 성향의 맞게 여행지를 추천해주는 웹 사이트입니다.",
     "date": "2022-12-01",
     "category": "EJS",
-    "path": "express",
+    "path": "mileEASY",
     "featured": true
   },
   {
@@ -12,7 +12,7 @@
     "description": "알라딘 Open API를 이용한 도서 데이터 검색 사이트",
     "date": "2023-01-01",
     "category": "Mysql",
-    "path": "AWS",
+    "path": "search_library",
     "featured": true
   },
   {
@@ -20,7 +20,7 @@
     "description": "자바스크립트공부한내용을 정리한 프로젝트입니다.",
     "date": "2022-12-01",
     "category": "JS",
-    "path": "express",
+    "path": "m_pro01",
     "featured": false
   },
   {
@@ -28,7 +28,7 @@
     "description": "알라딘 Open API를 이용한 도서 데이터 검색 사이트",
     "date": "2023-01-01",
     "category": "Mysql",
-    "path": "AWS",
+    "path": "m_pro02",
     "featured": false
   }
 ]
