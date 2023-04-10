@@ -1,4 +1,6 @@
+import AnimatedIcon from "@/components/About/AnimatedIcon";
 import Profile from "@/components/About/Profile";
+import Skills from "@/components/About/Skills";
 import { Metadata } from "next";
 import React from "react";
 
@@ -12,6 +14,7 @@ export default function AboutPage() {
   return (
     <>
       <Profile className="text-center" width={250} height={250} />
+      <AnimatedIcon />
       <section className="bg-gray-100 shadow-lg p-8 m-8 text-center">
         <h2 className={TITLE_CLASS}>Who Am I?</h2>
         <p>

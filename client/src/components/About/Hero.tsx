@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import AnimatedText from "./AnimatedText";
 import Profile from "./Profile";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -26,7 +27,8 @@ export default function Hero() {
             target={"_blank"}
             className="flex items-center bg-black text-lime-50 p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-lime-50 hover:text-black border-2 border-solid border-transparent hover:border-black"
           >
-            이력서
+            이력서&ensp;
+            <FaExternalLinkAlt />
           </Link>
           <Link
             href="/contact"
