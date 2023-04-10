@@ -1,5 +1,11 @@
 import Profile from "@/components/About/Profile";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description: "김세현에 대한 소개글",
+};
 
 const TITLE_CLASS = "text-2xl font-bold text-gray-800 my-2";
 export default function AboutPage() {
