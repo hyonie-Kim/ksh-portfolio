@@ -16,19 +16,19 @@
     "featured": true
   },
   {
-    "title": "자바스크립트프로젝트",
-    "description": "자바스크립트공부한내용을 정리한 프로젝트입니다.",
+    "title": "Hyonie`s Portfolio",
+    "description": "취업준비를 위한 포트폴리오 웹사이트 입니다.",
     "date": "2022-12-01",
     "category": "JS",
-    "path": "m_pro01",
+    "path": "portfolio",
     "featured": false
   },
   {
-    "title": "리액트프로젝트",
-    "description": "알라딘 Open API를 이용한 도서 데이터 검색 사이트",
+    "title": "Momoa 모모아",
+    "description": "수입과 지출관리, 분석을 위한 가계부 웹입니다. 또한 유저 간 공유 기능을 통해 가계부를 공동으로 관리할수 있도록 구현하였습니다.",
     "date": "2023-01-01",
     "category": "Mysql",
-    "path": "m_pro02",
+    "path": "momoa",
     "featured": false
   }
 ]

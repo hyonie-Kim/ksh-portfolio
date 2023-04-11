@@ -1,27 +1,66 @@
-## MileEASY 프로젝트
+# MileEASY 프로젝트
 
-<h1>Garlic bread with cheese: What the science tells us</h1>
-  <p>
-    For years parents have espoused the health benefits of eating garlic bread with cheese to their
-    children, with the food earning such an iconic status in our culture that kids will often dress
-    up as warm, cheesy loaf for Halloween.
-  </p>
+---
 
-- mbti 답변 클릭할 때마다 배열에 결과 타입 누적 추가해서 배열 내에 각 타입의 최대 개수 카운트 하여 사용자 mbti 도출
-- db에서 User mbti 컬럼과 Trip mbti 컬럼 값 일치 시, 결과 페이지에 사용자 mbti 및 해당 mbti에 대한 추천 여행지 정보 보여주기
+## 📝Summary
 
-```query
-use MileEasy;
+**여행 MBTI 테스트를 통해 사용자 성향에 맞추어 여행지를 추천하는 웹 사이트** 입니다.
+청년취업사관학교 용산 1기에서 지금까지 배웠던 내용을 바탕으로 프론트 영역과 백엔드 영역을 나누어 만든 첫번째 팀 프로젝트입니다. MBTI에 참여하여 여행의 선택을 쉽고 재미있게 만드는 것을 목적으로 하였습니다.
 
-create table User (
+### \* 주요 기능
 
-id varchar(50) Not null primary key,
+- ✅ 회원가입 및 로그인/로그아웃
+- ✅ 프로필 이미지
+- ✅ MBTI 테스트
+- ✅ 여행지 추천
+- ✅ 방명록 작성 (커뮤니티)
 
-pw varchar(50) not null,
+## 🙋‍♀️담당 기능
 
-name varchar(128) not null,
+#### 로그인/로그아웃 화면
 
-mbti varchar(4)
-);
+- HTML contaienr Tag의 역할과 상속관계의 이해
+- CSS display:flex에 대한이해
+- getElementByName과 getElementByID()가 불러오는 데이터 구조의 이해
+- addEventListener()를 통한 이벤트 구현
 
+![mileEASY](/images/projects/mileEASY.png)
+
+#### 회원정보 수정
+
+- multiparty/form-data 이미지 파일 업로드 구현
+
+#### 방명록 화면
+
+- swiper라이브러리 슬라이드 기능
+- ejs 템플릿엔진을 이용한 node.js 데이터 및 HTML 반복문 구현
+
+## ⚒️Technology Stack
+
+- Frontend: HTML, CSS, JavaScirpt, jQurey, Bootstrap
+- Backend: Node.js, EJS Template Engine, Express.js
+- Database: MySQL
+- Deployment: AWS(EC2)
+
+## 👩‍👧‍👦Members
+
+- 김세현 (Frontend)
+- 배인혜 (Frontend) : https://github.com/ome-r
+- 김혜연 (Backend) : https://github.com/loveyrooney
+- 장현수 (Backend) : https://github.com/nyondoo
+- 갈서인 (Frontend) : https://github.com/GSIII
+
+## ⚙️Environment Setup
+
+1. Git Clone
+
+```bash
+git clone https://github.com/MileEASY/MileEasy_repo.git
+```
+
+2. 서버 실행
+
+```bash
+npm install
+node index.js
 ```
