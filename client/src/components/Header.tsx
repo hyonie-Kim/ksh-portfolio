@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import HamburgerBar from "./HamburgerBar";
 
-type CustomProps = {
+export type CustomProps = {
   href: string;
   title: string;
   className: string;
@@ -19,21 +20,21 @@ const CustomLink: React.FC<CustomProps> = ({ href, title, className }) => {
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center px-32 py-8 font-medium">
+    <header className="w-full flex justify-between items-center px-32 py-8 font-medium relative">
       <Link href="/">
-        <h1 className="text-3xl font-bold">{"Hyonie's Portfolio"}</h1>
+        <h1 className=" text-3xl font-bold">{"Hyonie's Portfolio"}</h1>
       </Link>
 
-      <nav className="flex gap-4">
-        <CustomLink href="/" title="Home" className="mr-4" />
-        <CustomLink href="/about" title="About" className="mr-4" />
-        <CustomLink href="/project" title="Project" className="mr-4" />
-        <CustomLink href="/contact" title="Contact" className="mr-4" />
-        {/* <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/project">Project</Link>
-        <Link href="/contact">Contact</Link> */}
-      </nav>
+      <div className="flex justify-between items-end lg:hidden">
+        <nav className="flex gap-4 ">
+          <CustomLink href="/" title="Home" className="mr-4" />
+          <CustomLink href="/about" title="About" className="mr-4" />
+          <CustomLink href="/project" title="Project" className="mr-4" />
+          <CustomLink href="/contact" title="Contact" className="mr-4" />
+        </nav>
+      </div>
+
+      <HamburgerBar />
     </header>
   );
 }

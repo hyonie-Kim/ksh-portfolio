@@ -23,9 +23,9 @@ export default function Hero() {
         </p>
         <div className="flex items-center self-start mt-2">
           <Link
-            href="/"
+            href="/dummy.pdf"
             target={"_blank"}
-            className="flex items-center bg-black text-lime-50 p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-lime-50 hover:text-black border-2 border-solid border-transparent hover:border-black"
+            className="flex items-center bg-black text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
           >
             이력서&ensp;
             <FaExternalLinkAlt />
