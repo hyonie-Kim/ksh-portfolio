@@ -4,18 +4,17 @@ import profileImage from "../../../public/images/IMG_KSH.jpg";
 
 type Props = {
   className: string;
-  width: number;
-  height: number;
 };
-export default function Profile({ className, width, height }: Props) {
+export default function Profile({ className }: Props) {
   return (
     <section className={className}>
       <Image
-        className="mx-auto rounded-full"
+        className="w-full h-auto rounded-full"
         src={profileImage}
         alt="ProfileImage"
-        width={width}
-        height={height}
+        sizes="(max-width:768px) 33vw, (max-width:1200px) 33vw, 33vw"
+        // width={width}
+        // height={height}
         priority
       />
       <div className="text-center">

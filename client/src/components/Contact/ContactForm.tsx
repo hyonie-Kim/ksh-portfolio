@@ -32,7 +32,7 @@ export default function ContactForm() {
         });
         setForm(DEFAULT_DATA);
       })
-      .catch(() => {
+      .catch((error) => {
         setBanner({
           message: "메일전송에 실패 하였습니다. 다시 시도해 주세요.",
           state: "error",
@@ -56,6 +56,7 @@ export default function ContactForm() {
           Your Email
         </label>
         <input
+          className="text-black"
           type="email"
           id="from"
           name="from"
@@ -66,6 +67,7 @@ export default function ContactForm() {
         />
         <label htmlFor="subject">subject</label>
         <input
+          className="text-black"
           type="text"
           id="subject"
           name="subject"

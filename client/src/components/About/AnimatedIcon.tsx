@@ -16,7 +16,7 @@ export default function AnimatedIcon() {
       <ul className="flex gap-4 my-2">
         {LINKS.map((link, index) => (
           <motion.a
-            className="w-5 mx-3 hover:text-yellow-400"
+            className="w-5 mx-3 hover:text-yellow-400 sm:mx-1"
             key={index}
             href={link.url}
             target="_blank"

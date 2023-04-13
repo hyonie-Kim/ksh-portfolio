@@ -13,7 +13,7 @@ const TITLE_CLASS = "text-2xl font-bold text-gray-800 my-2";
 export default function AboutPage() {
   return (
     <>
-      <Profile className="text-center" width={250} height={250} />
+      <Profile className="text-center" />
       <AnimatedIcon />
       <section className="bg-gray-100 shadow-lg p-8 m-8 text-center">
         <h2 className={TITLE_CLASS}>Who Am I?</h2>

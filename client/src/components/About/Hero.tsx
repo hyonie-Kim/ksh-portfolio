@@ -7,7 +7,10 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="flex items-center justify-between w-full">
-      <Profile className="w-1/2" width={430} height={430} />
+      <div className="w-1/2 p-2">
+        <Profile className="" />
+      </div>
+
       <div className="w-1/2 flex flex-col items-center self-center">
         <AnimatedText
           text=" 유연한 자세로 빠르게🏃🏻‍♀️ 성장하는 개발자가 되도록 노력하겠습니다!"
