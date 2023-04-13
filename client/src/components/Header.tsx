@@ -22,7 +22,9 @@ export default function Header() {
   return (
     <header className="w-full flex justify-between items-center px-32 py-8 font-medium relative">
       <Link href="/">
-        <h1 className=" text-3xl font-bold">{"Hyonie's Portfolio"}</h1>
+        <h1 className=" text-3xl font-bold md:text-2xl">
+          {"Hyonie's Portfolio"}
+        </h1>
       </Link>
 
       <div className="flex justify-between items-end lg:hidden">
