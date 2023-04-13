@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="w-1/2 flex flex-col items-center self-center">
         <AnimatedText
           text=" 유연한 자세로 빠르게🏃🏻‍♀️ 성장하는 개발자가 되도록 노력하겠습니다!"
-          className="!text-6xl !text-left"
+          className="!text-5xl !text-left m-4 "
         />
 
         <p className="my-4 text-base font-medium">
