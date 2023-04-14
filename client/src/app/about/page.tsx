@@ -1,6 +1,6 @@
 import AnimatedIcon from "@/components/About/AnimatedIcon";
 import Profile from "@/components/About/Profile";
-import Skills from "@/components/About/Skills";
+
 import { Metadata } from "next";
 import React from "react";
 
