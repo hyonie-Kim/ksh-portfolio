@@ -14,11 +14,11 @@ const NAV_ITEMS: Array<NavItem> = [
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <header className="w-full mx-auto px-4 bg-white shadow fixed top-0 z-50">
+    <header className="w-full mx-auto px-4 bg-white shadow fixed top-0 z-50 sm:px-20">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3">
-            <div className="md:py-5 md:block">
+            <div className="md:py-2 md:block">
               <h2 className="text-2xl font-bold">{"Sehyeon's Portfolio"}</h2>
             </div>
             <div className="md:hidden">

@@ -29,7 +29,7 @@ export default function RootLayout({
         {/* <main className="grow w-full inline-block z-0 p-32 pt-0 pb-20"> */}
         {children}
         {/* </main> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

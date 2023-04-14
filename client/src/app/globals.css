@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* html,
 body {
   height: 100vh;
   overflow-y: auto;
@@ -27,4 +27,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
