@@ -1,14 +1,15 @@
 import CarouselProject from "@/components/Project/CarouselProject";
 import Hero from "@/components/About/Hero";
 import MainProject from "@/components/Project/MainProject";
+import HeroSection from "@/components/HeroSection";
 
 export default function HomePage() {
   return (
-    <>
-      <Hero />
+    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+      <HeroSection />
       {/* <MainProject /> */}
       {/* @ts-expect-error Async Server Component */}
       <CarouselProject />
-    </>
+    </main>
   );
 }

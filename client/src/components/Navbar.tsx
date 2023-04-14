@@ -40,6 +40,7 @@ export default function Navbar() {
                   <Link
                     key={index}
                     href={item.page}
+                    onClick={() => setNavbar(!navbar)}
                     className="block lg:inline-block text-neutral-900 hover:text-neutral-500 justify-center md:space-x-6"
                   >
                     {item.title}
