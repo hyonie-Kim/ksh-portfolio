@@ -11,7 +11,7 @@ import { MdLocationOn } from "react-icons/md";
 export default function HeroSection() {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-20 md:py-24 md:flex-row md:space-x-4 md:text-left">
+      <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-14 md:py-16 md:flex-row md:space-x-4 md:text-left">
         <div className="md:w-1/2 md:mt-1">
           <Image
             className="rounded-full md:shadow-2xl"

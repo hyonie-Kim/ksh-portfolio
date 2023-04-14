@@ -37,7 +37,7 @@ const singleWord = {
 export default function AnimatedText({ text, className }: AnimatedProps) {
   return (
     <motion.h1
-      className={`inline-block w-full font-bold px-2 ${className} md:font-semibold md:text-4xl md:mt-0`}
+      className={`inline-block w-full font-bold px-2 ${className} md:font-semibold md:text-4xl/loose md:mt-0`}
       variants={quote}
       initial="initial"
       animate="animate"
