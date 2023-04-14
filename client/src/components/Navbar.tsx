@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
+import Link from "next/link";
 interface NavItem {
-  label: string;
+  title: string;
   page: string;
 }
 const NAV_ITEMS: Array<NavItem> = [
-  { label: "Home", page: "home" },
-  { label: "About", page: "about" },
-  { label: "Project", page: "project" },
+  { title: "Home", page: "home" },
+  { title: "About", page: "about" },
+  { title: "Project", page: "project" },
 ];
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -20,8 +21,8 @@ export default function Navbar() {
             <div className="md:py-5 md:block">
               <h2 className="text-2xl font-bold">{"Sehyeon's Portfolio"}</h2>
             </div>
-            <div>
-              <button className="md:hidden">
+            <div className="md:hidden">
+              <button onClick={() => setNavbar(!navbar)}>
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
               </button>
             </div>
@@ -33,9 +34,17 @@ export default function Navbar() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <div className="item-center justify-center md:flex md:space-x-6">
+            <div className="item-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, index) => {
-                return <a key={index}>{item.label}</a>;
+                return (
+                  <Link
+                    key={index}
+                    href={item.page}
+                    className="block lg:inline-block text-neutral-900 hover:text-neutral-500 justify-center md:space-x-6"
+                  >
+                    {item.title}
+                  </Link>
+                );
               })}
             </div>
           </div>
