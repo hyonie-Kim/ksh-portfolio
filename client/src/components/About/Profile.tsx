@@ -22,12 +22,6 @@ export default function Profile({ className, width, height }: Props) {
         priority
       />
 
-      {/* <div className="text-center my-4">
-        <h2 className="text-3xl font-bold mt-2">{"김세현/Kim Se Hyeon"}</h2>
-        <h3 className="text-xl font-semibold">
-          <AiOutlineUser className="inline-block" /> Front-end developer
-        </h3>
-      </div> */}
       <div className="flex my-4">
         <ul className="list-inside mx-auto border-3 leading-relaxed space-y-2 md:space-y-1">
           <li>
