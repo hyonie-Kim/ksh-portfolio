@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
+import NextLink from "next/link";
 import profileImage from "../../public/images/IMG_KSH.jpg";
 import AnimatedText from "./About/AnimatedText";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -60,16 +62,21 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-row mt-8 justify-center border-2">
-            <Link
+            <NextLink
               href="/dummy.pdf"
               target={"_blank"}
               className="flex items-center bg-black text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
             >
               이력서&ensp;
               <FaExternalLinkAlt />
-            </Link>
+            </NextLink>
             <Link
-              href="/contact"
+              to="contact"
+              activeClass="action"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
               className="ml-4 text-lg font-medium text-black underline my-auto"
             >
               Contact
@@ -77,8 +84,15 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center">
-        <Link href="about">
+      <div className="flex flex-row justify-center cursor-pointer">
+        <Link
+          to="about"
+          activeClass="action"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
           <HiArrowDown size={35} className="animate-bounce" />
         </Link>
       </div>

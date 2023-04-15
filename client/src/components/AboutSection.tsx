@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import SesacImage from "../../public/images/sesacmile.png";
@@ -58,6 +59,7 @@ export default function AboutSection() {
                 );
               })}
             </div>
+
             <Image
               className="hidden md:block md:relative md:bottum-3 md:mx-auto md:z-0 "
               src={SesacImage}

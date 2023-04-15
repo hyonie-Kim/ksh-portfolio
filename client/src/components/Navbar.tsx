@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 interface NavItem {
   title: string;
   page: string;
@@ -38,10 +39,16 @@ export default function Navbar() {
               {NAV_ITEMS.map((item, index) => {
                 return (
                   <Link
+                    to={item.page}
                     key={index}
-                    href={`#${item.page}`}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    // href={`#${item.page}`}
                     onClick={() => setNavbar(!navbar)}
-                    className="block lg:inline-block text-neutral-900 hover:text-neutral-500 justify-center md:space-x-6"
+                    className="block lg:inline-block text-neutral-900 hover:text-neutral-500 justify-center md:space-x-6 cursor-pointer"
                   >
                     {item.title}
                   </Link>
