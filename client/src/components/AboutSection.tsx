@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import SesacImage from "../../public/images/sesacmile.jpg";
+import SesacImage from "../../public/images/sesacmile.png";
 
 const skills = [
   { skill: "HTML" },
@@ -59,11 +59,11 @@ export default function AboutSection() {
               })}
             </div>
             <Image
-              className="hidden md:block md:relative md:top-6 md:mx-auto md:z-0 md:rounded-lg"
+              className="hidden md:block md:relative md:bottum-3 md:mx-auto md:z-0 "
               src={SesacImage}
               alt="SesacImage"
-              width={300}
-              height={300}
+              width={350}
+              height={350}
             />
           </div>
         </div>
