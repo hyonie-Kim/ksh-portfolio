@@ -10,7 +10,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   { title: "Home", page: "home" },
   { title: "About", page: "about" },
-  { title: "Project", page: "project" },
+  { title: "Project", page: "projects" },
 ];
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
