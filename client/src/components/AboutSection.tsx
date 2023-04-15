@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SesacImage from "../../public/images/sesacmile.jpg";
+import AnimatedIcon from "./About/AnimatedIcon";
 
 const skills = [
   { skill: "HTML" },
