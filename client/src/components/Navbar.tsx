@@ -11,6 +11,7 @@ const NAV_ITEMS: Array<NavItem> = [
   { title: "Home", page: "home" },
   { title: "About", page: "about" },
   { title: "Project", page: "projects" },
+  { title: "Contact", page: "contact" },
 ];
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
