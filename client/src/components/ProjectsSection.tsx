@@ -3,6 +3,7 @@ import { getAllProject } from "@/service/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import ContactBtn from "./About/ContactBtn";
 
 export default async function ProjectsSection() {
   const projects = await getAllProject();
@@ -48,6 +49,14 @@ export default async function ProjectsSection() {
                         size={30}
                         className="hover:-translate-y-1 transition-transform cursor-pointer"
                       />
+                    </Link>
+
+                    <Link
+                      href={"/"}
+                      target={"_blank"}
+                      className="flex items-center bg-black text-light p-2 rounded-lg text-sm font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
+                    >
+                      자세히 보기
                     </Link>
                   </div>
                 </div>
