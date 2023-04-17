@@ -20,9 +20,11 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3">
-            <div className="md:py-2 md:block">
-              <h2 className="text-2xl font-bold">{"Sehyeon's Portfolio"}</h2>
-            </div>
+            <Link to="home">
+              <div className="md:py-2 md:block">
+                <h2 className="text-2xl font-bold">{"Sehyeon's Portfolio"}</h2>
+              </div>
+            </Link>
             <div className="md:hidden">
               <button onClick={() => setNavbar(!navbar)}>
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
