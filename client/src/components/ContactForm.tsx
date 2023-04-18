@@ -2,6 +2,7 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import Banner, { BannerData } from "./Banner";
 import { sendContactEmail } from "@/service/contact";
+import AnimatedIcon from "./AnimatedIcon";
 
 type Form = {
   from: string;

@@ -9,6 +9,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi";
 import { AiOutlineUser, AiFillCalendar } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
+import AnimatedIcon from "./AnimatedIcon";
 
 export default function HeroSection() {
   return (
@@ -29,6 +30,9 @@ export default function HeroSection() {
                 <h2 className="text-xl font-bold mt-2 md:text-xl">
                   {"김세현/Kim Se Hyeon"}
                 </h2>
+              </li>
+              <li>
+                <AnimatedIcon />
               </li>
               <li>
                 <h3 className="text-base font-semibold flex space-x-3 md:text-base">

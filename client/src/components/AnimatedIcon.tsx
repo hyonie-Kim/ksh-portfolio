@@ -1,13 +1,17 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { SiTistory, SiGithub, SiGmail } from "react-icons/si";
+import { SiTistory, SiGithub, SiGmail, SiNaver } from "react-icons/si";
 const LINKS = [
   { icon: <SiGithub />, url: "https://github.com/hyonie-Kim" },
   { icon: <SiGmail />, url: "mailto:dev.hyonie@gmail.com" },
   {
     icon: <SiTistory />,
     url: "https://sehyeon90.tistory.com/",
+  },
+  {
+    icon: <SiNaver />,
+    url: "https://blog.naver.com/star_loo4/",
   },
 ];
 export default function AnimatedIcon() {
