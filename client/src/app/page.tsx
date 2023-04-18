@@ -13,7 +13,7 @@ export default function HomePage() {
       <AboutSection />
       {/* @ts-expect-error Async Server Component */}
       <ProjectsSection />
-      {/* <ContactForm /> */}
+      <ContactForm />
     </main>
   );
 }

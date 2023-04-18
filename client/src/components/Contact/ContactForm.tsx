@@ -46,49 +46,57 @@ export default function ContactForm() {
   };
 
   return (
-    <>
-      {banner && <Banner banner={banner} />}
-      <form
-        onSubmit={onSubmit}
-        className="w-full max-w-md flex flex-col gap-2 m-4 p-4 bg-slate-700 rounded-xl text-white"
-      >
-        <label htmlFor="from" className="font-semibold">
-          Your Email
-        </label>
-        <input
-          className="text-black"
-          type="email"
-          id="from"
-          name="from"
-          required
-          autoFocus
-          value={form.from}
-          onChange={onChange}
-        />
-        <label htmlFor="subject">subject</label>
-        <input
-          className="text-black"
-          type="text"
-          id="subject"
-          name="subject"
-          required
-          value={form.subject}
-          onChange={onChange}
-        />
-        <label htmlFor="message">Message</label>
-        <textarea
-          className="text-black"
-          rows={10}
-          id="message"
-          name="message"
-          required
-          value={form.message}
-          onChange={onChange}
-        />
-        <button className="bg-yellow-300 text-black font-bold hover:bg-yellow-400">
-          submit
-        </button>
-      </form>
-    </>
+    <section id="contact">
+      <div className="my-12 pb-12 md:pt-16 md:pb-48">
+        <h1 className="text-center font-bold text-3xl">
+          Contact
+          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
+        </h1>
+        <div className="flex flex-col  space-y-28 border-2 ">
+          {banner && <Banner banner={banner} />}
+          <form
+            onSubmit={onSubmit}
+            className="w-full max-w-md flex flex-col my-6 mx-auto p-4 gap-2 bg-slate-700 rounded-xl text-white"
+          >
+            <label htmlFor="from" className="font-semibold">
+              Your Email
+            </label>
+            <input
+              className="text-black"
+              type="email"
+              id="from"
+              name="from"
+              required
+              autoFocus
+              value={form.from}
+              onChange={onChange}
+            />
+            <label htmlFor="subject">subject</label>
+            <input
+              className="text-black"
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              value={form.subject}
+              onChange={onChange}
+            />
+            <label htmlFor="message">Message</label>
+            <textarea
+              className="text-black"
+              rows={10}
+              id="message"
+              name="message"
+              required
+              value={form.message}
+              onChange={onChange}
+            />
+            <button className="bg-yellow-300 text-black font-bold hover:bg-yellow-400">
+              submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   );
 }

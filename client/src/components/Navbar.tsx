@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 // import Link from "next/link";
 import { Link } from "react-scroll";
+import NextLink from "next/link";
 interface NavItem {
   title: string;
   page: string;
@@ -20,11 +21,11 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3">
-            <Link to="home">
+            <NextLink href="/">
               <div className="md:py-2 md:block">
                 <h2 className="text-2xl font-bold">{"Sehyeon's Portfolio"}</h2>
               </div>
-            </Link>
+            </NextLink>
             <div className="md:hidden">
               <button onClick={() => setNavbar(!navbar)}>
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
