@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 import NextLink from "next/link";
 import profileImage from "../../public/images/IMG_KSH.jpg";
-import AnimatedText from "./About/AnimatedText";
+import AnimatedText from "./AnimatedText";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { HiArrowDown } from "react-icons/hi";
 import { AiOutlineUser, AiFillCalendar } from "react-icons/ai";
