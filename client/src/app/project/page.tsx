@@ -1,4 +1,5 @@
 import SelectProject from "@/components/Project/SelectProject";
+import ProjectsSection from "@/components/ProjectsSection";
 import { getAllProject } from "@/service/projects";
 import { Metadata } from "next";
 import React from "react";

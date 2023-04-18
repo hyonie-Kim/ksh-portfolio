@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import ContactBtn from "./About/ContactBtn";
 import SlideUp from "./SlideUp";
+import { Project } from "@/service/projects";
 
 export default async function ProjectsSection() {
   const projects = await getAllProject();
@@ -33,12 +34,14 @@ export default async function ProjectsSection() {
                       />
                     </Link>
                   </div>
-                  <div className="md:mt-12 md:w-1/2">
-                    <h1 className="text-3xl font-bold mb-6">{project.title}</h1>
+                  <div className="md:mt-12 md:w-1/2  mt-8 text-center md:text-left">
+                    <h1 className="md:text-3xl font-bold mb-6 text-2xl">
+                      {project.title}
+                    </h1>
                     <p className="text-xl leading-7 mb-4 text-neutral-600">
                       {project.description}
                     </p>
-                    <div className="flex flex-row align-bottom space-x-4">
+                    <div className="flex flex-row align-bottom space-x-4 justify-center md:justify-start">
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
