@@ -3,9 +3,7 @@ import { getAllProject } from "@/service/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
-import ContactBtn from "./About/ContactBtn";
 import SlideUp from "./SlideUp";
-import { Project } from "@/service/projects";
 
 export default async function ProjectsSection() {
   const projects = await getAllProject();

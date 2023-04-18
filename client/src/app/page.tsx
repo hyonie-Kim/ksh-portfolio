@@ -1,6 +1,3 @@
-import CarouselProject from "@/components/Project/CarouselProject";
-import Hero from "@/components/About/Hero";
-import MainProject from "@/components/Project/MainProject";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
