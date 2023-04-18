@@ -81,7 +81,7 @@ export default function HeroSection() {
               smooth={true}
               offset={-100}
               duration={500}
-              className="ml-4 text-lg font-medium text-black underline my-auto"
+              className="ml-4 text-lg font-medium text-black underline my-auto cursor-pointer"
             >
               Contact
             </Link>
