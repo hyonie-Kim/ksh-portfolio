@@ -24,11 +24,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={montserrat.className}>
-      <body className="flex flex-col w-full max-w-screen-2xl mx-auto">
+      <body className="flex flex-col w-full w-screen mx-auto">
         <Navbar />
-        {/* <main className="grow w-full inline-block z-0 p-32 pt-0 pb-20"> */}
-        {children}
-        {/* </main> */}
+        <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

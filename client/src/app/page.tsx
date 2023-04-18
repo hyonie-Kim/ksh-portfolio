@@ -8,12 +8,12 @@ import ContactForm from "@/components/Contact/ContactForm";
 
 export default function HomePage() {
   return (
-    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+    <>
       <HeroSection />
       <AboutSection />
       {/* @ts-expect-error Async Server Component */}
       <ProjectsSection />
       <ContactForm />
-    </main>
+    </>
   );
 }
