@@ -52,7 +52,11 @@ export default function ContactForm() {
           Contact
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
         </h1>
-        <div className="flex flex-col  space-y-28 border-2 ">
+        <div className="flex flex-col items-center">
+          <p>dev.hyonie@gmail.com</p>
+          <p>*메일주신 내용에 대해 신속히 회신드리겠습니다.😃</p>
+        </div>
+        <div className="flex flex-col  space-y-28">
           {banner && <Banner banner={banner} />}
           <form
             onSubmit={onSubmit}

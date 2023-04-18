@@ -23,7 +23,7 @@ export default function HeroSection() {
             height={300}
             priority
           />
-          <div className="flex text-center justify-center my-6 border-2 md:px-10 md:inline-block">
+          <div className="flex text-center justify-center my-6 md:px-10 md:inline-block">
             <ul className="list-inside mx-auto border-3 leading-relaxed space-y-2 md:space-y-1">
               <li>
                 <h2 className="text-xl font-bold mt-2 md:text-xl">
@@ -50,7 +50,7 @@ export default function HeroSection() {
             </ul>
           </div>
         </div>
-        <div className="md:mt-0 md:w-3/5 border-2 border-indigo-600">
+        <div className="md:mt-0 md:w-3/5">
           <AnimatedText
             text=" 유연한 자세로 빠르게🏃🏻‍♀️ 성장하는 개발자가 되도록 노력하겠습니다!"
             className="text-4xl/loose mt-6 !text-left m-4"
@@ -61,7 +61,7 @@ export default function HeroSection() {
             신입 개발자로서 도움이 되어 든든한 팀원이 되겠습니다.
           </p>
 
-          <div className="flex flex-row mt-8 justify-center border-2">
+          <div className="flex flex-row mt-8 justify-center">
             <NextLink
               href="/dummy.pdf"
               target={"_blank"}
