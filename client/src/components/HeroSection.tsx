@@ -60,7 +60,7 @@ export default function HeroSection() {
             className="text-4xl/loose mt-6 !text-left m-4"
           />
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            팀과의 협업과 소통을 중요시하며, 서로의 아이디어를 존중하고 협력하여
+            팀과의 협업과 소통을 중요시하며, 서로의 의견을 존중하고 협력하여
             프로젝트를 성공적으로 완수하는 것을 목표로 하고 있습니다. 믿음직한
             신입 개발자로서 도움이 되어 든든한 팀원이 되겠습니다.
           </p>
