@@ -31,10 +31,31 @@ https://ksh-portfolio.vercel.app/
 - ✅ 이력서
 - ✅ 기술스택
 - ✅ 프로젝트 경험
+- ✅ 메일 발송 - 노드메일러
 
 ## 🙋‍♀️와이어 프레임
 
-![mileEASY](/images/projects/mileEASY.png)
+#### 전체페이지
+
+- app > layout 페이지에서 body 태그 안에 자식태그로 전체 레이아웃 페이지를 구성한다.
+  ![portfolio](/images/projects/portfolio_1.png)
+
+#### 헤더 - 네비게이션 바
+
+- React-scroll 라이브러리를 사용하여 섹션마다 id를 주어 해당 페이지로 이동
+- 모바일 화면으로 축소되었을 때 useState 상태값을 사용하였습니다. false일때, React-icon라이브러리를 사용하여 Menu버튼가 나타나고 true일땐 close버튼이 나타나는 토글 기능 구현
+  ![portfolio](/images/projects/portfolio_2.png)
+
+#### 자기소개 메인 페이지
+
+- Tailwind config파일에 애니메이션 키프레임 추가하여 무한반복 효과
+  ![portfolio](/images/projects/portfolio_3.png)
+
+#### 기술스킬 소개 페이지
+
+#### 프로젝트 페이지
+
+#### Contact 페이지
 
 ## ⚙️Environment Setup
 
