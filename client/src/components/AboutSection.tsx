@@ -28,10 +28,10 @@ export default function AboutSection() {
               🌱청년취업사관학교 용산1기
             </h1>
             <p>
-              지난 6개월간 청년취업사관학교에서 HTML, CSS, JavaScirpt와 웹
-              개발에 대한 기초 지식을 공부하였고, 학습한 기술을 바탕으로 React와
-              Express 그리고 MySQL을 연결해 하나의 프로젝트를 만들고 웹사이트를
-              구현할수 있습니다.
+              지난 6개월간 청년취업사관학교에서 HTML, CSS, JavaScript와 웹
+              개발에 대한 기초 지식을 공부하였고, 자바스크립트 언어를 기반으로
+              React 프레임 워크 및 라이브러리를 활용하여 Express 그리고 MySQL을
+              연결해 하나의 프로젝트를 만들고 웹사이트를 구현할수 있습니다.
             </p>
             <br />
             <p>
