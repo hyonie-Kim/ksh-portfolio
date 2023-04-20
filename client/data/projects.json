@@ -7,8 +7,9 @@
       "Bootstrap",
       "jQuery",
       "JavaScript",
-      "Node.Js",
+      "Node.js",
       "Express",
+      "EJS",
       "Sequelize",
       "MySQL"
     ],
