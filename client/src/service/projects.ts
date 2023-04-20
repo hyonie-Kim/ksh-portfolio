@@ -4,7 +4,7 @@ export type Project = {
   title: string;
   description: string;
   date: Date;
-  category: string;
+  category: string[];
   path: string;
   featured: boolean;
   github: string;
