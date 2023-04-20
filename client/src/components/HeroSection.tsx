@@ -67,7 +67,7 @@ export default function HeroSection() {
 
           <div className="flex flex-row mt-8 justify-center">
             <NextLink
-              href="/dummy.pdf"
+              href="/matching.pdf"
               target={"_blank"}
               className="flex items-center bg-black text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
             >
