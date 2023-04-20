@@ -36,20 +36,20 @@ export default async function ProjectsSection() {
                     <h1 className="md:text-3xl font-bold mb-6 text-2xl">
                       {project.title}
                     </h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600">
+                    <p className="md:line-clamp-3 text-xl leading-7 mb-4 text-neutral-600">
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4 justify-center md:justify-start">
                       <Link href={project.github} target="_blank">
                         <BsGithub
-                          size={30}
+                          size={40}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
 
                       <Link href={project.link} target="_blank">
                         <BsArrowUpRightSquare
-                          size={30}
+                          size={40}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
