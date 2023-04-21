@@ -37,7 +37,7 @@ export default async function ProjectsSection() {
                     <h1 className="md:text-3xl font-bold mb-6 text-2xl">
                       {project.title}
                     </h1>
-
+                    <span>{project.participant}</span>
                     <p className="md:line-clamp-3 text-xl leading-7 my-4 text-neutral-600">
                       {project.description}
                     </p>

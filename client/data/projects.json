@@ -3,6 +3,7 @@
     "title": "MileEASY",
     "description": "MBTI 검사를 통해 자신의 성향의 맞게 여행지를 추천해주는 웹 사이트입니다. MVC패턴에 대해 이해할수있었습니다. 팀원들과 협업하고 수업 시간에 배운 내용으로 기획과 최종 배포까지 함을 목표로 하였습니다.",
     "date": "2022-12-01",
+    "participant": "2022-12-01~2022-12-29(5인 팀프로젝트)",
     "category": [
       "Bootstrap",
       "jQuery",
@@ -21,16 +22,18 @@
   {
     "title": "Hyonie`s Portfolio",
     "description": "취업 준비를 위한 포트폴리오 용도의 웹 사이트 입니다. 직접 프로젝트를 만들어보고 Next.js 서버사이드와 클라이언트 서버 렌더링에 대해 이해할수 있었습니다.",
+    "participant": "2023-04-01~2023-04-20(개인프로젝트)",
     "date": "2022-12-01",
     "category": ["Next.js", "TypeScript", "TailwindCss"],
     "path": "portfolio",
     "featured": false,
-    "link": "",
+    "link": "https://ksh-portfolio.vercel.app/",
     "github": "https://github.com/hyonie-Kim/blog"
   },
   {
     "title": "Momoa 모모아",
     "description": "리액트로 구현한 수입과 지출관리, 분석을 위한 가계부 웹입니다. 또한 유저 간 공유 기능을 통해 가계부를 공동으로 관리할수 있도록 구현하였습니다.",
+    "participant": "2023-02-11~2023-02-25(4인 팀프로젝트)",
     "date": "2023-01-01",
     "category": [
       "React",
@@ -49,6 +52,7 @@
   {
     "title": "LIBRARY",
     "description": "알라딘 Open API를 이용한 도서 데이터 검색 사이트입니다.React와 Express로 구현하였고 알라딘 API를 요청하면서 CORS이슈에 대해 공부 할수 있었습니다. ",
+    "participant": "2023-01-26~2023-02-04(개인프로젝트)",
     "date": "2023-01-01",
     "category": ["React", "Redux", "Bootstrap", "Express", "Mysql"],
     "path": "search_library",

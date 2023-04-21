@@ -9,6 +9,7 @@ export type Project = {
   featured: boolean;
   github: string;
   link: string;
+  participant: string;
 };
 export type ProjectData = Project & { content: string };
 export async function getFeaturedProject(): Promise<Project[]> {
