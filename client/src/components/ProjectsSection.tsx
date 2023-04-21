@@ -68,8 +68,14 @@ export default async function ProjectsSection() {
                         href={`/project/${project.path}`}
                         className="flex items-center bg-black text-light p-2 rounded-lg text-sm font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
                       >
-                        자세히 보기
+                        자세히 보기 ▶ README
                       </Link>
+                      {/* <Link
+                        href={`/project/${project.path}`}
+                        className="ml-4 text-lg font-medium text-black underline my-auto cursor-pointer"
+                      >
+                        자세히 보기 ▶ README
+                      </Link> */}
                     </div>
                   </div>
                 </div>
