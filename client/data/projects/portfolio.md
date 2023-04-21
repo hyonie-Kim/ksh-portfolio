@@ -37,7 +37,7 @@ https://ksh-portfolio.vercel.app/
 
 #### 전체페이지
 
-- app > layout 페이지에서 body 태그 안에 자식태그로 전체 레이아웃 페이지를 구성한다.
+- app > layout 페이지에서 body 태그 안에 자식태그로 전체 레이아웃 페이지를 구성
   ![portfolio](/images/projects/portfolio_1.png)
 
 #### 헤더 - 네비게이션 바
@@ -48,14 +48,26 @@ https://ksh-portfolio.vercel.app/
 
 #### 자기소개 메인 페이지
 
-- Tailwind config파일에 애니메이션 키프레임 추가하여 무한반복 효과
+- 하단화살표에 애니메이션 키프레임 추가 무한반복 효과
   ![portfolio](/images/projects/portfolio_3.png)
 
 #### 기술스킬 소개 페이지
 
+![portfolio](/images/projects/portfolio_4.png)
+
 #### 프로젝트 페이지
 
+- Json파일의 프로젝트 정보를 읽어와서 비동기로 동작하는 getAllProject()함수를 호출
+- 이때, 타입 Project의 객체 정보를 배열형태로 반환
+- 현재까지 Next.js버전에서 서로 다른 컴포넌트에서 async/await 사용시 타입에대한 정보가 명시 되지 않아 에러가 발생, 때문에 사용하는 컴포넌트 상단에 이코멘트 추가
+- -webkit-line-clamp 속성을 사용하여 텍스트의 길이가 넘치면 말줄임표(...) 사용
+  ![portfolio](/images/projects/portfolio_5.png)
+
 #### Contact 페이지
+
+- 메일발송 Nodemailer 라이브러리 사용
+- 사용자가 입력한 정보의 유효성 검사 Yup 라이브러리 사용
+  ![portfolio](/images/projects/portfolio_6.png)
 
 ## ⚙️Environment Setup
 
