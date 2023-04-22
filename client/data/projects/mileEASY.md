@@ -4,6 +4,8 @@
 
 ---
 
+![mileEASY](/images/projects/mileeasy.gif)
+
 ## 🔗URL
 
 http://3.35.216.78:8080/
