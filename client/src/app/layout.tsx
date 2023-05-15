@@ -12,7 +12,7 @@ export const metadata = {
   },
   description: "웹 개발자를 꿈꾸는 김세현의 포트폴리오입니다.",
   icons: {
-    icons: "favicon.ico",
+    icons: "👋🏻",
   },
 };
 
