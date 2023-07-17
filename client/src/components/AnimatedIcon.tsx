@@ -9,10 +9,10 @@ const LINKS = [
     icon: <SiTistory />,
     url: "https://sehyeon90.tistory.com/",
   },
-  {
-    icon: <SiNaver />,
-    url: "https://blog.naver.com/star_loo4/",
-  },
+  // {
+  //   icon: <SiNaver />,
+  //   url: "https://blog.naver.com/star_loo4/",
+  // },
 ];
 export default function AnimatedIcon() {
   return (

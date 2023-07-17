@@ -66,15 +66,15 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-row mt-8 justify-center">
-            <NextLink
+            {/* <NextLink
               href="/matching_portfolio.pdf"
               target={"_blank"}
               className="flex items-center bg-black text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
             >
               이력서&ensp;
               <FaExternalLinkAlt />
-            </NextLink>
-            <Link
+            </NextLink> */}
+            {/* <Link
               to="contact"
               activeClass="action"
               spy={true}
@@ -84,7 +84,7 @@ export default function HeroSection() {
               className="ml-4 text-lg font-medium text-black underline my-auto cursor-pointer"
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

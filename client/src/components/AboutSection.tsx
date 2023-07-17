@@ -25,19 +25,20 @@ export default function AboutSection() {
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
           <div className="md:w-1/2">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
-              🌱청년취업사관학교 용산1기
+              🌱피드백과 코드리뷰를 통해 성장하는것을 좋아합니다.
             </h1>
             <p>
-              지난 6개월간 청년취업사관학교에서 HTML, CSS, JavaScript와 웹
-              개발에 대한 기초 지식을 공부하였고, 자바스크립트 언어를 기반으로
-              React 프레임 워크 및 라이브러리를 활용하여 Express 그리고 MySQL을
-              연결해 하나의 프로젝트를 만들고 웹사이트를 구현할수 있습니다.
+              지난 6개월간 서울시 청년취업사관학교에서 HTML, CSS, JavaScript와
+              웹 개발에 대한 기초 지식을 공부하였고, 자바스크립트 언어를
+              기반으로 React 프레임 워크 및 라이브러리를 활용하여 Express 그리고
+              MySQL을 연결해 하나의 프로젝트를 만들고 웹사이트를 구현할수
+              있습니다.
             </p>
             <br />
             <p>
               팀프로젝트를 하면서 Git을 사용하여 팀원들과 변경된 코드 이력을
-              확인하고, 기능을 추가하거나 오류사항을 수정할 때 commit을 사용하고
-              메시지 관리하여 협업한 경험이 있습니다.
+              확인하고,어떤 기능을 추가하거나 오류사항을 수정할 때 commit을
+              사용하고 메시지 관리하여 협업하였습니다.
             </p>
             <br />
             <p>

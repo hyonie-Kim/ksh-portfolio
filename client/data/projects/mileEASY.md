@@ -42,13 +42,7 @@ http://3.35.216.78:8080/
 
 #### 로그인/로그아웃 화면
 
-- 스크롤이 생기는 것을 방지하기 위해서 body에 overflow속성을 hidden 설정하여 보여주려고하는 컨텐츠가 원하는 영역에 맞춰서 보여질수 있게 구현
-- 백그라운드는 no-repeat속성으로 배경이미지를 반복하지 않게 구현
-- HTML container Tag의 역할과 상속관계의 이해
-- CSS display:flex에 대한이해
-- getElementByName과 getElementByID()가 불러오는 데이터 구조의 이해
-- addEventListener()를 통한 이벤트 구현
-  ![mileEASY](/images/projects/mile_1.png)
+![mileEASY](/images/projects/mile_1.png)
 
 #### 회원정보 수정 페이지
 
@@ -57,14 +51,12 @@ http://3.35.216.78:8080/
 
 #### 방명록 등록 페이지
 
-- form textarea valid ~ button CSS 가상 클래스를 사용하여 폼요소가 입력이 완료되면 등록하기 버튼이 활성화 된다.
-- font awesome Icon을 사용하여 MBTI 아이콘 디자인
-  ![mileEASY](/images/projects/mile_3.png)
+![mileEASY](/images/projects/mile_3.png)
 
 ### 방명록 읽기 페이지
 
 - swiper 슬라이드 플러그인을 이용해서 슬라이드를 구현
-- ejs 템플릿엔진을 이용한 node.js 데이터 및 HTML 반복문 구현
+
   ![mileEASY](/images/projects/mile_4.png)
 
 ## ⚙️Environment Setup
