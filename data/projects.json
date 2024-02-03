@@ -59,5 +59,16 @@
     "featured": true,
     "link": "http://3.35.216.78:3001/",
     "github": "https://github.com/hyonie-Kim/search_library"
+  },
+  {
+    "title": "cobooki 코부기",
+    "description": "개발공부를 하고 있는 입문자들에게 IT 개발 도서를 추천 해주는 웹사이트입니다. ",
+    "participant": "2023-07-03~2023-07-14(5인 팀프로젝트)",
+    "date": "2023-01-01",
+    "category": ["React", "Redux", "Express", "MongoDB"],
+    "path": "cobooki",
+    "featured": true,
+    "link": "http://3.35.216.78:8080/",
+    "github": "https://github.com/hyonie-Kim/cobooki"
   }
 ]
