@@ -37,14 +37,14 @@ export default function HeroSection() {
               <li>
                 <h3 className='text-base font-semibold flex space-x-3 md:text-base'>
                   <AiOutlineUser className='inline-block mx-2' />
-                  Front-end developer
+                  Software developer
                 </h3>
               </li>
-              <li>
+              {/* <li>
                 <h3 className='text-base font-semibold flex space-x-3 md:text-base'>
                   <AiFillCalendar className='inline-block mx-2' /> 1990.11.20
                 </h3>
-              </li>
+              </li> */}
               <li>
                 <h3 className='text-base font-semibold flex space-x-3 md:text-base'>
                   <MdLocationOn className='inline-block mx-2' /> 서울 영등포구
@@ -56,15 +56,18 @@ export default function HeroSection() {
         </div>
         <div className='md:mt-0 md:w-3/5'>
           <AnimatedText
-            text=' 사용자 관점에서 바라보고 올바른 방향으로 나아가는 프론트 엔지니어 김세현입니다.'
+            text='올바른 방향으로 나아가는 소프트웨어 개발자👩🏻‍💻 김세현입니다.'
             className='text-4xl/loose mt-6 !text-left m-4'
           />
-          <p className='text-lg mt-4 mb-6 md:text-2xl'>
+          <p className='text-lg mt-4 mb-6 md:text-lg md:leading-8'>
             사용자가 원하는 니즈를 찾고 그에 맞는 경험을 제공하도록 노력하는
-            것이 개발자가 가장 갖춰야하는 덕목이라 믿습니다. 현재는 개발 역량을
-            키우고자 개인스터디 및 다양한 기술 블로그와 멘토님들의 경험과 조언을
-            통해 기술 지식을 습득하고 있습니다. 책읽는 것을 좋아하고, 주도적으로
-            업무를 수행할 수 있는 환경을 선호합니다.
+            것이 개발자가 가장 갖춰야하는 덕목이라 믿습니다.
+            <br></br>
+            <br></br>
+            현재는 Kosta에서 개발 역량키우고 있고, 꾸준한 개인학습 및 다양한
+            기술 블로그와 멘토님들의 경험과 조언을 통해 기술 지식을 습득하고
+            있습니다. 책읽는 것을 좋아하고, 주도적으로 업무를 수행할 수 있는
+            환경을 선호합니다.
           </p>
 
           <div className='flex flex-row mt-8 justify-center'>
