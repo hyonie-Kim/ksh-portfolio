@@ -13,21 +13,21 @@ import AnimatedIcon from './AnimatedIcon';
 
 export default function HeroSection() {
   return (
-    <section id='home'>
-      <div className='flex flex-col text-center items-center justify-center my-10 py-16 sm:py-14 md:py-16 md:flex-row md:space-x-4 md:text-left'>
-        <div className='md:w-1/2 md:mt-1'>
+    <section id="home">
+      <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-14 md:py-16 md:flex-row md:space-x-4 md:text-left">
+        <div className="md:w-1/2 md:mt-1">
           <Image
-            className='rounded-full md:shadow-2xl'
+            className="rounded-full md:shadow-2xl"
             src={profileImage}
-            alt='profileImage'
+            alt="profileImage"
             width={300}
             height={300}
             priority
           />
-          <div className='flex text-center justify-center my-6 md:px-10 md:inline-block'>
-            <ul className='list-inside mx-auto border-3 leading-relaxed space-y-2 md:space-y-1'>
+          <div className="flex text-center justify-center my-6 md:px-10 md:inline-block">
+            <ul className="list-inside mx-auto border-3 leading-relaxed space-y-2 md:space-y-1">
               <li>
-                <h2 className='text-xl font-bold mt-2 md:text-xl'>
+                <h2 className="text-xl font-bold mt-2 md:text-xl">
                   {'김세현/Kim Se Hyeon'}
                 </h2>
               </li>
@@ -35,8 +35,8 @@ export default function HeroSection() {
                 <AnimatedIcon />
               </li>
               <li>
-                <h3 className='text-base font-semibold flex space-x-3 md:text-base'>
-                  <AiOutlineUser className='inline-block mx-2' />
+                <h3 className="text-base font-semibold flex space-x-3 md:text-base">
+                  <AiOutlineUser className="inline-block mx-2" />
                   Software developer
                 </h3>
               </li>
@@ -46,20 +46,20 @@ export default function HeroSection() {
                 </h3>
               </li> */}
               <li>
-                <h3 className='text-base font-semibold flex space-x-3 md:text-base'>
-                  <MdLocationOn className='inline-block mx-2' /> 서울 영등포구
+                <h3 className="text-base font-semibold flex space-x-3 md:text-base">
+                  <MdLocationOn className="inline-block mx-2" /> 서울 영등포구
                   거주
                 </h3>
               </li>
             </ul>
           </div>
         </div>
-        <div className='md:mt-0 md:w-3/5'>
+        <div className="md:mt-0 md:w-3/5">
           <AnimatedText
-            text='올바른 방향으로 나아가는 소프트웨어 개발자👩🏻‍💻 김세현입니다.'
-            className='text-4xl/loose mt-6 !text-left m-4'
+            text="올바른 방향으로 나아가는 소프트웨어 개발자👩🏻‍💻 김세현입니다."
+            className="text-4xl/loose mt-6 !text-left m-4"
           />
-          <p className='text-lg mt-4 mb-6 md:text-lg md:leading-8'>
+          <p className="text-lg mt-4 mb-6 md:text-lg md:leading-8">
             사용자가 원하는 니즈를 찾고 그에 맞는 경험을 제공하도록 노력하는
             것이 개발자가 가장 갖춰야하는 덕목이라 믿습니다.
             <br></br>
@@ -70,7 +70,7 @@ export default function HeroSection() {
             환경을 선호합니다.
           </p>
 
-          <div className='flex flex-row mt-8 justify-center'>
+          <div className="flex flex-row mt-8 justify-center">
             {/* <NextLink
               href="/matching_portfolio.pdf"
               target={"_blank"}
@@ -93,16 +93,18 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className='flex flex-row justify-center cursor-pointer'>
+
+      {/* React와 Tailwind CSS를 사용하여 버튼 또는 링크를 만들어 특정 섹션으로 부드럽게 스크롤하는 기능을 구현한 것 */}
+      <div className="flex flex-row justify-center cursor-pointer">
         <Link
-          to='about'
-          activeClass='action'
+          to="about"
+          activeClass="action"
           spy={true}
           smooth={true}
-          offset={-100}
-          duration={500}
+          offset={-100} // 스크롤시 100px 만큼
+          duration={500} // 스크롤 시간 0.5초
         >
-          <HiArrowDown size={35} className='animate-bounce' />
+          <HiArrowDown size={35} className="animate-bounce" />
         </Link>
       </div>
     </section>
