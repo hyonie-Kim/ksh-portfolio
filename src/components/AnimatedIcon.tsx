@@ -1,14 +1,22 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SiTistory, SiGithub, SiGmail, SiNaver } from 'react-icons/si';
+import {
+  SiTistory,
+  SiGithub,
+  SiGmail,
+  SiNaver,
+  SiInstagram,
+} from 'react-icons/si';
 const LINKS = [
   { icon: <SiGithub />, url: 'https://github.com/hyonie-Kim' },
   { icon: <SiGmail />, url: 'mailto:dev.hyonie@gmail.com' },
   {
     icon: <SiTistory />,
-    url: 'https://sehyeon90.tistory.com/',
+    url: 'https://dev-hyonie.tistory.com/',
   },
+
+  { icon: <SiInstagram />, url: 'https://www.instagram.com/hyonie.develop/' },
   // {
   //   icon: <SiNaver />,
   //   url: "https://blog.naver.com/star_loo4/",
