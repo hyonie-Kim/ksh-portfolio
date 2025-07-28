@@ -50,15 +50,15 @@
     "github": "https://github.com/momoa-book"
   },
   {
-    "title": "웹 퍼블리셔 포트폴리오 | 김세현",
-    "description": "웹 퍼블리셔 김세현의 첫번째 포트폴리오 사이트입니다. jQuery를 처음 배우면서 제작한 프로젝트로, FullPage.js를 활용한 인터랙티브한 원페이지 스크롤 경험을 구현했습니다.",
-    "participant": "2021-01-21~2021-02-08(개인)",
-    "date": "2021-02-08",
-    "category": ["jQuery", "FullPage.js", "Flexbox", "미디어쿼리", "반응형 디자인"],
-    "path": "1st_portfolio",
+    "title": "LIBRARY",
+    "description": "알라딘 Open API를 이용한 도서 데이터 검색 사이트입니다.React와 Express로 구현하였고 알라딘 API를 요청하면서 CORS이슈에 대해 공부 할수 있었습니다. ",
+    "participant": "2023-01-26~2023-02-04(개인프로젝트)",
+    "date": "2023-01-01",
+    "category": ["React", "Redux", "Bootstrap", "Express", "Mysql"],
+    "path": "search_library",
     "featured": true,
-    "link": "https://sehyeon90.github.io/portfolio/",
-    "github": "https://github.com/sehyeon90/portfolio"
+    "link": "http://3.35.216.78:3001/",
+    "github": "https://github.com/hyonie-Kim/search_library"
   },
   {
     "title": "cobooki 코부기",
