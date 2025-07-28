@@ -25,7 +25,11 @@ export default async function ProjectsSection() {
                   <div className="mt-8 md:w-1/2">
                     <Link href={project.link} target="_blank">
                       <Image
-                        className="rounded-xl shadow-xl hover:opacity-70"
+                        className={`rounded-xl shadow-xl hover:opacity-70 ${
+                          project.path === 'wedding_mo' 
+                            ? 'h-[226px] w-auto mx-auto' 
+                            : ''
+                        }`}
                         src={`/images/projects/${project.path}.png`}
                         alt={project.path}
                         width={1000}

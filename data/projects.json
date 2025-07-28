@@ -1,5 +1,23 @@
 [
   {
+    "title": "With Chu Forever | 웨딩 청첩장",
+    "description": "20년지기 친구의 인생에서 가장 중요한 순간을 담은 웨딩 청첩장입니다.",
+    "date": "2025-07-20",
+    "participant": "2025-07-20 ~진행중(개인)",
+    "category": [
+      "React 19",
+      "TypeScript",
+      "Vite 환경",
+      "Sass/SCSS",
+      "Kakao Maps API",
+      "Kakao Share API"
+    ],
+    "path": "wedding_mo",
+    "featured": true,
+    "link": "https://with-chu-forever.vercel.app/",
+    "github": "https://github.com/hyonie-Kim/with-chu-forever"
+  },
+  {
     "title": "MileEASY",
     "description": "MBTI 검사를 통해 자신의 성향의 맞게 여행지를 추천해주는 웹 사이트입니다. MVC패턴에 대해 이해할수있었습니다. 팀원들과 협업하고 수업 시간에 배운 내용으로 기획과 최종 배포까지 함을 목표로 하였습니다.",
     "date": "2022-12-01",
