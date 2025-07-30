@@ -3,7 +3,7 @@
     "title": "With Chu Forever | 웨딩 청첩장",
     "description": "20년지기 친구의 인생에서 가장 중요한 순간을 담은 웨딩 청첩장입니다.",
     "date": "2025-07-20",
-    "participant": "2025-07-20 ~진행중(개인)",
+    "participant": "2025년 7월 20일 ~ 진행중(개인)",
     "category": [
       "React 19",
       "TypeScript",
@@ -18,29 +18,28 @@
     "github": "https://github.com/hyonie-Kim/with-chu-forever"
   },
   {
-    "title": "MileEASY",
-    "description": "MBTI 검사를 통해 자신의 성향의 맞게 여행지를 추천해주는 웹 사이트입니다. MVC패턴에 대해 이해할수있었습니다. 팀원들과 협업하고 수업 시간에 배운 내용으로 기획과 최종 배포까지 함을 목표로 하였습니다.",
+    "title": "Resumates (이력서 작성 플랫폼)",
+    "description": "3가지 템플릿을 제공하고 개인 맞춤형 이력서를 쉽고 빠르게 작성할 수 있는 온라인 플랫폼 프로젝트 입니다.",
     "date": "2022-12-01",
-    "participant": "2022-12-01~2022-12-29(5인 팀프로젝트)",
+    "participant": "2024년 6월 20일~ 2024년 7월 24일 (3인 팀프로젝트)",
     "category": [
-      "Bootstrap",
-      "jQuery",
-      "JavaScript",
+      "React 18",
+      "Styled Components",
+      "Axios",
       "Node.js",
-      "Express",
-      "EJS",
-      "Sequelize",
-      "MySQL"
+      "Express.js",
+      "MongoDB + Mongoose",
+      "Nodemailer"
     ],
-    "path": "mileEASY",
+    "path": "Resumates",
     "featured": true,
-    "link": "http://3.35.216.78:8080/",
-    "github": "https://github.com/MileEASY"
+    "link": "https://resumates.vercel.app/",
+    "github": "https://github.com/Resumates/Resumates"
   },
   {
-    "title": "Hyonie`s Portfolio",
+    "title": "김세현의 포트폴리오",
     "description": "취업 준비를 위한 포트폴리오 용도의 웹 사이트 입니다. 직접 프로젝트를 만들어보고 Next.js 서버사이드와 클라이언트 서버 렌더링에 대해 이해할수 있었습니다.",
-    "participant": "2023-04-01~2023-04-20(개인프로젝트)",
+    "participant": "2023년 4월 1일~ 2023년 4월 20일 (개인)",
     "date": "2022-12-01",
     "category": ["Next.js", "TypeScript", "TailwindCss"],
     "path": "portfolio",
@@ -49,28 +48,9 @@
     "github": "https://github.com/hyonie-Kim/blog"
   },
   {
-    "title": "Momoa 모모아",
-    "description": "리액트로 구현한 수입과 지출관리, 분석을 위한 가계부 웹입니다. 또한 유저 간 공유 기능을 통해 가계부를 공동으로 관리할수 있도록 구현하였습니다.",
-    "participant": "2023-02-11~2023-02-25(4인 팀프로젝트)",
-    "date": "2023-01-01",
-    "category": [
-      "React",
-      "ReactQuery",
-      "TailwindCss",
-      "Node.js",
-      "Express",
-      "Sequelize",
-      "MySQL"
-    ],
-    "path": "momoa",
-    "featured": false,
-    "link": "http://3.35.216.78:3000/",
-    "github": "https://github.com/momoa-book"
-  },
-  {
     "title": "웹 퍼블리셔 포트폴리오 | 김세현",
     "description": "웹 퍼블리셔 김세현의 첫번째 포트폴리오 사이트입니다. jQuery를 처음 배우면서 제작한 프로젝트로, FullPage.js를 활용한 인터랙티브한 원페이지 스크롤 경험을 구현했습니다.",
-    "participant": "2021-01-21~2021-02-08(개인)",
+    "participant": "2021년 1월 21일~ 2021년 2월 08일 (개인)",
     "date": "2021-02-08",
     "category": ["jQuery", "FullPage.js", "Flexbox", "미디어쿼리", "반응형 디자인"],
     "path": "1st_portfolio",
@@ -81,7 +61,7 @@
   {
     "title": "cobooki 코부기",
     "description": "개발공부를 하고 있는 입문자들에게 IT 개발 도서를 추천 해주는 웹사이트입니다. ",
-    "participant": "2023-07-03~2023-07-14(5인 팀프로젝트)",
+    "participant": "2023년 7월 3일~ 2023년 7월 14일 (5인 팀프로젝트)",
     "date": "2023-01-01",
     "category": ["React", "Redux", "Express", "MongoDB"],
     "path": "cobooki",

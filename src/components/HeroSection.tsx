@@ -70,7 +70,7 @@ export default function HeroSection() {
             개발을 단순한 도구가 아닌, 업무의 구조와 흐름을 이해하고 개선하는 수단으로 생각합니다.
             <br></br>
             
-            &ldquo;문제를 해결하는 개발&rdquo;보다는, &ldquo;비즈니스 흐름을 이해하고 개선하는 개발&rdquo;를 지향합니다.
+            &ldquo;당장의 문제를 해결하는 개발&rdquo;보다는, &ldquo;로직의 흐름을 이해하고 구조적으로 개선하는 개발&rdquo;을 지향합니다.
           </p>
 
           <div className="flex flex-row mt-8 justify-center">

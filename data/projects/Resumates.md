@@ -1,80 +1,80 @@
-# 포트폴리오 웹사이트 (Next.js)
+# Resumates (이력서 작성 플랫폼)
 
-2023.04.01 ~ 2023.04.20 (팀프로젝트)
+2024년 6월 20일~ 2024년 7월 24일 (3인 팀프로젝트)
 
 ---
 
-## 🔗URL
+## 1. 프로젝트 개요
 
-https://ksh-portfolio.vercel.app/
+- 팀프로젝트 | 2024년 6월 20일~ 2024년 7월 24일
+- 역할: 풀스택 개발 (프론트엔드 + 백엔드)
 
-## ⚒️Technology Stack
+## 2. 기술 스택
 
-- Frontend: Next.js, TypeScript, tailwind css
-- Deployment: Vercel
+### 프론트엔드
+- React 18.3.1 - 메인 프레임워크
+- Styled Components - CSS-in-JS 스타일링
+- React Router DOM - 클라이언트 사이드 라우팅
+- Axios - HTTP 클라이언트
+- React Easy Crop - 이미지 크롭 기능
+- React To Print - 이력서 PDF 출력
 
-## 📝Summary
+### 백엔드
+- Node.js - 서버 런타임
+- Express.js - 웹 프레임워크
+- MongoDB + Mongoose - 데이터베이스
+- JWT - 인증 토큰
+- Multer - 파일 업로드
+- Nodemailer - 이메일 발송
 
-취업 준비를 위한 **포트폴리오 용도의 웹 사이트** 입니다.
-직접 프로젝트를 만들어보고 Next.js 서버사이드와 클라이언트 서버 렌더링에 대해 이해할수 있었습니다. 서버사이드 렌더링 장점인 검색엔진 최적화 SEO를 지원하면서 동시에 React가 지원하는 클라이언트 사이드 렌더링도 적절하게 사용하면서 효율적으로 앱을 구성하여 만들수 있음을 경험하였습니다. 항상 배포하는것을 어렵게 느꼈는데, Vercel로 이용하여 클릭 몇번으로 간단하게 배포를 할수 있어서 큰 장점도 느낄수 있었습니다
+### 배포
+- 프론트엔드: Vercel
+- 백엔드: Render
+- 데이터베이스: MongoDB Atlas
 
-테일윈드 CSS를 사용하면서 각각이 컴포넌트에 스타일을 주면서 이전에 아이디와 클래스명을 검색하면서 스타일을 주는 번거로움을 덜어서 편리하였습니다.
+## 4. 주요기능
 
-- 테일윈드 CSS를 이용한 반응형 웹사이트
-- 노드메일러 메일 발송 기능
-- 클라이언트와 서버간의 통신 방법
+### 1. 사용자 인증
+- 회원가입/로그인
+- JWT 토큰 기반 인증
+- 소셜 로그인 (네이버)
 
-### \* 주요 기능
+### 2. 이력서 작성
+- 3가지 템플릿 (Simple, Normal, Casual)
+- 드래그 앤 드롭 이미지 업로드
+- 실시간 미리보기
+- PDF 다운로드
 
-- ✅ 간단한 자기소개
-- ✅ 인적 사항
-- ✅ 이력서
-- ✅ 기술스택
-- ✅ 프로젝트 경험
-- ✅ 메일 발송 - 노드메일러
+### 3. 사용자 관리
+- 프로필 이미지 업로드/크롭
+- 계정 정보 수정
+- 이메일 설정
 
-## 🙋‍♀️와이어 프레임
+### 4. 이력서 관리
+- 이력서 목록 조회
+- 이력서 수정/삭제
+- 마이페이지
 
-#### 전체페이지
+## 5. 아키텍처
 
-- app > layout 페이지에서 body 태그 안에 자식태그로 전체 레이아웃 페이지를 구성
-  ![portfolio](/images/projects/portfolio_1.png)
+1. 프론트엔드 구조
+```bash
+client/src/
+├── components/     # 재사용 컴포넌트
+├── pages/         # 페이지 컴포넌트
+├── api/           # API 통신
+├── hooks/         # 커스텀 훅
+├── style/         # 스타일 컴포넌트
+└── utils/         # 유틸리티 함수
+```
 
-#### 헤더 - 네비게이션 바
-
-- React-scroll 라이브러리를 사용하여 섹션마다 id를 주어 해당 페이지로 이동
-- 모바일 화면으로 축소되었을 때 useState 상태값을 사용하였습니다. false일때, React-icon라이브러리를 사용하여 Menu버튼가 나타나고 true일땐 close버튼이 나타나는 토글 기능 구현
-  ![portfolio](/images/projects/portfolio_2.png)
-
-#### 자기소개 메인 페이지
-
-- 하단화살표에 애니메이션 키프레임 추가 무한반복 효과
-  ![portfolio](/images/projects/portfolio_3.png)
-
-#### 기술스킬 소개 페이지
-
-![portfolio](/images/projects/portfolio_4.png)
-
-#### 프로젝트 페이지
-
-- Json파일의 프로젝트 정보를 읽어와서 비동기로 동작하는 getAllProject()함수를 호출
-- 이때, 타입 Project의 객체 정보를 배열형태로 반환
-- 현재까지 Next.js버전에서 서로 다른 컴포넌트에서 async/await 사용시 타입에대한 정보가 명시 되지 않아 에러가 발생, 때문에 사용하는 컴포넌트 상단에 이코멘트 추가
-- -webkit-line-clamp 속성을 사용하여 텍스트의 길이가 넘치면 말줄임표(...) 사용
-  ![portfolio](/images/projects/portfolio_5.png)
-
-#### Contact 페이지
-
-- 메일발송 Nodemailer 라이브러리 사용
-- 사용자가 입력한 정보의 유효성 검사 Yup 라이브러리 사용
-  ![portfolio](/images/projects/portfolio_6.png)
-
-## ⚙️Environment Setup
+2. 백엔드 구조
 
 ```bash
-# Install JavaScript Packages
-npm install
-
-#Run Frontend Server
-npm run dev
+server/
+├── controllers/   # 비즈니스 로직
+├── models/        # 데이터 모델
+├── routes/        # API 라우트
+├── middleware/    # 미들웨어
+└── upload/        # 파일 업로드
 ```
