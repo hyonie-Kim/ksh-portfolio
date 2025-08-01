@@ -61,11 +61,9 @@ export default async function ProjectsSection() {
                         />
                       </Link>
 
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={40}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
+                      <Link href={project.link} target="_blank" className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer">
+                        <BsArrowUpRightSquare size={20} />
+                        <span>사이트 바로가기</span>
                       </Link>
 
                       <Link
