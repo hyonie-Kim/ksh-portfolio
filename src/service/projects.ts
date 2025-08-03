@@ -12,6 +12,9 @@ export type Project = {
   github: string;
   link: string;
   participant: string;
+  developmentScope?: string; // 개발 범위
+  keyFeatures?: string[]; // 주요 기능
+  achievements?: string[]; // 성과/포인트
 };
 export type ProjectData = Project & { content: string };
 

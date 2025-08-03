@@ -15,7 +15,19 @@
     "path": "wedding_mo",
     "featured": true,
     "link": "https://with-chu-forever.vercel.app/",
-    "github": "https://github.com/hyonie-Kim/with-chu-forever"
+    "github": "https://github.com/hyonie-Kim/with-chu-forever",
+    "developmentScope": "100% 개인 개발",
+    "keyFeatures": [
+      "반응형 웨딩 청첩장 디자인",
+      "카카오 지도 API 연동",
+      "카카오 공유하기 기능",
+      "모바일 최적화 UI/UX"
+    ],
+    "achievements": [
+      "실제 결혼식에 사용되는 실용적인 프로젝트",
+      "카카오 API 연동을 통한 외부 서비스 활용 경험",
+      "모바일 우선 반응형 디자인 구현"
+    ]
   },
   {
     "title": "Resumates (이력서 작성 플랫폼)",
@@ -34,7 +46,19 @@
     "path": "Resumates",
     "featured": true,
     "link": "https://resumates.vercel.app/",
-    "github": "https://github.com/Resumates/Resumates"
+    "github": "https://github.com/Resumates/Resumates",
+    "developmentScope": "프론트엔드 & 백엔드 개발 담당",
+    "keyFeatures": [
+      "3가지 이력서 템플릿 제공",
+      "실시간 이력서 미리보기",
+      "PDF 다운로드 기능",
+      "이메일 발송 기능"
+    ],
+    "achievements": [
+      "팀 프로젝트에서 프론트엔드 역할 수행",
+      "Styled Components를 활용한 컴포넌트 기반 개발",
+      "실용적인 이력서 작성 도구 구현"
+    ]
   },
   {
     "title": "김세현의 포트폴리오",
@@ -45,7 +69,19 @@
     "path": "portfolio",
     "featured": false,
     "link": "https://ksh-portfolio.vercel.app/",
-    "github": "https://github.com/hyonie-Kim/blog"
+    "github": "https://github.com/hyonie-Kim/blog",
+    "developmentScope": "100% 개인 개발",
+    "keyFeatures": [
+      "Next.js App Router 활용",
+      "서버사이드 렌더링 구현",
+      "반응형 포트폴리오 디자인",
+      "프로젝트 상세 페이지"
+    ],
+    "achievements": [
+      "Next.js 13+ App Router 학습 및 적용",
+      "SSR과 CSR의 차이점 이해",
+      "포트폴리오 웹사이트 완성"
+    ]
   },
   {
     "title": "웹 퍼블리셔 포트폴리오 | 김세현",
@@ -56,7 +92,19 @@
     "path": "1st_portfolio",
     "featured": true,
     "link": "https://sehyeon90.github.io/portfolio/",
-    "github": "https://github.com/sehyeon90/portfolio"
+    "github": "https://github.com/sehyeon90/portfolio",
+    "developmentScope": "100% 개인 개발",
+    "keyFeatures": [
+      "FullPage.js 인터랙티브 스크롤",
+      "jQuery 애니메이션 효과",
+      "반응형 웹 디자인",
+      "원페이지 포트폴리오"
+    ],
+    "achievements": [
+      "jQuery 라이브러리 학습 및 활용",
+      "FullPage.js를 통한 인터랙티브 경험 구현",
+      "첫 번째 포트폴리오 완성"
+    ]
   },
   {
     "title": "cobooki 코부기",
@@ -67,6 +115,18 @@
     "path": "cobooki",
     "featured": true,
     "link": "http://3.35.216.78:8080/",
-    "github": "https://github.com/hyonie-Kim/cobooki"
+    "github": "https://github.com/hyonie-Kim/cobooki",
+    "developmentScope": "프론트엔드 & 백엔드 개발 담당",
+    "keyFeatures": [
+      "도서 추천 시스템",
+      "사용자 리뷰 기능",
+      "도서 검색 및 필터링",
+      "Redux 상태 관리"
+    ],
+    "achievements": [
+      "팀 프로젝트에서 프론트엔드 역할 수행",
+      "Redux를 활용한 상태 관리 학습",
+      "실용적인 도서 추천 서비스 구현"
+    ]
   }
 ]

@@ -38,46 +38,90 @@ export default async function ProjectsSection() {
                     </Link>
                   </div>
                   <div className="md:mt-6 md:w-1/2  mt-8 text-center md:text-left">
-                    <h1 className="md:text-3xl font-bold mb-6 text-2xl">
-                      {project.title}
-                    </h1>
-                    <span>{project.participant}</span>
-                    <p className="md:line-clamp-3 text-xl leading-7 my-4 text-neutral-600">
-                      {project.description}
-                    </p>
-                    {project.category.map((skill, index) => (
-                      <span
-                        key={index}
-                        className="sm-text rounded bg-gray-200 text-gray-500 px-2 mx-1"
-                      >
-                        {skill}{" "}
-                      </span>
-                    ))}
-                    <div className="flex flex-row align-bottom space-x-4 justify-center mt-4 md:justify-start">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={40}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
+                    <div className="mb-4">
+                      <h1 className="md:text-2xl font-bold mb-2 text-xl">
+                         {project.title}
+                      </h1>
+                      <p className="text-gray-600 mb-2">
+                        {project.participant}
+                      </p>
+                      <blockquote className="text-lg text-neutral-600 mb-4 border-l-4 border-gray-300 pl-4 italic">
+                         {project.description}
+                      </blockquote>
+                    </div>
+
+                    <div className="mb-4">
+                      <h3 className="font-semibold text-gray-700 mb-2">🛠사용 기술:</h3>
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        {project.category.map((skill, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-sm"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mb-4">
+                      <h3 className="font-semibold text-gray-700 mb-2"> 👩🏻‍💻 개발 범위:</h3>
+                      <p className="text-sm text-gray-600 mb-3">
+                        {project.developmentScope || (project.participant.includes('개인') ? '100% 개인 개발' : project.participant)}
+                      </p>
+                    </div>
+
+                    <div className="mb-4">
+                      <h3 className="font-semibold text-gray-700 mb-2">📌 주요 기능:</h3>
+                      <ul className="text-sm text-gray-600 space-y-1 list-disc list-inside">
+                        {project.keyFeatures ? (
+                          project.keyFeatures.map((feature, index) => (
+                            <li key={index}>{feature}</li>
+                          ))
+                        ) : (
+                          <>
+                            <li>요금제 CRUD + 사용자 필터 검색</li>
+                            <li>관리자 로그인 및 인증 처리</li>
+                            <li>ERD 설계 및 API 문서 작성</li>
+                          </>
+                        )}
+                      </ul>
+                    </div>
+
+                    <div className="mb-6">
+                      <h3 className="font-semibold text-gray-700 mb-2">✅ 성과 / 포인트:</h3>
+                      <ul className="text-sm text-gray-600 space-y-1 list-disc list-inside">
+                        {project.achievements ? (
+                          project.achievements.map((achievement, index) => (
+                            <li key={index}>{achievement}</li>
+                          ))
+                        ) : (
+                          <>
+                            <li>실무에서 경험한 요금제 관리 로직을 개인 프로젝트로 재구현</li>
+                            <li>Prisma로 모델 구조를 설계하며 DB 연관성 학습</li>
+                            <li>화면 → DB 흐름 전체를 혼자 구성하며 전체 아키텍처 이해도 향상</li>
+                          </>
+                        )}
+                      </ul>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                      <Link href={project.link} target="_blank" className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer bg-green-500 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-green-600">
+                        <BsArrowUpRightSquare size={16} />
+                        <span>🔗 사이트 바로가기</span>
                       </Link>
 
-                      <Link href={project.link} target="_blank" className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer">
-                        <BsArrowUpRightSquare size={20} />
-                        <span>사이트 바로가기</span>
+                      <Link href={project.github} target="_blank" className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer bg-gray-800 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-900">
+                        <BsGithub size={16} />
+                        <span>GitHub</span>
                       </Link>
 
                       <Link
                         href={`/project/${project.path}`}
-                        className="flex items-center bg-black text-light p-2 rounded-lg text-sm font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
+                        className="flex items-center bg-black text-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-gray-800 border-2 border-solid border-transparent hover:border-gray-800"
                       >
-                        자세히 보기 ▶ README
+                        README 보기
                       </Link>
-                      {/* <Link
-                        href={`/project/${project.path}`}
-                        className="ml-4 text-lg font-medium text-black underline my-auto cursor-pointer"
-                      >
-                        자세히 보기 ▶ README
-                      </Link> */}
                     </div>
                   </div>
                 </div>
