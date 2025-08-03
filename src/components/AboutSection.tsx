@@ -1,8 +1,4 @@
-// 만약 client 컴포넌트로 전환하려면 파일 최상위에 "use client" 를 추가
-'use client';
 import React from 'react';
-import Image from 'next/image';
-import SesacImage from '../../public/images/sesacmile.png';
 
 const skillData = [
   {
@@ -33,7 +29,7 @@ const skillData = [
     items: [
       'Git & GitHub (PR 리뷰, 협업 브랜치 전략 사용 경험)',
       'Jira (이슈 트래킹 및 칸반 보드 활용)',
-      'ISMS 인증 문서 관리 및 보안 취약점 조치',
+      'ISMS 인증 대응 전자결재 폼 제작 및 문서 정리',
       'DBeaver, Postman, Figma (개발 보조 도구 활용 능숙)',
     ],
   },
@@ -74,13 +70,6 @@ export default function AboutSection() {
                 </ul>
               </div>
             ))}
-            <Image
-              className="hidden md:block md:relative md:bottum-3 md:mx-auto md:z-0 "
-              src={SesacImage}
-              alt="SesacImage"
-              width={350}
-              height={350}
-            />
           </div>
         </div>
       </div>

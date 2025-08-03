@@ -23,19 +23,42 @@ export default async function ProjectsSection() {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col animate-sliderUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className="mt-8 md:w-1/2">
-                    <Link href={project.link} target="_blank">
-                      <Image
-                        className={`rounded-xl shadow-xl hover:opacity-70 ${
-                          project.path === 'wedding_mo' 
-                            ? 'h-[226px] w-auto mx-auto' 
-                            : ''
-                        }`}
-                        src={`/images/projects/${project.path}.png`}
-                        alt={project.path}
-                        width={1000}
-                        height={1000}
-                      />
-                    </Link>
+                    {project.path === 'amobile_telecom' ? (
+                      <div className="space-y-8">
+                        <Link href="https://www.amobile.co.kr/" target="_blank" className="block">
+                          <Image
+                            className="rounded-xl shadow-xl hover:opacity-70"
+                            src="/images/projects/amobile.png"
+                            alt="에이모바일"
+                            width={1000}
+                            height={1000}
+                          />
+                        </Link>
+                        <Link href="https://annextele.com/" target="_blank" className="block">
+                          <Image
+                            className="rounded-xl shadow-xl hover:opacity-70"
+                            src="/images/projects/annextele.png"
+                            alt="에넥스텔레콤"
+                            width={1000}
+                            height={1000}
+                          />
+                        </Link>
+                      </div>
+                    ) : (
+                      <Link href={project.link} target="_blank">
+                        <Image
+                          className={`rounded-xl shadow-xl hover:opacity-70 ${
+                            project.path === 'wedding_mo' 
+                              ? 'h-[226px] w-auto mx-auto' 
+                              : ''
+                          }`}
+                          src={`/images/projects/${project.path}.png`}
+                          alt={project.path}
+                          width={1000}
+                          height={1000}
+                        />
+                      </Link>
+                    )}
                   </div>
                   <div className="md:mt-6 md:w-1/2  mt-8 text-center md:text-left">
                     <div className="mb-4">
@@ -106,15 +129,27 @@ export default async function ProjectsSection() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                      <Link href={project.link} target="_blank" className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer bg-green-500 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-green-600">
-                        <BsArrowUpRightSquare size={16} />
-                        <span>🔗 사이트 바로가기</span>
-                      </Link>
+                      {project.link && project.link !== "#" && (
+                        <Link 
+                          href={project.link} 
+                          target="_blank" 
+                          className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer px-3 py-2 rounded-lg text-sm font-medium bg-green-500 text-white hover:bg-green-600"
+                        >
+                          <BsArrowUpRightSquare size={16} />
+                          <span>🔗 사이트 바로가기</span>
+                        </Link>
+                      )}
 
-                      <Link href={project.github} target="_blank" className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer bg-gray-800 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-900">
-                        <BsGithub size={16} />
-                        <span>GitHub</span>
-                      </Link>
+                      {project.github && project.github !== "#" && !project.developmentScope?.includes('실무 프로젝트') && (
+                        <Link 
+                          href={project.github} 
+                          target="_blank" 
+                          className="flex items-center space-x-2 hover:-translate-y-1 transition-transform cursor-pointer px-3 py-2 rounded-lg text-sm font-medium bg-gray-800 text-white hover:bg-gray-900"
+                        >
+                          <BsGithub size={16} />
+                          <span>GitHub</span>
+                        </Link>
+                      )}
 
                       <Link
                         href={`/project/${project.path}`}

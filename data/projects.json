@@ -1,5 +1,158 @@
 [
   {
+    "title": "스마트렌탈 - 가전/가구 렌탈 가입 사이트",
+    "description": "에넥스텔레콤에서 진행한 가전, 가구 렌탈 가입 사이트의 유지보수 및 개선 프로젝트입니다.",
+    "date": "2023-01-01",
+    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
+    "category": [
+      "ASP.NET",
+      "MSSQL",
+      "C#",
+      ".NET Framework"
+    ],
+    "path": "smart_rental",
+    "featured": true,
+    "link": "https://www.smartrental.co.kr/",
+    "github": "#",
+    "developmentScope": "실무 프로젝트 - 백엔드 개발 담당",
+    "keyFeatures": [
+      "가전/가구 렌탈 가입 시스템 유지보수",
+      "렌탈 상품 카테고리 관리 및 개선",
+      "MSSQL 데이터베이스 관리",
+      "ASP.NET 기반 웹 애플리케이션 개발"
+    ],
+    "achievements": [
+      "레거시 시스템 유지보수 경험",
+      "실무 환경에서의 데이터베이스 최적화",
+      "기존 시스템 개선을 통한 사용성 향상"
+    ]
+  },
+  {
+    "title": "에넥스텔레콤 & 에이모바일 - 통신 서비스 플랫폼",
+    "description": "에넥스텔레콤(고객 서비스 관리)과 에이모바일(요금제 가입) 사이트의 유지보수 및 통합 개발 준비 프로젝트입니다.",
+    "date": "2023-01-01",
+    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤/에이모바일)",
+    "category": [
+      "ASP.NET",
+      "Classic ASP",
+      "MSSQL",
+      "Next.js",
+      "NestJS",
+      "Ubuntu",
+      "Hyper-V"
+    ],
+    "path": "amobile_telecom",
+    "featured": true,
+    "link": "https://www.amobile.co.kr/",
+    "github": "#",
+    "developmentScope": "실무 프로젝트 - 풀스택 개발 담당",
+    "keyFeatures": [
+      "에이모바일(요금제 가입) 사이트 유지보수 및 기능 개선",
+      "에넥스텔레콤(고객 서비스 관리) 사이트 유지보수",
+      "Hyper-V 기반 Ubuntu 환경 개발 서버 구성",
+      "레거시 ASP.NET 및 Classic ASP 시스템 유지보수",
+      "Next.js, NestJS 기반 기능 유지보수",
+      "통합 개발을 위한 기술 검토 및 준비"
+    ],
+    "achievements": [
+      "레거시 시스템과 최신 기술 스택 혼용 개발 경험",
+      "가상화 환경 구축 및 운영 경험",
+      "통신 업계 실무 프로젝트 경험",
+      "대규모 시스템 통합 개발 준비 경험"
+    ]
+  },
+  {
+    "title": "피졸로 ERP - WMS 시스템",
+    "description": "피졸로에서 진행한 ERP 관리자 페이지 및 WMS 시스템 유지보수 및 기능 개선 프로젝트입니다.",
+    "date": "2024-08-01",
+    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
+    "category": [
+      "ASP.NET Web Forms 4.0",
+      "C#",
+      "MSSQL",
+      "ERP",
+      "WMS"
+    ],
+    "path": "pisolo_ERP",
+    "featured": true,
+    "link": "#",
+    "github": "#",
+    "developmentScope": "실무 프로젝트 - 풀스택 개발 담당",
+    "keyFeatures": [
+      "ERP 관리자 페이지 유지보수",
+      "WMS 시스템 기능 개선",
+      "재고 관리 시스템 개발",
+      "ERP 연동 시스템 구축"
+    ],
+    "achievements": [
+      "ERP 시스템 개발 및 유지보수 경험",
+      "WMS(창고관리시스템) 개발 경험",
+      "기업용 관리 시스템 개발 경험"
+    ]
+  },
+  {
+    "title": "사내 인트라넷 MNG - 업무 관리 시스템",
+    "description": "유관 부서의 요청에 따라 가입 고객 관리, 실적 집계, 납입 정보 처리 등 다양한 업무를 웹 기반으로 처리할 수 있도록 구현한 내부 업무용 웹 시스템입니다.",
+    "date": "2024-08-01",
+    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
+    "category": [
+      "ASP.NET Web Forms 4.0",
+      "C#",
+      "MSSQL",
+      "jQuery",
+      "AJAX",
+      "IIS"
+    ],
+    "path": "intranet_mng",
+    "featured": true,
+    "link": "#",
+    "github": "#",
+    "developmentScope": "실무 프로젝트 - 풀스택 개발 담당",
+    "keyFeatures": [
+      "가입 고객 리스트 (필터/검색, 엑셀 다운로드)",
+      "실적 집계 (일/주/월 단위 통계, 부서별 비교)",
+      "권한 기반 페이지 제어 (부서별 접근 권한 관리)",
+      "신규 기능 기획 및 개발 (통신팀 요금제, 노출, 종료)",
+      "웹폼 기반 UI 설계 및 서버-DB 연동 로직 구현"
+    ],
+    "achievements": [
+      "유관 부서 요구사항에 따른 맞춤형 기능 개발",
+      "기존 시스템 유지보수 및 성능 개선",
+      "웹폼 기반 내부 업무 시스템 구축 경험",
+      "부서간 협업 및 요구사항 조율 경험"
+    ]
+  },
+  {
+    "title": "Oallacare - 비대면 진료 의료 서비스",
+    "description": "국내 비대면 진료 & 약 배송 서비스 및 대표 의료전문 디지털 헬스케어 플랫폼 서비스 제공 사이트입니다. 상담예약 시스템 구현을 통해 의료 서비스 플랫폼 개발 경험을 쌓았습니다.",
+    "date": "2023-08-01",
+    "participant": "2023년 8월 ~ 2023년 10월 (블루앤트)",
+    "category": [
+      "Next.js 12",
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "CSS/SCSS"
+    ],
+    "path": "ollacare",
+    "featured": true,
+    "link": "https://ollacare.com/",
+    "github": "#",
+    "developmentScope": "프론트엔드 개발 담당",
+    "keyFeatures": [
+      "올라케어 홈페이지 Next.js 12 버전으로 개선",
+      "매달 진행되는 이벤트 페이지 퍼블리싱",
+      "심리/해석 상담 예약 서비스 v2 버전 개선",
+      "기획팀 요구사항에 맞는 기능 구현"
+    ],
+    "achievements": [
+      "프론트엔드 팀 기존 코드 활용 및 개선",
+      "Next.js 12 버전 업그레이드 경험",
+      "의료 서비스 플랫폼 개발 경험",
+      "기획팀과의 협업 및 요구사항 구현 경험"
+    ]
+  },
+  {
     "title": "With Chu Forever | 웨딩 청첩장",
     "description": "20년지기 친구의 인생에서 가장 중요한 순간을 담은 웨딩 청첩장입니다.",
     "date": "2025-07-20",
@@ -114,7 +267,7 @@
     "category": ["React", "Redux", "Express", "MongoDB"],
     "path": "cobooki",
     "featured": true,
-    "link": "http://3.35.216.78:8080/",
+    "link": "#",
     "github": "https://github.com/hyonie-Kim/cobooki",
     "developmentScope": "프론트엔드 & 백엔드 개발 담당",
     "keyFeatures": [
