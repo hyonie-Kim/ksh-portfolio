@@ -53,51 +53,72 @@ export default function ContactForm() {
           Contact
           <hr className='w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded' />
         </h1>
-        <div className='flex flex-col items-center'>
-          <p>dev.hyonie@gmail.com</p>
-          <p>*메일주신 내용에 대해 신속히 회신드리겠습니다.😃</p>
+        <div className='flex flex-col items-center mb-8'>
+          <p className='text-lg text-teal-600 font-medium mb-2'>dev.hyonie@gmail.com</p>
+          <p className='text-sm text-gray-500'>궁금한 점이나 문의사항이 있으시면 언제든 연락주세요! ✨</p>
         </div>
-        <div className='flex flex-col  space-y-28'>
+        <div className='flex flex-col space-y-6'>
           {banner && <Banner banner={banner} />}
           <form
             onSubmit={onSubmit}
-            className='w-full max-w-md flex flex-col my-6 mx-auto p-4 gap-2 bg-slate-700 rounded-xl text-white'
+            className='w-full max-w-lg mx-auto p-8 bg-gradient-to-br from-white to-teal-50 rounded-2xl shadow-xl border border-teal-100'
           >
-            <label htmlFor='from' className='font-semibold'>
-              Your Email
-            </label>
-            <input
-              className='text-black'
-              type='email'
-              id='from'
-              name='from'
-              required
-              value={form.from}
-              onChange={onChange}
-            />
-            <label htmlFor='subject'>subject</label>
-            <input
-              className='text-black'
-              type='text'
-              id='subject'
-              name='subject'
-              required
-              value={form.subject}
-              onChange={onChange}
-            />
-            <label htmlFor='message'>Message</label>
-            <textarea
-              className='text-black'
-              rows={10}
-              id='message'
-              name='message'
-              required
-              value={form.message}
-              onChange={onChange}
-            />
-            <button className='bg-yellow-300 text-black font-bold hover:bg-yellow-400'>
-              submit
-            </button>
+            <div className='space-y-6'>
+              <div>
+                <label htmlFor='from' className='block text-sm font-medium text-gray-700 mb-2'>
+                  이메일 주소
+                </label>
+                <input
+                  className='w-full px-4 py-3 border border-teal-200 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-400 transition-all duration-200 bg-white'
+                  type='email'
+                  id='from'
+                  name='from'
+                  required
+                  value={form.from}
+                  onChange={onChange}
+                  placeholder='your.email@example.com'
+                />
+              </div>
+              
+              <div>
+                <label htmlFor='subject' className='block text-sm font-medium text-gray-700 mb-2'>
+                  제목
+                </label>
+                <input
+                  className='w-full px-4 py-3 border border-teal-200 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-400 transition-all duration-200 bg-white'
+                  type='text'
+                  id='subject'
+                  name='subject'
+                  required
+                  value={form.subject}
+                  onChange={onChange}
+                  placeholder='제목을 입력해주세요'
+                />
+              </div>
+              
+              <div>
+                <label htmlFor='message' className='block text-sm font-medium text-gray-700 mb-2'>
+                  메시지
+                </label>
+                <textarea
+                  className='w-full px-4 py-3 border border-teal-200 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-400 transition-all duration-200 resize-none bg-white'
+                  rows={8}
+                  id='message'
+                  name='message'
+                  required
+                  value={form.message}
+                  onChange={onChange}
+                  placeholder='메시지를 입력해주세요'
+                />
+              </div>
+              
+              <button 
+                type='submit'
+                className='w-full bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-teal-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl'
+              >
+                메시지 보내기
+              </button>
+            </div>
           </form>
         </div>
       </div>

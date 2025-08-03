@@ -4,33 +4,36 @@ const skillData = [
   {
     category: '🔧 Frontend',
     items: [
-      'Next.js 14 (App Router 중심의 구조 설계 및 SSR 활용)',
-      'React (컴포넌트 단위 재사용, Zustand 전역 상태 관리 경험)',
-      'TypeScript (props/interface 구조화, 타입 안전한 개발)',
-      'JQuery (DOM 조작 및 이벤트 처리)',
+      'Next.js 14',
+      'React',
+      'TypeScript',
+      'JQuery',
     ],
   },
   {
     category: '🛠 Backend',
     items: [
-      'NestJS (기존 프로젝트 유지보수 및 API/라우팅 수정 경험)',
-      'ASP.NET WebForms / Classic ASP (기존 레거시 유지보수 및 개선)',
+      'NestJS',
+      'ASP.NET WebForms',
+      'Classic ASP',
     ],
   },
   {
     category: '🗃 Database & Infra',
     items: [
-      'MSSQL (기본 쿼리 작성 및 데이터 관리 경험)',
-      'Windows Server (IIS 설정, DB 백업 및 접근 권한 관리)',
+      'MSSQL',
+      'Windows Server',
+      'IIS',
     ],
   },
   {
     category: '🧠 Collaboration & Tools',
     items: [
-      'Git & GitHub (PR 리뷰, 협업 브랜치 전략 사용 경험)',
-      'Jira (이슈 트래킹 및 칸반 보드 활용)',
-      'ISMS 인증 대응 전자결재 폼 제작 및 문서 정리',
-      'DBeaver, Postman, Figma (개발 보조 도구 활용 능숙)',
+      'Git & GitHub',
+      'Jira',
+      'DBeaver',
+      'Postman',
+      'Figma',
     ],
   },
 ];
@@ -38,36 +41,39 @@ const skillData = [
 export default function AboutSection() {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center font-bold text-3xl">
+      <div className="my-12 pb-12 md:pt-16 md:pb-48 mb-24">
+        <h1 className="text-center font-bold text-3xl mb-24">
           Skills & Tech Stack
-          {/* About Me */}
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
         </h1>
-        <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
-          <div className="md:w-1/2">
+        <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:p-4 md:space-y-0">
+          <div className="md:w-1/2 md:text-left md:pr-5">
             {/* 왼쪽: Frontend, Backend */}
             {skillData.slice(0, 2).map((category, idx) => (
-              <div key={idx} className="mb-6">
-                <h2 className="text-xl font-bold mb-2">{category.category}</h2>
-                <ul className="list-disc list-inside space-y-2 text-gray-800">
+              <div key={idx} className="mb-12">
+                <h2 className="text-xl font-bold mb-4 text-gray-800">{category.category}</h2>
+                <div className="flex flex-wrap gap-2">
                   {category.items.map((item, itemIdx) => (
-                    <li key={itemIdx}>{item}</li>
+                    <span key={itemIdx} className="px-3 py-2 bg-teal-100 text-teal-800 rounded-lg text-sm font-medium">
+                      {item}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 md:text-left md:pl-5">
             {/* 오른쪽: Database & Infra, Collaboration & Tools */}
             {skillData.slice(2).map((category, idx) => (
-              <div key={idx} className="mb-6">
-                <h2 className="text-xl font-bold mb-2">{category.category}</h2>
-                <ul className="list-disc list-inside space-y-2 text-gray-800">
+              <div key={idx} className="mb-12">
+                <h2 className="text-xl font-bold mb-4 text-gray-800">{category.category}</h2>
+                <div className="flex flex-wrap gap-2">
                   {category.items.map((item, itemIdx) => (
-                    <li key={itemIdx}>{item}</li>
+                    <span key={itemIdx} className="px-3 py-2 bg-teal-100 text-teal-800 rounded-lg text-sm font-medium">
+                      {item}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>

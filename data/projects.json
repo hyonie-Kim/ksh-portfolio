@@ -123,6 +123,36 @@
     ]
   },
   {
+    "title": "고객센터 CS 사이트 - 업무 분배 시스템",
+    "description": "고객 요청 내용을 업무별로 게시판 이관하여 게시판 담당자가 처리할 수 있도록 분배하는 고객센터 CS 관리 시스템입니다.",
+    "date": "2024-08-01",
+    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
+    "category": [
+      "ASP.NET Web Forms 4.0",
+      "C#",
+      "MSSQL",
+      "jQuery",
+      "AJAX",
+      "IIS"
+    ],
+    "path": "cs_site",
+    "featured": true,
+    "link": "#",
+    "github": "#",
+    "developmentScope": "실무 프로젝트 - 풀스택 개발 담당",
+    "keyFeatures": [
+      "고객 요청 내용 게시판 이관 시스템",
+      "업무별 담당자 분배 기능",
+      "CS 요청 처리 현황 관리",
+      "권한 기반 게시판 접근 제어",
+      "웹폼 기반 CS 관리 시스템 구축"
+    ],
+    "achievements": [
+      "부서간 업무 협업 시스템 구축",
+      "업무 요청에 따른 유지보수 경험"
+    ]
+  },
+  {
     "title": "Oallacare - 비대면 진료 의료 서비스",
     "description": "국내 비대면 진료 & 약 배송 서비스 및 대표 의료전문 디지털 헬스케어 플랫폼 서비스 제공 사이트입니다. 상담예약 시스템 구현을 통해 의료 서비스 플랫폼 개발 경험을 쌓았습니다.",
     "date": "2023-08-01",
@@ -132,7 +162,8 @@
       "React",
       "TypeScript",
       "JavaScript",
-      "CSS/SCSS"
+      "CSS/SCSS",
+      "vanilla Extract Style"
     ],
     "path": "ollacare",
     "featured": true,

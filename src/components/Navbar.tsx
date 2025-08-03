@@ -11,8 +11,8 @@ interface NavItem {
 }
 const NAV_ITEMS: Array<NavItem> = [
   { title: 'Home', page: 'home' },
-  { title: 'Skill', page: 'about' },
-  { title: 'Project', page: 'projects' },
+  { title: 'Skills', page: 'about' },
+  { title: 'Projects', page: 'projects' },
   { title: 'Contact', page: 'contact' },
 ];
 export default function Navbar() {
