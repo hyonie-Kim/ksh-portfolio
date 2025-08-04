@@ -10,7 +10,7 @@
       "C#",
       ".NET Framework"
     ],
-    "path": "smart_rental",
+    "path": "smartRental",
     "featured": true,
     "link": "https://www.smartrental.co.kr/",
     "github": "#",
@@ -239,7 +239,7 @@
       "이메일 발송 기능"
     ],
     "achievements": [
-      "팀 프로젝트에서 프론트엔드 역할 수행",
+      "팀 프로젝트에서 백엔드 역할 수행",
       "Styled Components를 활용한 컴포넌트 기반 개발",
       "실용적인 이력서 작성 도구 구현"
     ]

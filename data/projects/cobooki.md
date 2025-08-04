@@ -1,83 +1,74 @@
-# cobooki 사이트
+# 코부기 - IT 중고 서적 제공 사이트
 
-2023.07.03 ~ 2023.07.14 (5인 팀프로젝트)
+## 1. 프로젝트 개요
+
+| 항목           | 내용                                                                 |
+|----------------|----------------------------------------------------------------------|
+| **프로젝트명** | 코부기 (Coding + Book + IT) |
+| **기간**       | 2023년 7월 1일 ~ 2023년 7월 17일 (총 2주)                          |
+| **소속**       | 엘리스 SW 엔지니어 트랙 "불사조" 팀                                  |
+| **설명**       | 개발자들을 위한 IT 중고 서적 제공 사이트 |
+
+## 2. 보유 기술 스택
+
+- **Frontend**: HTML, CSS, JavaScript, jQuery, Bootstrap
+- **Backend**: Node.js, Express.js, EJS Template Engine
+- **Database**: MongoDB, Mongoose
+- **Deployment**: AWS EC2
+- **Tools**: npm, GitHub, Notion, Discord, Figma, Postman
+
+## 3. 프로젝트 세부 내용
+
+### ✅ 담당 역할
+
+- 백엔드 100% 단독 구현
+- 서버 레포지토리 초기 설정 및 파일 경로 매핑 구성
+- Application Tier 3계층으로 분리하여 사용자 및 제품 기능 구현
+- RESTful API 명세서 작성
+
+### 🛠️ 주요 기술
+
+- **Node.js & Express.js** 기반 서버 구축 및 RESTful API 개발
+- **MongoDB & Mongoose**를 활용한 데이터베이스 설계 및 CRUD 기능 구현
+- **Session & bcrypt**를 이용한 비밀번호 암호화 및 자동 로그인 기능
+- **EJS Template Engine**을 활용한 서버사이드 렌더링
+
+### 📈 성과 / 개선한 점
+
+- **보안 강화**: bcrypt를 통한 비밀번호 암호화 및 session 기반 인증 구현
+- **사용자 경험**: cookie와 session을 활용한 자동 로그인 기능으로 UX 향상
+
+- **아키텍처 개선**: Application Tier 3계층 분리로 코드 구조화 및 유지보수성 향상
+
+### 🎯 주요 기능
+
+- **회원 관리**: 회원가입, 로그인, 회원정보 수정 및 탈퇴 등 사용자 CRUD
+- **장바구니**: 프론트엔드 단에서 수행하는 장바구니 관련 기능
+- **관리자 페이지**: 관리자 전용 기능 및 페이지
+- **방명록**: Swiper 슬라이드 플러그인을 활용한 방명록 기능
+
+
+### 🔧 기술적 구현
+
+- **데이터베이스 설계**: MongoDB와 Mongoose를 활용한 스키마 설계
+- **API 설계**: RESTful API 명세서 작성 및 구현
+
+- **보안 구현**: bcrypt를 통한 비밀번호 해싱 및 session 관리
+- **템플릿 엔진**: EJS를 활용한 동적 페이지 렌더링
+
+
+### 🤝 팀 협업
+
+- **팀 구성**: 프론트엔드 4명, 백엔드 1명 (총 5명)
+- **협업 도구**: GitHub, Notion, Discord, Figma 활용
+- **역할 분담**: 백엔드 100% 단독 구현으로 전체 서버 로직 담당
+
+### 🚀 배포 및 운영
+
+- **AWS EC2**: 클라우드 서버 환경에서 배포
+- **GitHub**: 버전 관리 및 협업
+- **Postman**: API 테스트 및 문서화
 
 ---
 
-<!-- ![mileEASY](/images/projects/mileeasy.gif) -->
-
-## 🔗URL
-
-http://3.35.216.78:8080/
-
-## ⚒️Technology Stack
-
-- Frontend: HTML, CSS, JavaScript, jQuery, Bootstrap
-- Backend: Node.js, EJS Template Engine, Express.js, Sequelize
-- Database: MongoDB
-- Deployment: AWS(EC2)
-
-## 📝Summary
-
-**개발공부를 하고 있는 입문자들에게 IT 개발 도서를 추천 해주는 웹사이트** 입니다.
-
-1. Coding + book + IT = Cobooki(코부기) 줄잇말
-2. 회원가입, 로그인, 회원정보 수정 및 탈퇴 등 사용자 관련 CRUD
-3. 장바구니 관련 기능을 프론트 단에서 수행
-4. 관리자 페이지
-
-### \* 이슈
-
-마이페이지 구현 시 이미지 파일과 텍스트 값을 form에 담기 위해서 enctype을
-multipart/form-data로 변경
-이때 req.body로 요청 시 body에 데이터가 담기지 않는 문제가 발생
-
-### \* 해결
-
-노드 환경에서 사용하는 multiparty 패키지를 사용하여 form 데이터를 파싱
-클라이언트에서 req.body로 보낸 텍스트 값과 path에 각 경로를 지정하여 어떤 이미지가 전송
-되었는지 확인 가능
-
-### \* 역할 및 기여도
-
-- 백엔드, 100%
-
-### \* 프로젝트 총 인원
-
-- 백엔드 1명, 프론트엔드 4명 총 5명
-
-## 🙋‍♀️구현 기능
-
-#### 로그인/로그아웃 화면
-
-![mileEASY](/images/projects/mile_1.png)
-
-#### 회원정보 수정 페이지
-
-- HTML 폼 POST방식 전송을 할때 데이터를 인코딩 타입을 multiparty/form-data 를 사용하여 이미지 파일 업로드 구현
-  ![mileEASY](/images/projects/mile_2.png)
-
-#### 방명록 등록 페이지
-
-![mileEASY](/images/projects/mile_3.png)
-
-### 방명록 읽기 페이지
-
-- swiper 슬라이드 플러그인을 이용해서 슬라이드를 구현
-
-  ![mileEASY](/images/projects/mile_4.png)
-
-## ⚙️Environment Setup
-
-1. Git Clone
-
-```bash
-git clone https://github.com/MileEASY/MileEasy_repo.git
-```
-
-2. 서버 실행
-
-```bash
-npm install
-node index.js
-```
+> 📌 **비고**: 엘리스 SW 엔지니어 트랙에서 진행한 팀 프로젝트로, 백엔드 100% 단독 구현을 통해 전체 서버 아키텍처를 설계하고 구현할 수 있었습니다. 특히 session 기반 인증 구현과 RESTful API 설계를 통해 실무에서 필요한 핵심 기술들을 경험할 수 있었으며, 팀 협업을 통한 소통 능력도 향상시킬 수 있었습니다.
