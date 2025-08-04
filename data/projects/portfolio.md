@@ -1,80 +1,106 @@
-# 포트폴리오 웹사이트 (Next.js)
+# 포트폴리오 웹사이트 - Next.js
 
-2023.04.01 ~ 2023.04.20 (개인프로젝트)
+## 1. 프로젝트 개요
+
+| 항목           | 내용                                                                 |
+|----------------|----------------------------------------------------------------------|
+| **프로젝트명** | 김세현 포트폴리오 웹사이트 ([https://ksh-portfolio.vercel.app/](https://ksh-portfolio.vercel.app/))|
+| **기간**       | 2023년 4월 1일 ~ 2023년 4월 20일 (총 20일)                          |
+| **소속**       | 개인 프로젝트                                                         |
+| **설명**       | 취업 준비를 위한 포트폴리오 용도의 웹사이트 |
+
+## 2. 보유 기술 스택
+
+- **Frontend**: Next.js 13, TypeScript, Tailwind CSS
+- **Deployment**: Vercel
+- **Email Service**: Nodemailer
+- **Validation**: Yup
+
+## 3. 프로젝트 세부 내용
+
+### ✅ 담당 역할
+
+- 100% 개인 개발로 전체 프로젝트 설계 및 구현
+- Next.js App Router를 활용한 서버사이드 렌더링 구현
+- 반응형 포트폴리오 디자인 및 배포 자동화
+
+### 🛠️ 주요 기술
+
+- **Next.js 13 App Router** 기반 SSR과 CSR 혼합 구조 이해 및 활용
+- **TypeScript**를 활용한 타입 안전한 개발 환경 구축
+- **Tailwind CSS**를 활용한 반응형 웹 디자인 구현
+- **React-scroll** 라이브러리를 활용한 스무스 스크롤 네비게이션
+- **Nodemailer**를 활용한 이메일 발송 기능 구현
+
+### 📈 성과 / 개선한 점
+
+- **SEO 최적화**: 서버사이드 렌더링을 통한 검색엔진 최적화 구현
+- **성능 최적화**: 클라이언트와 서버 간 효율적인 렌더링 전략 적용
+- **배포 자동화**: Vercel을 통한 간편한 배포 프로세스 구축
+- **사용자 경험**: 반응형 디자인과 스무스한 애니메이션으로 UX 향상
+
+### 🎯 주요 기능
+
+- **자기소개 섹션**: 애니메이션이 적용된 메인 소개 페이지
+- **기술 스택**: 카테고리별 기술 스킬 표시
+- **프로젝트 경험**: JSON 데이터 기반 동적 프로젝트 목록
+- **Contact 폼**: Yup 유효성 검사와 Nodemailer 이메일 발송
+- **반응형 네비게이션**: 모바일 친화적인 토글 메뉴
+
+### 🔧 기술적 구현
+
+- **비동기 데이터 처리**: `getAllProject()` 함수를 통한 프로젝트 정보 동적 로딩
+- **타입 안전성**: TypeScript를 활용한 Project 인터페이스 정의
+- **스타일링**: Tailwind CSS를 활용한 컴포넌트 기반 스타일링
+- **애니메이션**: CSS 키프레임을 활용한 무한 반복 애니메이션
+
+### 📱 반응형 디자인
+
+- **데스크톱**: 3컬럼 레이아웃으로 정보 효율적 배치
+- **태블릿**: 2컬럼 레이아웃으로 적응형 디자인
+- **모바일**: 1컬럼 레이아웃과 토글 네비게이션
+
+### 🎨 와이어 프레임 및 UI/UX
+
+#### 전체 페이지 구조
+- **App Router 구조**: `app > layout` 페이지에서 body 태그 안에 자식태그로 전체 레이아웃 구성
+- **컴포넌트 기반 설계**: 각 섹션별 독립적인 컴포넌트 구조로 유지보수성 향상
+
+![전체 페이지 구조](/images/projects/portfolio_1.png)
+
+#### 헤더 - 네비게이션 바
+- **React-scroll 라이브러리**: 섹션마다 id를 주어 해당 페이지로 스무스 스크롤 이동
+- **반응형 토글 메뉴**: 모바일 화면에서 useState 상태값을 활용한 메뉴 토글 기능
+- **아이콘 라이브러리**: React-icon을 활용한 Menu/Close 버튼 동적 전환
+
+![네비게이션 바](/images/projects/portfolio_2.png)
+
+#### 자기소개 메인 페이지
+- **애니메이션 효과**: 하단 화살표에 CSS 키프레임을 활용한 무한반복 애니메이션
+- **타이핑 효과**: AnimatedText 컴포넌트를 통한 동적 텍스트 표시
+
+![자기소개 페이지](/images/projects/portfolio_3.png)
+
+#### 기술 스킬 소개 페이지
+- **카테고리별 분류**: Frontend, Backend, Database & Infra, Collaboration & Tools
+- **태그 형태 디자인**: 각 기술을 시각적으로 구분되는 태그 형태로 표시
+
+![기술 스킬 페이지](/images/projects/portfolio_4.png)
+
+#### 프로젝트 페이지
+- **동적 데이터 로딩**: JSON 파일의 프로젝트 정보를 `getAllProject()` 함수로 비동기 처리
+- **타입 안전성**: TypeScript Project 인터페이스를 통한 타입 정의
+- **텍스트 처리**: `-webkit-line-clamp` 속성을 활용한 말줄임표(...) 처리
+
+![프로젝트 페이지](/images/projects/portfolio_5.png)
+
+#### Contact 페이지
+- **이메일 발송**: Nodemailer 라이브러리를 활용한 메일 발송 기능
+- **유효성 검사**: Yup 라이브러리를 통한 사용자 입력 데이터 검증
+- **사용자 피드백**: 성공/실패 상태에 따른 배너 메시지 표시
+
+![Contact 페이지](/images/projects/portfolio_6.png)
 
 ---
 
-## 🔗URL
-
-https://ksh-portfolio.vercel.app/
-
-## ⚒️Technology Stack
-
-- Frontend: Next.js, TypeScript, tailwind css
-- Deployment: Vercel
-
-## 📝Summary
-
-취업 준비를 위한 **포트폴리오 용도의 웹 사이트** 입니다.
-직접 프로젝트를 만들어보고 Next.js 서버사이드와 클라이언트 서버 렌더링에 대해 이해할수 있었습니다. 서버사이드 렌더링 장점인 검색엔진 최적화 SEO를 지원하면서 동시에 React가 지원하는 클라이언트 사이드 렌더링도 적절하게 사용하면서 효율적으로 앱을 구성하여 만들수 있음을 경험하였습니다. 항상 배포하는것을 어렵게 느꼈는데, Vercel로 이용하여 클릭 몇번으로 간단하게 배포를 할수 있어서 큰 장점도 느낄수 있었습니다
-
-테일윈드 CSS를 사용하면서 각각이 컴포넌트에 스타일을 주면서 이전에 아이디와 클래스명을 검색하면서 스타일을 주는 번거로움을 덜어서 편리하였습니다.
-
-- 테일윈드 CSS를 이용한 반응형 웹사이트
-- 노드메일러 메일 발송 기능
-- 클라이언트와 서버간의 통신 방법
-
-### \* 주요 기능
-
-- ✅ 간단한 자기소개
-- ✅ 인적 사항
-- ✅ 이력서
-- ✅ 기술스택
-- ✅ 프로젝트 경험
-- ✅ 메일 발송 - 노드메일러
-
-## 🙋‍♀️와이어 프레임
-
-#### 전체페이지
-
-- app > layout 페이지에서 body 태그 안에 자식태그로 전체 레이아웃 페이지를 구성
-  ![portfolio](/images/projects/portfolio_1.png)
-
-#### 헤더 - 네비게이션 바
-
-- React-scroll 라이브러리를 사용하여 섹션마다 id를 주어 해당 페이지로 이동
-- 모바일 화면으로 축소되었을 때 useState 상태값을 사용하였습니다. false일때, React-icon라이브러리를 사용하여 Menu버튼가 나타나고 true일땐 close버튼이 나타나는 토글 기능 구현
-  ![portfolio](/images/projects/portfolio_2.png)
-
-#### 자기소개 메인 페이지
-
-- 하단화살표에 애니메이션 키프레임 추가 무한반복 효과
-  ![portfolio](/images/projects/portfolio_3.png)
-
-#### 기술스킬 소개 페이지
-
-![portfolio](/images/projects/portfolio_4.png)
-
-#### 프로젝트 페이지
-
-- Json파일의 프로젝트 정보를 읽어와서 비동기로 동작하는 getAllProject()함수를 호출
-- 이때, 타입 Project의 객체 정보를 배열형태로 반환
-- 현재까지 Next.js버전에서 서로 다른 컴포넌트에서 async/await 사용시 타입에대한 정보가 명시 되지 않아 에러가 발생, 때문에 사용하는 컴포넌트 상단에 이코멘트 추가
-- -webkit-line-clamp 속성을 사용하여 텍스트의 길이가 넘치면 말줄임표(...) 사용
-  ![portfolio](/images/projects/portfolio_5.png)
-
-#### Contact 페이지
-
-- 메일발송 Nodemailer 라이브러리 사용
-- 사용자가 입력한 정보의 유효성 검사 Yup 라이브러리 사용
-  ![portfolio](/images/projects/portfolio_6.png)
-
-## ⚙️Environment Setup
-
-```bash
-# Install JavaScript Packages
-npm install
-
-#Run Frontend Server
-npm run dev
-```
+> 📌 **비고**: Next.js 13의 최신 기능들을 학습하고 적용할 수 있었으며, 서버사이드 렌더링과 클라이언트 사이드 렌더링의 차이점을 실제 프로젝트를 통해 이해할 수 있었습니다. 또한 Vercel을 통한 배포 경험을 통해 현대적인 개발 워크플로우를 경험할 수 있었습니다.
