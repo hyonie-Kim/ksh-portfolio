@@ -44,6 +44,36 @@ export default async function ProjectsSection() {
                           />
                         </Link>
                       </div>
+                    ) : project.path === 'internal_systems' ? (
+                      <div className="space-y-8">
+                        <Link href="#" target="_blank" className="block">
+                          <Image
+                            className="rounded-xl shadow-xl hover:opacity-70"
+                            src="/images/projects/pisolo_ERP.png"
+                            alt="피졸로 ERP"
+                            width={1000}
+                            height={1000}
+                          />
+                        </Link>
+                        <Link href="#" target="_blank" className="block">
+                          <Image
+                            className="rounded-xl shadow-xl hover:opacity-70"
+                            src="/images/projects/intranet_mng.png"
+                            alt="사내 인트라넷 MNG"
+                            width={1000}
+                            height={1000}
+                          />
+                        </Link>
+                        <Link href="#" target="_blank" className="block">
+                          <Image
+                            className="rounded-xl shadow-xl hover:opacity-70"
+                            src="/images/projects/cs_site.png"
+                            alt="고객센터 CS 사이트"
+                            width={1000}
+                            height={1000}
+                          />
+                        </Link>
+                      </div>
                     ) : (
                       <Link href={project.link} target="_blank">
                         <Image
