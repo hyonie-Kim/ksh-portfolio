@@ -43,6 +43,15 @@ export default async function ProjectsSection() {
                             height={1000}
                           />
                         </Link>
+                        <Link href="https://auth.amobile.co.kr/?agentCode=12339" target="_blank" className="block">
+                          <Image
+                            className="rounded-xl shadow-xl hover:opacity-70"
+                            src="/images/projects/auth_amobile.png"
+                            alt="에이모바일 개통 페이지"
+                            width={1000}
+                            height={1000}
+                          />
+                        </Link>
                       </div>
                     ) : project.path === 'internal_systems' ? (
                       <div className="space-y-8">
