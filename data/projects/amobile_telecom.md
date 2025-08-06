@@ -13,8 +13,8 @@
 
 ## 2. 보유 기술 스택
 
-- **Frontend**: ASP.NET WebForms, HTML/CSS, JavaScript, jQuery, Bootstrap 3.3.2
-- **Backend**: C#, .NET Framework 4.0, SQL Server
+- **Frontend**: ASP.NET WebForms, Classic ASP, Next.js, HTML/CSS, JavaScript, jQuery, Bootstrap 3.3.2
+- **Backend**: C#, .NET Framework 4.0, Classic ASP, NestJS, SQL Server
 - **기타 도구**: Git, Visual Studio, IIS
 
 ---
@@ -24,13 +24,14 @@
 ### ✅ 담당 역할
 
 #### 🏢 에넥스텔레콤 웹사이트
-- ASP.NET WebForms 기반 웹사이트 유지보수 및 기능 개선
+- Classic ASP 기반 웹사이트 유지보수 및 기능 개선
 - 모바일/웹 반응형 사이트 관리 및 운영
 - 고객 서비스 시스템 유지보수 및 운영 중 발생하는 이슈 처리
 - AJAX 기반 비동기 통신 시스템 관리
 
 #### 🏢 에이모바일 웹사이트
-- ASP.NET WebForms 기반 웹사이트 유지보수 및 기능 개선
+- ASP.NET WebForms 기반 웹사이트 유지보수 및 기능 개선 (요금제 가입, 마이페이지)
+- Next.js & NestJS 기반 개통페이지 유지보수 및 기능 개선
 - 모바일/웹 반응형 사이트 관리 및 운영
 - 관리자 페이지 유지보수 및 운영 중 발생하는 이슈 처리
 
@@ -39,6 +40,8 @@
 ### 🛠️ 주요 기술
 
 - **ASP.NET WebForms** 구조 분석 및 코드비하인드(.aspx.cs) 활용
+- **Classic ASP** 레거시 시스템 분석 및 유지보수
+- **Next.js & NestJS** 모던 웹 기술 스택 활용 및 유지보수
 - **SgFramework** 커스텀 프레임워크를 통한 데이터베이스 연동 및 유틸리티 관리
 - **Master Page** 기반 레이아웃 및 **User Control** 컴포넌트 관리
 - **SQL Server** 쿼리 최적화 및 데이터베이스 관리
@@ -54,8 +57,9 @@
 - **요금 조회**: 실시간 요금 조회, 청구서 출력, 결제 내역 관리
 
 #### 🏢 에이모바일 웹사이트
-- **요금제 가입**: 요금제 선택
-- **개통페이지**: USIM 개통 신청, 개통 완료 처리
+- **요금제 가입**: 요금제 선택 (ASP.NET WebForms)
+- **개통페이지**: USIM 개통 신청, 개통 상태 조회, 개통 완료 처리 (Next.js & NestJS)
+- **마이페이지**: 내 요금제 조회, 개인정보 관리 (ASP.NET WebForms)
 
 ---
 
@@ -76,4 +80,4 @@
 
 ---
 
-> 📌 **비고**: 에넥스텔레콤 통신사의 웹사이트와 에이모바일 브랜드 웹사이트를 통합 관리하며, ASP.NET WebForms 기반의 레거시 시스템 유지보수 경험을 쌓았습니다. 특히 커스텀 프레임워크 활용과 AJAX 기반 실시간 처리 시스템을 통해 실무 환경에서의 웹 개발 역량을 향상시킬 수 있었습니다.
+> 📌 **비고**: 에넥스텔레콤 통신사의 웹사이트(Classic ASP)와 에이모바일 브랜드 웹사이트(ASP.NET WebForms + Next.js & NestJS)를 통합 관리하며, 레거시 시스템과 최신 기술 스택 혼용 개발 경험을 쌓았습니다. 특히 다양한 기술 스택을 활용한 실무 환경에서의 웹 개발 역량을 향상시킬 수 있었습니다.
