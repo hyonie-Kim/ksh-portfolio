@@ -1,92 +1,67 @@
 # With Chu Forever | 웨딩 청첩장
 
-2025.07.20 ~ 진행중(개인)
+## 1. 프로젝트 개요
+
+| 항목           | 내용                                                                 |
+|----------------|----------------------------------------------------------------------|
+| **프로젝트명** | With Chu Forever | 웨딩 청첩장 |
+| **기간**       | 2025년 7월 20일 ~ 진행중                          |
+| **소속**       | 개인 프로젝트 |
+| **설명**       | 20년지기 친구의 인생에서 가장 중요한 순간을 담은 웨딩 청첩장 |
+
+## 2. 보유 기술 스택
+
+- **Frontend**: React 19, TypeScript, Vite 환경, Sass/SCSS
+- **Maps API**: Kakao Maps API, Kakao Share API
+- **Deployment**: Vercel
+
+## 3. 프로젝트 세부 내용
+
+### ✅ 담당 역할
+
+- **프론트엔드 개발** - React 19 기반 모던 웹 애플리케이션 구현
+- **UI/UX**: 반응형 디자인 및 인터랙티브 요소 구현
+- **API 연동**: Kakao Maps API 및 공유 기능 구현
+
+### 🛠️ 주요 기술
+
+- **React 19** 기반 컴포넌트 기반 개발
+- **TypeScript**를 활용한 타입 안전성 확보
+- **Kakao Maps API**를 활용한 지도 서비스
+- **Kakao Share API**를 활용한 소셜 공유 기능
+
+### 📈 성과 / 개선한 점
+
+- **실제 사용**: 실제 결혼식에 사용되는 실용적인 프로젝트
+- **모바일 최적화**: 모바일 우선 반응형 디자인으로 접근성 향상
+- **기술적 성장**: 최신 React 19와 TypeScript를 활용한 개발 경험
+
+### 🎯 주요 기능
+
+- **반응형 디자인**: 모든 디바이스에서 최적화된 화면 제공
+- **인터랙티브 갤러리**: Swiper 기반 이미지 슬라이더
+- **위치 서비스**: Kakao Maps API를 활용한 교통편 안내
+- **소셜 기능**: 카카오톡 공유, 링크 복사
+
+### 🤝 문제 해결 경험
+
+#### 1. 이미지 갤러리 (Swiper) 문제
+**문제**: 선택한 이미지가 첫 번째만 표시되는 문제
+**해결**: Swiper props 조정 및 key prop을 통한 강제 리렌더링 구현
+
+#### 2. Kakao Maps API 통합
+**문제**: NotAuthorizedError, 지도 렌더링 실패
+**해결**: Kakao Dev Center 서비스 활성화 및 API 키 설정
+
+#### 3. 배포 환경 문제
+**문제**: Vercel 빌드 에러
+**해결**: 파일 경로 대소문자 수정 및 빌드 설정 최적화
+
+### 🚀 배포 및 운영
+
+- **배포**: Vercel을 활용한 React 앱 배포
+- **도메인**: https://with-chu-forever.vercel.app/
 
 ---
 
-## 1. 프로젝트 개요
-- 개인프로젝트 | 2025.07.20 ~ 진행중(개인)
-- 사용기술: React 19, TypeScript, Vite 환경, 
-
-## 2. 기획 배경/목적
-
-- 커스텀 가능한 모던한 청첩장을 만들기 위함
-- 친구의 특별한 순간을 위한 의미 있는 기록
-
-## 3. 주요 기능
-
-1. 반응형 디자인
-
-2. 인터랙티브 갤러리
-  - Swiper 기반 이미지 슬라이더
-  - 전체화면 이미지 뷰어
-
-3. 위치 서비스
-  - akao Maps API
-  - 교통편 안내 (버스/지하철)
-
-4. 소셜 기능
-  - 카카오톡 공유
-  - 링크 복사 기능
-  - 참석 여부 모달
-
-5. 애니메이션 효과
-  - CSS Keyframes 애니메이션
-
-## 4. 문제 해결 경험
-
-1. 이미지 갤러리 (Swiper) 문제
-문제: 선택한 이미지가 첫 번째만 표시되고, 다른 이미지들은 보이지 않는 문제
-해결 과정:
-Swiper의 initialSlide, loop, slideTo props 조정
-key prop을 통한 강제 리렌더링 구현
-CSS 스타일링으로 이미지 가시성 확보
-useEffect와 onSwiper 콜백 최적화
-결과: 모든 이미지가 정상적으로 표시되고 슬라이드 기능 완벽 작동
-
-2. 환경 변수 문제
-문제: process is not defined 에러 (Node.js vs Vite 환경 차이)
-해결 과정:
-process.env → import.meta.env 변경
-Vite 환경에 맞는 환경 변수 접근 방식 적용
-개발/운영 환경 분리 설정
-결과: Kakao Maps API 정상 작동
-
-3. Kakao Maps API 통합
-문제: NotAuthorizedError, 지도가 렌더링되지 않는 문제
-해결 과정:
-Kakao Dev Center에서 서비스 활성화
-API 키 환경 변수 설정
-SDK 로딩 순서 최적화
-마커 및 지도 컨트롤 구현
-결과: 완벽한 지도 기능 구현
-
-4. Sass 컴파일 문제
-문제: Undefined mixin, Can't find stylesheet to import 에러
-해결 과정:
-@import → @use 구문 변경 (Sass 최신 문법)
-Vite alias 설정 최적화
-@types/node 설치로 타입 에러 해결
-결과: SCSS 모듈 정상 작동
-
-5. 배포 환경 문제
-문제: Vercel 빌드 에러 (Could not resolve "./SCSS/global.scss")
-해결 과정:
-파일 경로 대소문자 수정 (Linux 환경 대응)
-빌드 설정 최적화
-환경별 API URL 분리
-결과: 성공적인 프론트엔드/백엔드 배포
-
-## 5. 배포 / 링크
-
-1. Git  Hub:
-
-```bash
-https://with-chu-forever.vercel.app/
-```
-
-2. Backend API
-
-```bash
-https://with-chu-forever-1.onrender.com/wedding
-```
+> 📌 **비고**: 모바일 웨딩 청첩장 프로젝트로, 최신 React 19와 TypeScript를 활용하여 모던한 웹 애플리케이션을 구현했습니다. 특히 Kakao API 연동을 통한 외부 서비스 활용 경험과 모바일 우선 반응형 디자인 구현을 통해 사용자 중심의 개발 경험을 쌓을 수 있었습니다.
