@@ -15,7 +15,7 @@
 
 - **Frontend**: ASP.NET WebForms, HTML/CSS, JavaScript, jQuery, AJAX
 - **Backend**: C#, SQL Server, IIS
-- **기타 도구**: Git, GitHub, Visual Studio, Excel
+- **기타 도구**: Git, GitHub, Visual Studio, Excel, POSTMAN
 
 ---
 
@@ -29,16 +29,19 @@
   - 사내 인트라넷 MNG - 업무 관리 시스템 유지보수
   - 고객센터 CS 사이트 - 업무 분배 시스템 유지보수
 - **요금제관리 시스템 신규 개발** (정책 변경, 모요 API 대응값 등록)
+- **고객사 더좋은라이프 입금 API 신규 개발** (상조 계약 상태 변경 API)
 
 ---
 
 ### 🛠️ 주요 기술
 - **ASP.NET WebForms** 구조 분석 및 코드비하인드(.aspx.cs) 활용
+- **ASP.NET Web API** 기반 RESTful API 개발
 - **SQL Server** 쿼리 수정 및 데이터 확인, 간단한 프로시저 작업
 - **Master Page**, **User Control** 기반 레이아웃 및 컴포넌트 유지관리
 - **ListView/GridView**를 활용한 데이터 출력
 - **ERP/WMS 시스템** 개발 및 유지보수
 - **jQuery, AJAX**를 활용한 동적 웹 인터페이스 구현
+- **Postman**을 통한 API 테스트 및 검증
 
 ---
 
@@ -59,6 +62,11 @@
   → 정책 변경(노출/종료) 및 모요 API 수정 페이지 신규 개발
   → 정책 노출/종료 일괄 변경 기능 및 월간 정책 변경 기능 구현
   → 모요 스크래핑 API 대응값 등록 기능 개발
+
+- **고객사 더좋은라이프 입금 API 신규 개발**  
+  → 상조 계약 상태 변경을 위한 RESTful API 개발
+  → 입금 이벤트에 따른 자동 업무큐 처리 시스템 구축
+
 
 #### 🏢 기업용 시스템 경험
 - **ERP/WMS 시스템 개발 및 유지보수 경험**  
@@ -110,6 +118,67 @@
 - 대량 처리 지원: 다중 요금제ID 일괄 처리 기능
 - 정책 변경 유연성: 월정책 변경 시 시간대 제한 없음
 - 데이터 무결성: 중복 등록 방지 및 실시간 검증
+
+---
+
+#### 🌐 고객사 더좋은라이프 입금 API 개발
+
+**개발 배경**
+고객사 더좋은라이프의 입금 확인에 따른 상조 계약 상태 변경 및 업무큐 처리를 위한 REST API를 개발
+
+**API 명세**
+- **Endpoint**: `POST /comm/lg/v1/deposit`
+- **목적**: 입금 확인에 따른 상조 계약 상태 변경 및 업무큐 처리
+- **Content-Type**: `application/json`
+
+**Request 구조**
+```json
+{
+  "client": "<고객사 식별자>",
+  "contractNo": "<계약번호>", 
+  "status": "A|Z",
+  "managerId": "<담당자ID>"
+}
+```
+
+**Validation 로직**
+- `client`: 허용 값 한정 검증
+- `contractNo`: 계약 테이블 존재 확인 (+ 특정 지점 제약)
+- `status`: A(가입)/Z(만기)만 허용
+- `managerId`: 허용 목록 검증
+
+**처리 로직**
+1. 조건 조회 → 2) resultcode=0 대상 업데이트 → 3) 대기건 해제(isWaiting=1 → 0)
+- 모든 처리는 트랜잭션으로 관리하여 데이터 무결성 보장
+
+**Response 구조**
+```json
+{
+  "RESULT": "Y",
+  "RESULTCD": "200", 
+  "DATA": {
+    "resultCode": "0000",
+    "contractInfo": { "...": "..." }
+  }
+}
+```
+
+**에러 처리**
+- 1000: 필수 파라미터 누락
+- 1001: client 검증 실패
+- 1002: 계약번호 검증 실패  
+- 1003: 업데이트 실패
+- 500: 시스템 오류
+
+**기술적 구현 사항**
+- ASP.NET Web API 기반 RESTful API 개발
+- Postman을 통한 API 테스트 및 검증
+- 고객사 요구사항에 맞는 맞춤형 비즈니스 로직 구현
+
+**업무 프로세스 개선 효과**
+- 수동 업무 자동화: 입금확인에 따른 상조 상태 변경
+- 데이터 정확성: 트랜잭션 기반 안전한 데이터 처리
+- 확장성: 다양한 고객사 요구사항에 대응 가능한 구조
 
 ---
 
