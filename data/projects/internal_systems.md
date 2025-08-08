@@ -127,7 +127,7 @@
 고객사 더좋은라이프의 입금 확인에 따른 상조 계약 상태 변경 및 업무큐 처리를 위한 REST API를 개발
 
 ![입금 API 테스트 스크린샷](/images/projects/deposit_api_test.png)
-
+![입금 API 테스트 스크린샷](/images/projects/mng_TodoList_01.png)
 **API 명세**
 - **Endpoint**: `POST /comm/lg/v1/deposit`
 - **목적**: 입금 확인에 따른 상조 계약 상태 변경 및 업무큐 처리
