@@ -1,5 +1,36 @@
 [
   {
+    "title": "Resumates (이력서 작성 플랫폼)",
+    "description": "3가지 템플릿을 제공하고 개인 맞춤형 이력서를 쉽고 빠르게 작성할 수 있는 온라인 플랫폼 프로젝트 입니다.",
+    "date": "2022-12-01",
+    "participant": "2024년 6월 20일~ 2024년 7월 24일 (3인 팀프로젝트)",
+    "category": [
+      "React 18",
+      "Styled Components",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB + Mongoose",
+      "Nodemailer"
+    ],
+    "path": "Resumates",
+    "featured": true,
+    "link": "https://resumates.vercel.app/",
+    "github": "https://github.com/Resumates/Resumates",
+    "developmentScope": "프론트엔드 & 백엔드 개발 담당",
+    "keyFeatures": [
+      "3가지 이력서 템플릿 제공",
+      "실시간 이력서 미리보기",
+      "PDF 다운로드 기능",
+      "이메일 발송 기능"
+    ],
+    "achievements": [
+      "팀 프로젝트에서 백엔드 역할 수행",
+      "Styled Components를 활용한 컴포넌트 기반 개발",
+      "실용적인 이력서 작성 도구 구현"
+    ]
+  },
+  {
     "title": "스마트렌탈 - 가전/가구 렌탈 가입 사이트",
     "description": "에넥스텔레콤에서 진행한 가전, 가구 렌탈 가입 사이트의 유지보수 및 개선 프로젝트입니다.",
     "date": "2023-01-01",
@@ -156,37 +187,6 @@
       "실제 결혼식에 사용되는 실용적인 프로젝트",
       "카카오 API 연동을 통한 외부 서비스 활용 경험",
       "모바일 우선 반응형 디자인 구현"
-    ]
-  },
-  {
-    "title": "Resumates (이력서 작성 플랫폼)",
-    "description": "3가지 템플릿을 제공하고 개인 맞춤형 이력서를 쉽고 빠르게 작성할 수 있는 온라인 플랫폼 프로젝트 입니다.",
-    "date": "2022-12-01",
-    "participant": "2024년 6월 20일~ 2024년 7월 24일 (3인 팀프로젝트)",
-    "category": [
-      "React 18",
-      "Styled Components",
-      "Axios",
-      "Node.js",
-      "Express.js",
-      "MongoDB + Mongoose",
-      "Nodemailer"
-    ],
-    "path": "Resumates",
-    "featured": true,
-    "link": "https://resumates.vercel.app/",
-    "github": "https://github.com/Resumates/Resumates",
-    "developmentScope": "프론트엔드 & 백엔드 개발 담당",
-    "keyFeatures": [
-      "3가지 이력서 템플릿 제공",
-      "실시간 이력서 미리보기",
-      "PDF 다운로드 기능",
-      "이메일 발송 기능"
-    ],
-    "achievements": [
-      "팀 프로젝트에서 백엔드 역할 수행",
-      "Styled Components를 활용한 컴포넌트 기반 개발",
-      "실용적인 이력서 작성 도구 구현"
     ]
   },
   {
