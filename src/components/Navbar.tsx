@@ -11,6 +11,7 @@ interface NavItem {
 }
 const NAV_ITEMS: Array<NavItem> = [
   { title: 'Home', page: 'home' },
+  { title: 'Dev Life', page: 'dev-life' },
   { title: 'Skills', page: 'about' },
   { title: 'Projects', page: 'projects' },
   { title: 'Contact', page: 'contact' },

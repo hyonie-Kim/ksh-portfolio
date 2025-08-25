@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en" className={montserrat.className}>
       <body className="flex flex-col w-full mx-auto">
         <Navbar />
-        <main className="md:mx-auto max-w-3xl px-4 sm:px-6 overflow-x-hidden md:max-w-5xl">
+        <main className="md:mx-auto max-w-3xl px-4 sm:px-6 overflow-x-hidden md:max-w-7xl">
           {children}
         </main>
         <Footer />

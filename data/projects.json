@@ -189,52 +189,7 @@
       "모바일 우선 반응형 디자인 구현"
     ]
   },
-  {
-    "title": "김세현의 포트폴리오",
-    "description": "취업 준비를 위한 포트폴리오 용도의 웹 사이트 입니다. 직접 프로젝트를 만들어보고 Next.js 서버사이드와 클라이언트 서버 렌더링에 대해 이해할수 있었습니다.",
-    "participant": "2023년 4월 1일~ 2023년 4월 20일 (개인)",
-    "date": "2022-12-01",
-    "category": ["Next.js", "TypeScript", "TailwindCss"],
-    "path": "portfolio",
-    "featured": false,
-    "link": "https://ksh-portfolio.vercel.app/",
-    "github": "https://github.com/hyonie-Kim/blog",
-    "developmentScope": "100% 개인 개발",
-    "keyFeatures": [
-      "Next.js App Router 활용",
-      "서버사이드 렌더링 구현",
-      "반응형 포트폴리오 디자인",
-      "프로젝트 상세 페이지"
-    ],
-    "achievements": [
-      "Next.js 13+ App Router 학습 및 적용",
-      "SSR과 CSR의 차이점 이해",
-      "포트폴리오 웹사이트 완성"
-    ]
-  },
-  {
-    "title": "웹 퍼블리셔 포트폴리오 | 김세현",
-    "description": "웹 퍼블리셔 김세현의 첫번째 포트폴리오 사이트입니다. jQuery를 처음 배우면서 제작한 프로젝트로, FullPage.js를 활용한 인터랙티브한 원페이지 스크롤 경험을 구현했습니다.",
-    "participant": "2021년 1월 21일~ 2021년 2월 08일 (개인)",
-    "date": "2021-02-08",
-    "category": ["jQuery", "FullPage.js", "Flexbox", "미디어쿼리", "반응형 디자인"],
-    "path": "1st_portfolio",
-    "featured": true,
-    "link": "https://sehyeon90.github.io/portfolio/",
-    "github": "https://github.com/sehyeon90/portfolio",
-    "developmentScope": "100% 개인 개발",
-    "keyFeatures": [
-      "FullPage.js 인터랙티브 스크롤",
-      "jQuery 애니메이션 효과",
-      "반응형 웹 디자인",
-      "원페이지 포트폴리오"
-    ],
-    "achievements": [
-      "jQuery 라이브러리 학습 및 활용",
-      "FullPage.js를 통한 인터랙티브 경험 구현",
-      "첫 번째 포트폴리오 완성"
-    ]
-  },
+
   {
     "title": "cobooki 코부기",
     "description": "개발공부를 하고 있는 입문자들에게 IT 개발 도서를 추천 해주는 웹사이트입니다. ",
