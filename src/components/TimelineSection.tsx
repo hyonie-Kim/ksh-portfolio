@@ -71,16 +71,17 @@ const timelineData: TimelineItem[] = [
 
 export default function TimelineSection() {
   return (
-    <section id="dev-life" className="pt-16 pb-64 bg-gray-50">
+    <section id="dev-life" className="pt-16 pb-16 md:pb-64 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-60">
+        <div className="text-center mb-16 md:mb-60">
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Dev Life</h2>
           <p className="text-lg text-gray-600">지금까지의 여정을 한눈에</p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative py-8">
+        {/* 데스크톱 수평 타임라인 */}
+        <div className="relative py-8 hidden md:block">
           {/* 수평 타임라인 라인 */}
           <div className="absolute top-1/2 left-8 right-8 h-1 bg-gray-300 transform -translate-y-1/2"></div>
 
@@ -142,6 +143,55 @@ export default function TimelineSection() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* 모바일 수직 타임라인 */}
+        <div className="md:hidden px-4">
+          <div className="relative">
+            {/* 수직 타임라인 라인 */}
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+            
+            {/* 타임라인 아이템들 */}
+            <div className="space-y-6">
+              {timelineData.map((item, index) => (
+                <div key={index} className="flex items-start relative">
+                  {/* 타임라인 포인트 */}
+                  <div className={`w-4 h-4 rounded-full border-2 border-white shadow-md z-10 ml-4 mt-2 ${
+                    item.type === 'work' ? 'bg-teal-500' : 'bg-blue-500'
+                  }`}></div>
+                  
+                  {/* 아이콘 */}
+                  <div className="absolute -top-1 left-4 transform -translate-x-1/2">
+                    {item.type === 'work' ? (
+                      <FaBriefcase className="text-teal-600 text-sm" />
+                    ) : (
+                      <FaGraduationCap className="text-blue-600 text-sm" />
+                    )}
+                  </div>
+
+                  {/* 콘텐츠 */}
+                  <div className="ml-6 bg-white rounded-lg shadow-sm p-4 flex-1 transform hover:scale-102 transition-transform duration-300">
+                    <div className={`text-base font-bold mb-1 ${
+                      item.type === 'work' ? 'text-teal-600' : 'text-blue-600'
+                    }`}>
+                      {item.year}
+                    </div>
+                    <h3 className="text-sm font-semibold text-gray-800 mb-1">
+                      {item.title}
+                    </h3>
+                    {item.company && (
+                      <p className="text-xs text-gray-600 mb-2">
+                        {item.company}
+                      </p>
+                    )}
+                    <p className="text-xs text-gray-700 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
