@@ -15,7 +15,7 @@ export default function HeroSection() {
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-14 md:py-16 md:flex-row md:space-x-8 md:text-left">
-        <div className="md:w-1/2 md:mt-1">
+        <div className="md:w-1/2 md:mt-1 flex flex-col items-center">
           <Image
             className="rounded-full md:shadow-2xl"
             src={profileImage}
@@ -51,10 +51,10 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="md:mt-0 md:w-3/5">
+        <div className="md:mt-0 md:w-3/5 text-center md:text-left">
           <AnimatedText
             text="안녕하세요, 웹 개발 경력 2년차👩🏻‍💻 김세현입니다."
-            className="text-4xl/loose mt-6 !text-left text-gray-800"
+            className="text-4xl/loose mt-6 text-center md:!text-left text-gray-800"
           />
           <p className="text-lg mt-4 mb-6 md:text-lg md:leading-8">
             <span className="font-semibold text-teal-600">프론트엔드부터 백엔드까지 풀스택 개발자</span>로서 다양한 기술 스택에 유연하게 대응합니다.
