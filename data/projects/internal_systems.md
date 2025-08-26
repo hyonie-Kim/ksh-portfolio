@@ -192,10 +192,12 @@
 #### 피졸로 ERP/WMS 시스템
 ![피졸로 ERP 스크린샷](/images/projects/pisolo_ERP_login.png)
 
-**인증번호 발송 로직**
-**IP 접근제한 기능**
+**로그인 시 IP 접근 제한 기능 및 인증번호 발송 로직**
 - 페이지 로드 시 IP 접근제어 체크 추가
 - 테이블에서 등록된 IP면 접근 허용, 미등록 시 /Error/dnserror.aspx로 리다이렉트
+
+**피졸로 ERP 로그인 플로우차트**
+![피졸로 ERP 스크린샷](/images/projects/Pisolo_login_flowchart.png)
 
 ---
 
