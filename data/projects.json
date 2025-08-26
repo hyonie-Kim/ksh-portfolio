@@ -1,4 +1,34 @@
-[
+[{
+  "title": "내부 업무 관리 시스템 - ERP/MNG/CS",
+  "description": "피졸로 ERP/WMS 시스템, 사내 인트라넷 MNG, 고객센터 CS 사이트 내부 업무 시스템의 유지보수 및 운영 개선 프로젝트입니다.",
+  "date": "2024-08-01",
+  "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
+  "category": [
+    "ASP.NET Web Forms 4.0",
+    "C#",
+    "MSSQL",
+    "jQuery",
+    "AJAX",
+    "IIS"
+  ],
+  "path": "internal_systems",
+  "featured": true,
+  "link": "#",
+  "github": "#",
+  "developmentScope": "실무 풀스택 개발 담당",
+  "keyFeatures": [
+    "피졸로 ERP 관리자 페이지 - 유지보수 및 단순 기능 개발",
+    "사내 인트라넷 MNG - 유지보수 및 운영 ",
+    "고객센터 CS 사이트 - 업무 분배 및 게시판 관리 시스템"
+  ],
+  "achievements": [
+    "유관 부서 요구사항에 따른 기능 개발 및 유지보수",
+    "요금제관리 시스템 신규 개발",
+    "고객사 더좋은라이프 입금 API 신규 개발",
+    "Pisolo ERP 시스템 보안 강화",
+    "외부 신용정보사(NICE, 롯데) 연동 로직 유지보수 및 기능 개선"
+  ]
+},
   {
     "title": "Resumates (이력서 작성 플랫폼)",
     "description": "3가지 템플릿을 제공하고 개인 맞춤형 이력서를 쉽고 빠르게 작성할 수 있는 온라인 플랫폼 프로젝트 입니다.",
@@ -91,37 +121,6 @@
       "통신 업계 실무 프로젝트 경험",
       "알뜰폰 MVNO 도메인 경험",
       "대규모 시스템 통합 개발 준비 경험"
-    ]
-  },
-  {
-    "title": "내부 업무 관리 시스템 - ERP/MNG/CS",
-    "description": "피졸로 ERP/WMS 시스템, 사내 인트라넷 MNG, 고객센터 CS 사이트 내부 업무 시스템의 유지보수 및 운영 개선 프로젝트입니다.",
-    "date": "2024-08-01",
-    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
-    "category": [
-      "ASP.NET Web Forms 4.0",
-      "C#",
-      "MSSQL",
-      "jQuery",
-      "AJAX",
-      "IIS"
-    ],
-    "path": "internal_systems",
-    "featured": true,
-    "link": "#",
-    "github": "#",
-    "developmentScope": "실무 풀스택 개발 담당",
-    "keyFeatures": [
-      "피졸로 ERP 관리자 페이지 - 유지보수 및 단순 기능 개발",
-      "사내 인트라넷 MNG - 유지보수 및 운영 ",
-      "고객센터 CS 사이트 - 업무 분배 및 게시판 관리 시스템"
-    ],
-    "achievements": [
-      "유관 부서 요구사항에 따른 기능 개발 및 유지보수",
-      "요금제관리 시스템 신규 개발",
-      "고객사 더좋은라이프 입금 API 신규 개발",
-      "Pisolo ERP 시스템 보안 강화",
-      "외부 신용정보사(NICE, 롯데) 연동 로직 유지보수 및 기능 개선"
     ]
   },
   {
