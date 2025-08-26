@@ -27,7 +27,7 @@ const timelineData: TimelineItem[] = [
   },
   {
     year: '2022.07',
-    title: 'AI/SW 개발자 양성 교육',
+    title: 'AI 양재허브',
     company: '인공지능 웹개발 Track',
     description: 'TensorFlow 기반 인공지능 웹 개발 학습',
     type: 'education'
@@ -41,7 +41,7 @@ const timelineData: TimelineItem[] = [
   },
   {
     year: '2023.05',
-    title: '엘리스 프론트엔드&백엔드',
+    title: '엘리스 SW',
     company: '풀스택 웹 개발자 트랙',
     description: 'Node.js, MongoDB, Gitlab 학습',
     type: 'education'
@@ -55,8 +55,8 @@ const timelineData: TimelineItem[] = [
   },
   {
     year: '2024.02',
-    title: 'Node.JS 기반 DevOps',
-    company: '개발자 양성훈련과정',
+    title: '한국소프트웨어교육원',
+    company: 'Node.JS 기반 개발자 양성훈련과정',
     description: 'C/C++, C# Winform, Python 웹 크롤링 및 데이터 분석/시각화 학습',
     type: 'education'
   },
