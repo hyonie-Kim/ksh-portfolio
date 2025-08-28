@@ -190,7 +190,7 @@ export default function AboutSection() {
         </h1>
         <div className='flex flex-col lg:flex-row'>
         {/* 레이더 차트 */}
-        <div className="mb-12">
+        <div className="hidden lg:block mb-12">
           <h2 className="text-center text-xl font-semibold mb-8 text-gray-800">
             기술 스택 레이더 차트
           </h2>
@@ -202,7 +202,7 @@ export default function AboutSection() {
           <h2 className="text-center text-xl font-semibold mb-8 text-gray-800">
             상세 기술 정보
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillData.map((skill, idx) => (
               <div key={idx} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <div className="flex items-center gap-3 mb-3">
