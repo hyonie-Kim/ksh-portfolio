@@ -3,25 +3,10 @@ import {
   SiNextdotjs, 
   SiReact, 
   SiTypescript, 
-  SiJavascript,
-  SiJquery,
-  SiNestjs,
   SiDotnet,
   SiMicrosoftsqlserver,
-  SiWindows,
-  SiIis,
   SiGit,
-  SiGithub,
-  SiJira,
-  SiDbeaver,
-  SiPostman,
-  SiFigma,
-  SiJenkins,
-  SiTailwindcss,
-  SiMongodb,
-  SiMysql,
-  SiExpress,
-  SiCplusplus
+  
 } from 'react-icons/si';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 
