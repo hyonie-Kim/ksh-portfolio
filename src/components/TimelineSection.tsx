@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { SiReact, SiTypescript, SiJavascript, SiExpress, SiMongodb, SiGit,SiMysql,SiJquery,SiDotnet,SiNextdotjs,SiNestjs,SiMicrosoftsqlserver,SiJenkins,SiTailwindcss,SiCplusplus,SiCsharp,SiPython,SiPhotobucket} from 'react-icons/si';
+import { SiReact, SiTypescript, SiJavascript, SiExpress, SiMongodb, SiGit,SiMysql,SiJquery,SiDotnet,SiNextdotjs,SiNestjs,SiMicrosoftsqlserver,SiJenkins,SiTailwindcss,SiCplusplus,SiCsharp,SiPython,SiPhotobucket, SiHtml5, SiCss3,SiTensorflow, SiAdobephotoshop, SiAdobeillustrator,SiStyledcomponents, SiNodedotjs} from 'react-icons/si';
 import { FaBriefcase, FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
 
 interface TimelineItem {
@@ -24,8 +24,8 @@ const timelineData: TimelineItem[] = [
     skills:[
       { name: 'jQuery', icon: <SiJquery className="w-4 h-4" />, level: 75 },
       { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" />, level: 70 },
-      { name: 'CSS', icon: <SiJavascript className="w-4 h-4" />, level: 80 },
-      { name: 'HTML', icon: <SiJavascript className="w-4 h-4" />, level: 85 },
+      { name: 'CSS', icon: <SiCss3 className="w-4 h-4" />, level: 80 },
+      { name: 'HTML', icon: <SiHtml5 className="w-4 h-4" />, level: 85 },
       { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 60 }
     ]
   },
@@ -37,8 +37,8 @@ const timelineData: TimelineItem[] = [
     type: 'work',
     icon: <FaBriefcase />,
     skills: [
-      { name: 'Potoshop', icon: <SiPhotobucket className="w-4 h-4" />, level: 85 },
-      // { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" />, level: 90 },
+      { name: 'Potoshop', icon: <SiAdobephotoshop className="w-4 h-4" />, level: 85 },
+      { name: 'Illustrator', icon: <SiAdobeillustrator className="w-4 h-4" />, level: 80 },
       // { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 85 }
     ],
   },
@@ -50,6 +50,7 @@ const timelineData: TimelineItem[] = [
     type: 'work',
     icon: <FaBriefcase />,
     skills: [
+      { name: 'Styledcomponents', icon: <SiStyledcomponents className="w-4 h-4" />, level: 85 },
       { name: 'React.js', icon: <SiReact className="w-4 h-4" />, level: 85 },
       { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" />, level: 90 },
       { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 85 }
@@ -63,11 +64,8 @@ const timelineData: TimelineItem[] = [
     type: 'education',
     icon: <FaGraduationCap />,
     skills: [
-      { name: 'jQuery', icon: <SiJquery className="w-4 h-4" />, level: 75 },
-      { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" />, level: 70 },
-      { name: 'CSS', icon: <SiJavascript className="w-4 h-4" />, level: 80 },
-      { name: 'HTML', icon: <SiJavascript className="w-4 h-4" />, level: 85 },
-      { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 60 }
+      { name: 'TensorFlow', icon: <SiTensorflow className="w-4 h-4" />, level: 75 },
+      { name: 'React.js', icon: <SiReact className="w-4 h-4" />, level: 85 }
     ],
   },
   {
@@ -95,7 +93,7 @@ const timelineData: TimelineItem[] = [
       { name: 'React.js', icon: <SiReact className="w-4 h-4" />, level: 80 },
       { name: 'TypeScript', icon: <SiTypescript className="w-4 h-4" />, level: 75 },
       { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" />, level: 85 },
-      { name: 'Node.js', icon: <SiJavascript className="w-4 h-4" />, level: 70 },
+      { name: 'Node.js', icon: <SiNodedotjs className="w-4 h-4" />, level: 70 },
       { name: 'Express.js', icon: <SiExpress className="w-4 h-4" />, level: 65 },
       { name: 'MongoDB', icon: <SiMongodb className="w-4 h-4" />, level: 60 },
       { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 80 }
