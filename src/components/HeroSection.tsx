@@ -13,7 +13,7 @@ import AnimatedIcon from './AnimatedIcon';
 
 export default function HeroSection() {
   return (
-    <section id="home">
+    <section id="home" className='px-4 sm:px-6 md:mx-auto max-w-3xl md:max-w-7xl'>
       <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-14 md:py-16 md:flex-row md:space-x-8 md:text-left">
         <div className="md:w-1/2 md:mt-1 flex flex-col items-center">
           <Image

@@ -157,7 +157,7 @@ export default function TimelineSection() {
         </div>
       </div>
 
-      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-24">
         {/* 데스크톱 수평 타임라인 */}
         <div className="relative py-8 hidden md:block">
           {/* 수평 타임라인 라인 */}

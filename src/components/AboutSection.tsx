@@ -182,7 +182,7 @@ const RadarChart = ({ data }: { data: typeof skillData }) => {
 
 export default function AboutSection() {
   return (
-    <section id="about">
+    <section id="about" className='px-4 sm:px-6 md:mx-auto max-w-3xl md:max-w-7xl'>
       <div className="my-12 pb-12 md:pt-16 md:pb-24 mb-24">
         <h1 className="text-center font-bold text-3xl mb-24">
           Skills & Tech Stack
