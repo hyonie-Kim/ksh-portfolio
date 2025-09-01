@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { SiReact, SiTypescript, SiJavascript, SiExpress, SiMongodb, SiGit,SiMysql,SiJquery,SiDotnet,SiNextdotjs,SiNestjs,SiMicrosoftsqlserver,SiJenkins,SiTailwindcss,SiCplusplus,SiCsharp,SiPython,SiPhotobucket, SiHtml5, SiCss3,SiTensorflow, SiAdobephotoshop, SiAdobeillustrator,SiStyledcomponents, SiNodedotjs} from 'react-icons/si';
+import { SiReact, SiTypescript, SiJavascript, SiExpress, SiMongodb, SiGit,SiMysql,SiJquery,SiDotnet,SiNextdotjs,SiNestjs,SiMicrosoftsqlserver,SiJenkins,SiTailwindcss,SiCplusplus,SiCsharp,SiPython,SiPhotobucket, SiHtml5, SiCss3,SiTensorflow, SiAdobephotoshop, SiAdobeillustrator,SiStyledcomponents, SiNodedotjs, SiJira,SiBitbucket} from 'react-icons/si';
 import { FaBriefcase, FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
 
 interface TimelineItem {
@@ -110,7 +110,9 @@ const timelineData: TimelineItem[] = [
       { name: 'Next.js', icon: <SiNextdotjs className="w-4 h-4" />, level: 90 },
       { name: 'Tailwind CSS', icon: <SiTailwindcss className="w-4 h-4" />, level: 85 },
       { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 85 },
-      { name: 'Jenkins', icon: <SiJenkins className="w-4 h-4" />, level: 70 }
+      { name: 'Jenkins', icon: <SiJenkins className="w-4 h-4" />, level: 70 },
+      { name: 'Jira', icon: <SiJira className="w-4 h-4" />, level: 70 },
+      { name: 'Bitbucket', icon: <SiBitbucket className="w-4 h-4" />, level: 70 }
     ],
   },
   {
@@ -140,7 +142,7 @@ const timelineData: TimelineItem[] = [
       { name: 'NestJS', icon: <SiNestjs className="w-4 h-4" />, level: 75 },
       { name: 'MSSQL', icon: <SiMicrosoftsqlserver className="w-4 h-4" />, level: 90 },
       { name: 'Jenkins', icon: <SiJenkins className="w-4 h-4" />, level: 70 },
-      { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 85 }
+      { name: 'Git', icon: <SiGit className="w-4 h-4" />, level: 85 },
     ],
   }
 ];
