@@ -2,6 +2,9 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 next dev",
     "build": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 next build",
