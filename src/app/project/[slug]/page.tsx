@@ -23,6 +23,7 @@ export default async function ProjectPage({ params: { slug } }: Props) {
       {/* <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mt-8 md:mt-10">
         {project.title}
       </h1> */}
+      {/* 프로젝트 상세 */}
       <MarkdownViewer content={project.content} />
     </article>
   );
