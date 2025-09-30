@@ -57,7 +57,7 @@ export default function HeroSection() {
             className="text-4xl/loose mt-6 text-center md:!text-left text-gray-800"
           />
           <p className="text-lg mt-4 mb-6 md:text-lg md:leading-8">
-            <span className="font-semibold text-teal-600">프론트엔드부터 백엔드까지 풀스택 개발자</span>로서 다양한 기술 스택에 유연하게 대응합니다.
+            <span className="font-semibold text-teal-600">프론트엔드와 백엔드</span>를 두루 경험하며 다양한 기술 스택에 유연하게 대응합니다.
             <br></br>
             <br></br>
             <span className="text-base">

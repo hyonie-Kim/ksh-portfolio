@@ -228,13 +228,13 @@ export default function AboutSection() {
                     <span className="p-1 bg-blue-100 text-blue-600 rounded-full">
                       <FaBriefcase />
                     </span>
-                    <span>회사: {skill.sources.filter(s => s.type === 'work').length}개</span>
+                    <span>회사: {skill.sources.filter(s => s.type === 'work').length}개 조직 경험</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs">
                     <span className="p-1 bg-green-100 text-green-600 rounded-full">
                       <FaGraduationCap />
                     </span>
-                    <span>교육: {skill.sources.filter(s => s.type === 'education').length}개</span>
+                    <span>교육: {skill.sources.filter(s => s.type === 'education').length}개 과정 이수</span>
                   </div>
                 </div>
               </div>
