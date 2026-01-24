@@ -25,8 +25,16 @@ export default function Navbar() {
         <div>
           <div className='flex items-center justify-between py-3'>
             <NextLink href='/'>
-              <div className='md:py-2 md:block'>
-                <h2 className='text-2xl font-bold'>{"<Portfolio name='김세현'/>"}</h2>
+              <div className='md:py-2 md:block group'>
+              <div className='inline-flex items-center gap-2.5 px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105' style={{ backgroundColor: '#ECE7E9' }}>
+                  <div className='flex items-center justify-center w-9 h-9 bg-white/40 rounded-md backdrop-blur-sm'>
+                    <span className='text-xl'>👩🏻‍💻</span>
+                  </div>
+                  <div className='flex flex-col'>
+                    <span className='text-gray-800 text-base font-bold leading-tight'>hyonie</span>
+                    <span className='text-gray-600 text-xs font-medium leading-tight'>Developer</span>
+                  </div>
+                </div>
               </div>
             </NextLink>
             <div className='md:hidden'>

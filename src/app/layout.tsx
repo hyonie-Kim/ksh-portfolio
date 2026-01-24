@@ -7,12 +7,17 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "김세현의 포트폴리오",
-    template: "김세현의 포트폴리오 | %s",
+    default: "hyonie | Web Developer Portfolio",
+    template: "hyonie | %s",
   },
-  description: "웹 개발자를 꿈꾸는 김세현의 포트폴리오입니다.",
+  description: "레거시부터 최신 웹까지, 시스템 가치를 개선하는 3년차 개발자 김세현입니다. 헬스케어 스타트업부터 통신·렌탈 중견기업까지 다양한 도메인 경험과 ASP.NET, Next.js, NestJS, MSSQL 등 풀스택 개발 경험을 보유하고 있습니다.",
+  keywords: ["포트폴리오", "웹 개발자", "Full-Stack Developer", "Next.js", "ASP.NET", "NestJS", "김세현", "hyonie"],
   icons: {
-    icons: "👋🏻",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 
