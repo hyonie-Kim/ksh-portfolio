@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import { 
   SiNextdotjs, 
   SiReact, 
@@ -14,7 +15,8 @@ const skillData = [
   {
     name: 'React.js',
     icon: <SiReact className="w-6 h-6" />,
-    level: 85,
+    level: 60,
+    description: '헬스케어 서비스 및 Next.js 기반 UI 개발 경험',
     sources: [
       { place: '에넥스텔레콤', type: 'work', icon: <FaBriefcase /> },
       { place: '블루앤트', type: 'work', icon: <FaBriefcase /> },
@@ -29,7 +31,8 @@ const skillData = [
   {
     name: 'Next.js',
     icon: <SiNextdotjs className="w-6 h-6" />,
-    level: 90,
+    level: 65,
+    description: '통신 서비스 실운영 환경 유지보수',
     sources: [
       { place: '에넥스텔레콤', type: 'work', icon: <FaBriefcase /> },
       { place: '블루앤트', type: 'work', icon: <FaBriefcase /> }
@@ -38,7 +41,8 @@ const skillData = [
   {
     name: 'TypeScript',
     icon: <SiTypescript className="w-6 h-6" />,
-    level: 80,
+    level: 60,
+    description: 'Next.js 기반 서비스에서 타입 정의 및 유지보수 경험',
     sources: [
       { place: '에넥스텔레콤', type: 'work', icon: <FaBriefcase /> },
       { place: '블루앤트', type: 'work', icon: <FaBriefcase /> }, 
@@ -53,7 +57,8 @@ const skillData = [
   {
     name: 'ASP.NET',
     icon: <SiDotnet className="w-6 h-6" />,
-    level: 95,
+    level: 70,
+    description: '기존코드 이해 + 간단수정, CRUD, 기본 비즈니스 로직 구현, 레거시 유지보수 + 기능개선 주도',
     sources: [
       { place: '에넥스텔레콤', type: 'work', icon: <FaBriefcase /> }
     ]
@@ -61,7 +66,8 @@ const skillData = [
   {
     name: 'MSSQL',
     icon: <SiMicrosoftsqlserver className="w-6 h-6" />,
-    level: 90,
+    level: 70,
+    description: '복잡한 JOIN + CASE + 날짜 조건, 실서비스 데이터 조회/수정, 레거시 쿼리 유지보수, 운영 DB 직접 다룸 (ISMS 증적, 권한 이슈)',
     sources: [
       { place: '러닝스푼즈', type: 'education', icon: <FaGraduationCap /> },
       { place: '에넥스텔레콤', type: 'work', icon: <FaBriefcase /> }
@@ -70,7 +76,8 @@ const skillData = [
   {
     name: 'Git',
     icon: <SiGit className="w-6 h-6" />,
-    level: 85,
+    level: 70,
+    description: '기능 단위 브랜치 분리 (feature/xxx), 운영/개발 환경 구분, 충돌 해결 경험, Jenkins 연동 CI/CD 사용',
     sources: [
       { place: '한국소프트웨어교육원', type: 'education', icon: <FaGraduationCap /> },
       { place: '엘리스 SW', type: 'education', icon: <FaGraduationCap /> },
@@ -181,6 +188,8 @@ const RadarChart = ({ data }: { data: typeof skillData }) => {
 };
 
 export default function AboutSection() {
+  const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
+
   return (
     <section id="about" className='px-4 sm:px-6 md:mx-auto max-w-3xl md:max-w-7xl'>
       <div className="my-12 pb-12 md:pt-16 md:pb-24 mb-24">
@@ -204,7 +213,12 @@ export default function AboutSection() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillData.map((skill, idx) => (
-              <div key={idx} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+              <div 
+                key={idx} 
+                className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow relative"
+                onMouseEnter={() => setHoveredSkill(idx)}
+                onMouseLeave={() => setHoveredSkill(null)}
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-teal-600">{skill.icon}</span>
                   <h3 className="text-lg font-semibold text-gray-800">{skill.name}</h3>
@@ -221,6 +235,19 @@ export default function AboutSection() {
                 <div className="text-sm text-gray-600 mb-3">
                   경험 수준: {skill.level}%
                 </div>
+                
+                {/* 호버 시 상세 설명 툴팁 */}
+                {skill.description && hoveredSkill === idx && (
+                  <div className="absolute left-0 right-0 top-full mt-2 bg-gray-800 text-white text-xs rounded-lg p-3 z-50 shadow-xl max-w-full">
+                    <div className="font-semibold mb-2 text-teal-300">경험 내용:</div>
+                    <ul className="space-y-1 list-disc list-inside">
+                      {skill.description.split(', ').map((item, i) => (
+                        <li key={i} className="text-gray-200">{item}</li>
+                      ))}
+                    </ul>
+                    <div className="absolute -top-2 left-6 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-gray-800"></div>
+                  </div>
+                )}
                 
                 {/* 출처 정보 */}
                 <div className="space-y-2">

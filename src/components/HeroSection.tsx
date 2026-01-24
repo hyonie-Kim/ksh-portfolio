@@ -40,7 +40,7 @@ export default function HeroSection() {
               <div className="space-y-3">
                 <div className="flex items-center justify-center space-x-2">
                   <AiOutlineUser size={18} />
-                  <span className="text-base font-semibold text-gray-700">Full-Stack Developer</span>
+                  <span className="text-base font-semibold text-gray-700">Web Developer</span>
                 </div>
                 
                 <div className="flex items-center justify-center space-x-2">
@@ -53,15 +53,12 @@ export default function HeroSection() {
         </div>
         <div className="md:mt-0 md:w-3/5 text-center md:text-left">
           <AnimatedText
-            text="안녕하세요, 웹 개발 경력 2년차👩🏻‍💻 김세현입니다."
+            text="레거시부터 최신 웹까지, 시스템 가치를 개선하는 3년차 개발자 김세현입니다"
             className="text-4xl/loose mt-6 text-center md:!text-left text-gray-800"
           />
           <p className="text-lg mt-4 mb-6 md:text-lg md:leading-8">
-            <span className="font-semibold text-teal-600">프론트엔드와 백엔드</span>를 두루 경험하며 다양한 기술 스택에 유연하게 대응합니다.
-            <br></br>
-            <br></br>
             <span className="text-base">
-              <span className="font-semibold text-gray-800">📈 경력:</span> 헬스케어 스타트업 → 통신·렌탈 중견기업 (2년차)
+              <span className="font-semibold text-gray-800">📈 경력:</span> 헬스케어 스타트업 → 통신·렌탈 중견기업 (1년 5개월)
             </span>
             <br></br>
             <span className="text-base">
@@ -69,29 +66,29 @@ export default function HeroSection() {
             </span>
             <br></br>
             <br></br>
-            <span className="font-semibold">&ldquo;로직의 흐름을 이해하고 구조적으로 개선하는 개발&rdquo;</span>을 지향하며, 단순한 기능 구현을 넘어 업무의 구조와 흐름을 개선하는 개발자로 성장하고 있습니다.
+            <span className="font-semibold text-teal-600">Cursor AI, ChatGPT, Gemini</span> 등 AI 툴을 활용하여 개발 효율을 높이고, 레거시부터 최신 기술까지 다양한 스택으로 프로젝트를 진행하며 지속적으로 성장하고 있습니다.
           </p>
 
-          <div className="flex flex-row mt-8 justify-center">
-            {/* <NextLink
-              href="/matching_portfolio.pdf"
-              target={"_blank"}
-              className="flex items-center bg-black text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-black border-2 border-solid border-transparent hover:border-black"
-            >
-              이력서&ensp;
-              <FaExternalLinkAlt />
-            </NextLink> */}
-            {/* <Link
+          <div className="flex flex-row gap-4 mt-8 justify-center md:justify-start">
+            <Link
               to="contact"
               activeClass="action"
               spy={true}
               smooth={true}
               offset={-100}
               duration={500}
-              className="ml-4 text-lg font-medium text-black underline my-auto cursor-pointer"
+              className="bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-teal-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer"
             >
-              Contact
-            </Link> */}
+              연락하기
+            </Link>
+            <NextLink
+              href="/matching_portfolio.pdf"
+              target="_blank"
+              className="flex items-center bg-white text-gray-800 font-semibold py-3 px-8 rounded-lg border-2 border-gray-300 hover:border-teal-500 hover:text-teal-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              이력서&ensp;
+              <FaExternalLinkAlt />
+            </NextLink>
           </div>
         </div>
       </div>

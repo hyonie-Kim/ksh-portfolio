@@ -153,7 +153,7 @@ export default function TimelineSection() {
       <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 md:mb-80">
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Dev Life</h2>
-          <p className="text-lg text-gray-600">지금까지의 여정을 한눈에</p>
+          <p className="text-lg text-gray-600">배움과 도전의 타임라인</p>
         </div>
       </div>
 
