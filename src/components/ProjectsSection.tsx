@@ -8,6 +8,11 @@ import SlideUp from "./SlideUp";
 // type Props = {project:Project}
 export default async function ProjectsSection() {
   const projects = await getAllProject();
+  
+  // cobooki와 wedding_mo 프로젝트 제외
+  const filteredProjects = projects.filter((project: Project) => 
+    project.path !== 'cobooki' && project.path !== 'wedding_mo'
+  );
 
   return (
     <section id="projects" className='px-4 sm:px-6 md:mx-auto max-w-3xl md:max-w-7xl'>
@@ -17,7 +22,7 @@ export default async function ProjectsSection() {
       </h1>
 
       <div className="flex flex-col space-y-28 mb-20">
-        {projects.map((project: Project, index) => {
+        {filteredProjects.map((project: Project, index) => {
           return (
             <div key={index}>
               <SlideUp offset="-300px 0px -300px 0px">
@@ -190,12 +195,12 @@ export default async function ProjectsSection() {
                         </Link>
                       )}
 
-                      <Link
+                      {/* <Link
                         href={`/project/${project.path}`}
                         className="flex items-center bg-black text-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-gray-800 border-2 border-solid border-transparent hover:border-gray-800"
                       >
                         README 보기
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
