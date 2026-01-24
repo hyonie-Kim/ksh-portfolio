@@ -110,7 +110,7 @@ export default function HeroSection() {
               연락하기
             </Link>
             <NextLink
-              href="/matching_portfolio.pdf"
+              href="/sehyeon_resume.pdf"
               target="_blank"
               className="flex items-center bg-white text-gray-800 font-semibold py-3 px-8 rounded-lg border-2 border-gray-300 hover:border-teal-500 hover:text-teal-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
