@@ -11,7 +11,7 @@ import { AiOutlineUser, AiFillCalendar } from 'react-icons/ai';
 import { MdLocationOn } from 'react-icons/md';
 import { SiNextdotjs, SiReact, SiNestjs, SiDotnet, SiMicrosoftsqlserver } from 'react-icons/si';
 import AnimatedIcon from './AnimatedIcon';
-
+import { RiKakaoTalkFill } from 'react-icons/ri';
 export default function HeroSection() {
   return (
     <section id="home" className='px-4 sm:px-6 md:mx-auto max-w-3xl md:max-w-7xl'>
@@ -98,7 +98,7 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-row gap-4 mt-8 justify-center md:justify-start">
-            <Link
+            {/* <Link
               to="contact"
               activeClass="action"
               spy={true}
@@ -108,7 +108,16 @@ export default function HeroSection() {
               className="bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-teal-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer"
             >
               연락하기
-            </Link>
+            </Link> */}
+              <a
+                href="https://open.kakao.com/o/s88azsji" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-teal-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer flex items-center gap-2 justify-center whitespace-nowrap"
+              >
+                <RiKakaoTalkFill className='w-5 h-5 text-yellow-300' />
+                <span>연락하기</span>
+              </a>
             <NextLink
               href="/sehyeon_resume.pdf"
               target="_blank"
@@ -120,8 +129,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-      {/* React와 Tailwind CSS를 사용하여 버튼 또는 링크를 만들어 특정 섹션으로 부드럽게 스크롤하는 기능을 구현한 것 */}
       <div className="flex flex-row justify-center cursor-pointer mt-8">
         <Link
           to="about"
