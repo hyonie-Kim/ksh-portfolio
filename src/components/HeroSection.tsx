@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
 import NextLink from 'next/link';
@@ -12,7 +12,11 @@ import { MdLocationOn } from 'react-icons/md';
 import { SiNextdotjs, SiReact, SiNestjs, SiDotnet, SiMicrosoftsqlserver } from 'react-icons/si';
 import AnimatedIcon from './AnimatedIcon';
 import { RiKakaoTalkFill } from 'react-icons/ri';
+
+
 export default function HeroSection() {
+
+  const [isKakaoModalOpen, setIsKakaoModalOpen] = useState(false);
   return (
     <section id="home" className='px-4 sm:px-6 md:mx-auto max-w-3xl md:max-w-7xl'>
       <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-14 md:py-20 md:flex-row md:items-start md:space-x-12 md:text-left">
@@ -109,15 +113,21 @@ export default function HeroSection() {
             >
               연락하기
             </Link> */}
-              <a
+              {/* <a
                 href="https://open.kakao.com/o/s88azsji" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-teal-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer flex items-center gap-2 justify-center whitespace-nowrap"
+              > */}
+              <button
+              type="button"
+              onClick={() => setIsKakaoModalOpen(true)}
+              className="bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:from-teal-600 hover:to-teal-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer flex items-center gap-2 justify-center whitespace-nowrap"
               >
                 <RiKakaoTalkFill className='w-5 h-5 text-yellow-300' />
                 <span>연락하기</span>
-              </a>
+              </button>
+              {/* </a> */}
             <NextLink
               href="/sehyeon_resume.pdf"
               target="_blank"
@@ -141,6 +151,36 @@ export default function HeroSection() {
           <HiArrowDown size={35} className="animate-bounce text-teal-600 hover:text-teal-700 transition-colors" />
         </Link>
       </div>
+
+      {/* 모달 */}
+      {isKakaoModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+          <div className="bg-white rounded-xl shadow-2xl p-6 w-80 max-w-full">
+            <h2 className="text-lg font-semibold mb-3">카카오톡 오픈채팅으로 문의하기</h2>
+            <p className="text-sm text-gray-600 mb-4">
+              채용 관련하여 추가로 궁금하신 점이 있다면, 아래 카카오톡 오픈채팅을 통해 편하게 질문 남겨주세요.
+            </p>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://open.kakao.com/o/s88azsji"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2.5 rounded-lg flex items-center justify-center gap-2 transition-colors"
+              >
+                <RiKakaoTalkFill className="w-5 h-5" />
+                <span>카카오톡 열기</span>
+              </a>
+              <button
+                type="button"
+                onClick={() => setIsKakaoModalOpen(false)}
+                className="w-full py-2.5 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors"
+              >
+                닫기
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
