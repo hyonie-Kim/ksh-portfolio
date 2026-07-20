@@ -30,6 +30,7 @@ import {
   SiPhp,
   SiOracle,
   SiAmazonaws,
+  SiYoast,
 } from 'react-icons/si';
 
 export interface Skill {
@@ -64,6 +65,7 @@ export const careerItems: CareerItem[] = [
       { name: 'WordPress', icon: <SiWordpress className="w-4 h-4" /> },
       { name: 'PHP', icon: <SiPhp className="w-4 h-4" /> },
       { name: 'JavaScript', icon: <SiJavascript className="w-4 h-4" /> },
+      { name: 'SEO', icon: <SiYoast className="w-4 h-4" /> },
       { name: 'Oracle', icon: <SiOracle className="w-4 h-4" /> },
       { name: 'AWS', icon: <SiAmazonaws className="w-4 h-4" /> },
     ],
