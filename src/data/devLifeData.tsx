@@ -110,9 +110,27 @@ export const careerItems: CareerItem[] = [
       { name: 'Git', icon: <SiGit className="w-4 h-4" /> },
     ],
   },
+  {
+    period: '2021.02 ~ 2021.06',
+    company: '라이브러리티이',
+    description: 'SNS 콘텐츠 운영',
+    skills: [
+      { name: 'Photoshop', icon: <SiAdobephotoshop className="w-4 h-4" /> },
+      { name: 'Illustrator', icon: <SiAdobeillustrator className="w-4 h-4" /> },
+    ],
+  },
 ];
 
 export const learningItems: LearningItem[] = [
+  {
+    period: '2024.11 ~ 2024.12',
+    institution: '러닝스푼즈 · 강남',
+    description:
+      '간편결제 PO에게 배우는 백오피스 — 백엔드 기획서 작성 및 DB 설계도 작성법 학습',
+    skills: [
+      { name: 'DB 설계', icon: <SiMicrosoftsqlserver className="w-4 h-4" /> },
+    ],
+  },
   {
     period: '2024.02 ~ 2024.07',
     institution: '한국소프트웨어교육원',
@@ -156,15 +174,6 @@ export const learningItems: LearningItem[] = [
     skills: [
       { name: 'TensorFlow', icon: <SiTensorflow className="w-4 h-4" /> },
       { name: 'React', icon: <SiReact className="w-4 h-4" /> },
-    ],
-  },
-  {
-    period: '2021.02 ~ 2021.06',
-    institution: '라이브러리티이',
-    description: 'SNS 콘텐츠 운영',
-    skills: [
-      { name: 'Photoshop', icon: <SiAdobephotoshop className="w-4 h-4" /> },
-      { name: 'Illustrator', icon: <SiAdobeillustrator className="w-4 h-4" /> },
     ],
   },
   {
