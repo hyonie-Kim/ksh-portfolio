@@ -20,6 +20,7 @@ import {
   SiHtml5,
   SiCss3,
   SiTensorflow,
+  SiAnaconda,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiStyledcomponents,
@@ -112,7 +113,7 @@ export const careerItems: CareerItem[] = [
   },
   {
     period: '2021.02 ~ 2021.06',
-    company: '라이브러리티이',
+    company: '라이브로티브이',
     description: 'SNS 콘텐츠 운영',
     skills: [
       { name: 'Photoshop', icon: <SiAdobephotoshop className="w-4 h-4" /> },
@@ -174,6 +175,9 @@ export const learningItems: LearningItem[] = [
     skills: [
       { name: 'TensorFlow', icon: <SiTensorflow className="w-4 h-4" /> },
       { name: 'React', icon: <SiReact className="w-4 h-4" /> },
+      { name: 'Express.js', icon: <SiExpress className="w-4 h-4" /> },
+      { name: 'Python', icon: <SiPython className="w-4 h-4" /> },
+      { name: 'Anaconda', icon: <SiAnaconda className="w-4 h-4" /> },
     ],
   },
   {
