@@ -9,7 +9,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { HiArrowDown } from 'react-icons/hi';
 import { AiOutlineUser, AiFillCalendar } from 'react-icons/ai';
 import { MdLocationOn } from 'react-icons/md';
-import { SiNextdotjs, SiReact, SiNestjs, SiDotnet, SiMicrosoftsqlserver } from 'react-icons/si';
+import { SiNextdotjs, SiReact, SiNestjs, SiDotnet, SiMicrosoftsqlserver, SiAmazonaws } from 'react-icons/si';
 import AnimatedIcon from './AnimatedIcon';
 import { RiKakaoTalkFill } from 'react-icons/ri';
 
@@ -68,7 +68,11 @@ export default function HeroSection() {
                 <span className="text-xl">📈</span>
                 <span className="font-semibold text-gray-800">경력</span>
               </div>
-              <p className="text-base text-gray-700">헬스케어 스타트업 → 통신·렌탈 중견기업 (1년 5개월)</p>
+              <p className="text-base text-gray-700">
+                실무 경력 약 3년 5개월
+                <br />
+                헬스케어 · 통신 · 글로벌 의료기관 웹 서비스 개발
+              </p>
             </div>
 
             <div className="bg-gradient-to-r from-teal-50 to-white p-4 rounded-lg border border-teal-100">
@@ -93,12 +97,16 @@ export default function HeroSection() {
                   <SiMicrosoftsqlserver className="w-5 h-5 text-teal-600" />
                   <span className="text-sm font-medium text-gray-700">MSSQL</span>
                 </div>
+                <div className="flex items-center gap-1.5 px-3 py-1.5 bg-white rounded-lg border border-teal-200 hover:border-teal-400 transition-colors">
+                  <SiAmazonaws className="w-5 h-5 text-teal-600" />
+                  <span className="text-sm font-medium text-gray-700">AWS</span>
+                </div>
               </div>
             </div>
           </div>
 
           <p className="text-base mt-6 mb-6 md:leading-7 text-gray-700">
-            <span className="font-semibold text-teal-600">Cursor AI, ChatGPT, Gemini</span> 등 AI 툴을 활용하여 개발 효율을 높이고, 레거시부터 최신 기술까지 다양한 스택으로 프로젝트를 진행하며 지속적으로 성장하고 있습니다.
+            <span className="font-semibold text-teal-600">Cursor AI, ChatGPT, Gemini</span> 등 AI 툴을 활용하여 개발 생산성을 높이고, 레거시 시스템부터 최신 웹 서비스까지 지속적으로 개선하며 안정적인 서비스를 만들어가고 있습니다.
           </p>
 
           <div className="flex flex-row gap-4 mt-8 justify-center md:justify-start">
