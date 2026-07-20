@@ -130,8 +130,8 @@ const timelineData: TimelineItem[] = [
     ],
   },
   {
-    year: '2024.08 - 현재',
-    title: '에넥스텔레콤(재직중)',
+    year: '2024.08 - 2026.03',
+    title: '에넥스텔레콤',
     company: '풀스택 개발자로 근무',
     description: 'ASP.NET, Classic ASP, Next.js, NestJS 기반 유지보수 및 개발',
     type: 'work',
