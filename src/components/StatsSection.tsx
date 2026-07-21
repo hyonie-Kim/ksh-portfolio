@@ -29,7 +29,7 @@ const statsData: StatItem[] = [
     description: '다양한 기술 스택'
   },
   {
-    number: '3',
+    number: '4',
     label: 'Companies',
     icon: <FaBriefcase className="w-8 h-8" />,
     description: '경험한 회사'

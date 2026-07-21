@@ -1,69 +1,82 @@
-[{
-  "title": "내부 업무 관리 시스템 - ERP/MNG/CS",
-  "description": "피졸로 ERP/WMS 시스템, 사내 인트라넷 MNG, 고객센터 CS 사이트 내부 업무 시스템의 유지보수 및 운영 개선 프로젝트입니다.",
-  "date": "2024-08-01",
-  "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
-  "category": [
-    "ASP.NET Web Forms 4.0",
-    "C#",
-    "MSSQL",
-    "jQuery",
-    "AJAX",
-    "IIS"
-  ],
-  "path": "internal_systems",
-  "featured": true,
-  "link": "#",
-  "github": "#",
-  "developmentScope": "실무 풀스택 개발 담당",
-  "keyFeatures": [
-    "피졸로 ERP 관리자 페이지 - 유지보수 및 단순 기능 개발",
-    "사내 인트라넷 MNG - 유지보수 및 운영 ",
-    "고객센터 CS 사이트 - 업무 분배 및 게시판 관리 시스템"
-  ],
-  "achievements": [
-    "유관 부서 요구사항에 따른 기능 개발 및 유지보수",
-    "요금제관리 시스템 신규 개발",
-    "고객사 더좋은라이프 입금 API 신규 개발",
-    "Pisolo ERP 시스템 보안 강화",
-    "외부 신용정보사(NICE, 롯데) 연동 로직 유지보수 및 기능 개선"
-  ]
-},
+[
   {
-    "title": "Resumates (이력서 작성 플랫폼)",
-    "description": "3가지 템플릿을 제공하고 개인 맞춤형 이력서를 쉽고 빠르게 작성할 수 있는 온라인 플랫폼 프로젝트 입니다.",
-    "date": "2022-12-01",
-    "participant": "2024년 6월 20일~ 2024년 7월 24일 (3인 팀프로젝트)",
+    "title": "MNG 사내 인트라넷",
+    "description": "사내 인트라넷 기반 업무 관리 시스템으로, 고객·계약·CS·운영 업무를 관리하는 Admin 시스템의 유지보수 및 기능 개발 프로젝트입니다.",
+    "date": "2024-08-01",
+    "participant": "2024.08 ~ 2026.03 (에넥스텔레콤)",
     "category": [
-      "React 18",
-      "Styled Components",
-      "Axios",
-      "Node.js",
-      "Express.js",
-      "MongoDB + Mongoose",
-      "Nodemailer"
+      "ASP.NET Web Forms 4.0",
+      "C#",
+      "MSSQL",
+      "jQuery",
+      "AJAX",
+      "IIS"
     ],
-    "path": "Resumates",
+    "path": "internal_systems",
     "featured": true,
-    "link": "https://resumates.vercel.app/",
-    "github": "https://github.com/Resumates/Resumates",
-    "developmentScope": "프론트엔드 & 백엔드 개발 담당",
+    "link": "#",
+    "github": "#",
+    "badge": "실무",
+    "cardLabel": "유지보수",
+    "thumbnail": "/images/projects/intranet_mng.png",
+    "developmentScope": "MNG 유지보수 및 기능 개발",
+    "problem": "다양한 부서의 반복 업무와 수작업 프로세스로 운영 효율이 떨어졌습니다.",
+    "solution": "요금제관리 시스템·입금 API 등 웹 기반 기능을 신규 개발하고, MNG 레거시 시스템을 안정적으로 유지보수했습니다.",
     "keyFeatures": [
-      "3가지 이력서 템플릿 제공",
-      "실시간 이력서 미리보기",
-      "PDF 다운로드 기능",
-      "이메일 발송 기능"
+      "요금제관리 시스템 신규 개발",
+      "외부 고객사 입금 API 개발",
+      "MNG 화면 유지보수 및 기능 개선",
+      "CS·운영 업무 관리 기능 개발"
     ],
     "achievements": [
-      "팀 프로젝트에서 백엔드 역할 수행",
-      "Styled Components를 활용한 컴포넌트 기반 개발",
-      "실용적인 이력서 작성 도구 구현"
+      "유관 부서 요구사항에 따른 기능 개발 및 유지보수",
+      "요금제관리 시스템 신규 개발",
+      "고객사 입금 API 신규 개발",
+      "외부 신용정보사 연동 로직 유지보수 및 기능 개선"
     ]
   },
   {
-    "title": "스마트렌탈 - 가전/가구 렌탈 가입 사이트",
-    "description": "에넥스텔레콤에서 진행한 가전, 가구 렌탈 가입 사이트의 유지보수 및 개선 프로젝트입니다.",
-    "date": "2023-01-01",
+    "title": "피졸로(PISOLO) ERP",
+    "description": "피졸로 ERP는 기업 내부에서 상품, 주문, 회원, 재고, 배송, 계약 등의 업무를 통합 관리하기 위한 Web 기반 ERP(Back Office) 시스템입니다. 운영 중인 시스템의 유지보수와 기능 개선을 담당하며 기존 업무 프로세스를 분석하여 기능 수정 및 신규 개발을 진행했습니다.",
+    "date": "2024-08-01",
+    "participant": "2024년 08월 ~ 2026.03 (에넥스텔레콤)",
+    "category": [
+      "ASP.NET Web Forms 4.0",
+      "C#",
+      "MS SQL Server",
+      "ADO.NET",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "jQuery",
+      "IIS"
+    ],
+    "path": "pisolo_erp",
+    "featured": true,
+    "link": "#",
+    "github": "#",
+    "badge": "실무",
+    "cardLabel": "유지보수",
+    "thumbnail": "/images/projects/pisolo_ERP.png",
+    "developmentScope": "ERP 유지보수 및 기능 개발",
+    "problem": "레거시 Web Forms 기반 ERP에서 다양한 업무 도메인과 운영 이슈를 안정적으로 관리해야 했습니다.",
+    "solution": "업무 프로세스 분석, SQL 튜닝, 화면·기능 개선, 권한·엑셀·검색 기능 고도화로 운영 효율을 개선했습니다.",
+    "keyFeatures": [
+      "ERP 화면 유지보수 및 신규 기능 개발",
+      "SQL Query 작성·튜닝 및 Stored Procedure 수정",
+      "사용자 권한별 메뉴 관리",
+      "엑셀 업로드/다운로드 및 검색·페이징 개선"
+    ],
+    "achievements": [
+      "유통·렌탈 업무 Back Office 안정적 운영",
+      "부서 요청 기반 기능 개선 및 오류 대응",
+      "레거시 ASP.NET Web Forms 유지보수 경험"
+    ]
+  },
+  {
+    "title": "스마트렌탈",
+    "description": "PC·모바일 각각 운영되는 적응형 고객용 렌탈 쇼핑몰. NICE·롯데 신용등급 연동에 따라 렌탈 가능 상품이 달라집니다.",
+    "date": "2024-08-01",
     "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
     "category": [
       "ASP.NET",
@@ -75,84 +88,127 @@
     "featured": true,
     "link": "https://www.smartrental.co.kr/",
     "github": "#",
-    "developmentScope": "실무 프로젝트 - 백엔드 개발 담당",
+    "badge": "실무",
+    "cardLabel": "유지보수",
+    "thumbnail": "/images/projects/smartRental.png",
+    "developmentScope": "실무 프로젝트 - 고객용 쇼핑몰 유지보수 및 기능 개발",
+    "problem": "PC·모바일 분리 운영 렌탈 쇼핑몰의 운영 이슈와 신용등급 연동·가입 로직 개선 요청이 지속적으로 발생했습니다.",
+    "solution": "PC·모바일 각 프로젝트를 안정적으로 유지보수하고, NICE·롯데 신용 연동 및 등급별 렌탈 가능 상품 로직을 개선했습니다.",
     "keyFeatures": [
-      "가전/가구 렌탈 가입 시스템 유지보수",
-      "렌탈 상품 카테고리 관리 및 개선",
-      "MSSQL 데이터베이스 관리",
-      "ASP.NET 기반 웹 애플리케이션 개발"
+      "PC·모바일 적응형 고객용 렌탈 쇼핑몰",
+      "렌탈 가입서 작성·신청 프로세스",
+      "NICE·롯데 신용정보사 연동",
+      "신용등급별 렌탈 가능 상품 판별"
     ],
     "achievements": [
-      "레거시 시스템 유지보수 경험",
-      "실무 환경에서의 데이터베이스 최적화",
-      "기존 시스템 개선을 통한 사용성 향상"
+      "PC·모바일 분리 운영 고객용 사이트 유지보수",
+      "외부 신용정보사 연동 로직 개선",
+      "신용등급 기반 렌탈 가능 상품 로직 개선"
     ]
   },
   {
-    "title": "에넥스텔레콤 & 에이모바일 - 통신 서비스 플랫폼",
-    "description": "에넥스텔레콤(고객 서비스 관리), 에이모바일(요금제 가입), 에이모바일(개통페이지) 사이트는 각각 다른 기술 스택으로 구성되어 있으며, 해당 페이지들의 유지보수를 담당하며 현재는 하나의 통합 시스템으로 개발 준비 중인 프로젝트입니다.",
-    "date": "2023-01-01",
-    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤/에이모바일)",
+    "title": "에이모바일 - 통신 서비스 플랫폼",
+    "description": "알뜰폰(MVNO) 요금제 가입·마이페이지(ASP.NET)와 USIM 개통페이지(Next.js·NestJS)를 운영하는 고객용 통신 서비스 사이트입니다.",
+    "date": "2024-08-01",
+    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
     "category": [
       "ASP.NET",
-      "Classic ASP",
       "MSSQL",
       "Next.js",
       "NestJS",
-      "Ubuntu",
-      "Hyper-V"
+      "TypeScript",
+      "C#"
     ],
-    "path": "amobile_telecom",
+    "path": "amobile",
     "featured": true,
     "link": "https://www.amobile.co.kr/",
     "github": "#",
-    "developmentScope": "실무 프로젝트 - 풀스택 개발 담당",
+    "badge": "실무",
+    "cardLabel": "유지보수",
+    "thumbnail": "/images/projects/amobile.png",
+    "developmentScope": "실무 프로젝트 - 고객용 웹사이트 유지보수 및 기능 개발",
+    "problem": "ASP.NET Web Forms와 Next.js·NestJS가 혼재된 고객용 사이트에서 가입·마이페이지·개통페이지 운영 이슈가 지속적으로 발생했습니다.",
+    "solution": "요금제 가입·마이페이지·개통페이지를 각 스택에 맞게 유지보수하고, 모바일·웹 반응형 UI와 관리자 페이지 운영을 개선했습니다.",
     "keyFeatures": [
-      "에이모바일(요금제 가입) 사이트 유지보수 및 기능 개선",
-      "에넥스텔레콤(고객 서비스 관리) 사이트 유지보수",
-      "Hyper-V 기반 Ubuntu 환경 개발 서버 구성",
-      "레거시 ASP.NET 및 Classic ASP 시스템 유지보수",
-      "Next.js, NestJS 기반 기능 유지보수",
-      "통합 개발을 위한 기술 검토 및 준비"
+      "요금제 선택·가입 (ASP.NET Web Forms)",
+      "마이페이지·개인정보 관리 (ASP.NET Web Forms)",
+      "USIM 개통 신청·조회·완료 (Next.js·NestJS)",
+      "모바일·웹 반응형 사이트 운영"
     ],
     "achievements": [
-      "레거시 시스템과 최신 기술 스택 혼용 개발 경험",
-      "가상화 환경 구축 및 운영 경험",
-      "통신 업계 실무 프로젝트 경험",
-      "알뜰폰 MVNO 도메인 경험",
-      "대규모 시스템 통합 개발 준비 경험"
+      "레거시 Web Forms와 Next.js·NestJS 혼합 스택 운영 경험",
+      "알뜰폰(MVNO) 도메인 실무 경험",
+      "개통 프로세스 기능 개선"
+    ]
+  },
+  {
+    "title": "에넥스텔레콤 - 통신 서비스 플랫폼",
+    "description": "Classic ASP 기반 고객용 통신사 웹사이트. 고객 서비스, 회원 관리, 요금 조회 기능을 운영합니다.",
+    "date": "2024-08-01",
+    "participant": "2024년 08월 01일 ~ 현재 (에넥스텔레콤)",
+    "category": [
+      "Classic ASP",
+      "MSSQL",
+      "jQuery",
+      "AJAX",
+      "Bootstrap"
+    ],
+    "path": "amobile_telecom",
+    "featured": true,
+    "link": "https://www.annextele.com/",
+    "github": "#",
+    "badge": "실무",
+    "cardLabel": "유지보수",
+    "thumbnail": "/images/projects/annextele.png",
+    "developmentScope": "실무 프로젝트 - 고객용 웹사이트 유지보수 및 기능 개발",
+    "problem": "레거시 Classic ASP 고객용 사이트에서 고객 서비스·회원·요금 조회 운영 이슈가 지속적으로 발생했습니다.",
+    "solution": "Classic ASP 코드 구조를 분석해 안정적으로 유지보수하고, 고객 서비스·회원·요금 조회 기능을 개선했습니다.",
+    "keyFeatures": [
+      "고객 서비스(1:1 문의, FAQ, 공지사항) 유지보수",
+      "회원 관리·요금 조회 기능 개선",
+      "모바일·웹 반응형 사이트 운영",
+      "Classic ASP 레거시 시스템 유지보수"
+    ],
+    "achievements": [
+      "레거시 Classic ASP 사이트 유지보수 경험",
+      "고객 서비스·회원·요금 조회 기능 개선",
+      "통신 업계 실무 프로젝트 경험"
     ]
   },
   {
     "title": "Oallacare - 비대면 진료 의료 서비스",
-    "description": "국내 비대면 진료 & 약 배송 서비스 및 대표 의료전문 디지털 헬스케어 플랫폼 서비스 제공 사이트입니다. 상담예약 시스템 구현을 통해 의료 서비스 플랫폼 개발 경험을 쌓았습니다.",
+    "description": "비대면 진료·약 배송·심리 상담을 제공하는 디지털 헬스케어 플랫폼의 프론트엔드 개발 프로젝트입니다.",
     "date": "2023-08-01",
     "participant": "2023년 8월 ~ 2023년 10월 (블루앤트)",
     "category": [
-      "Next.js 12",
+      "Next.js 13",
       "React",
       "TypeScript",
-      "JavaScript",
-      "CSS/SCSS",
-      "vanilla Extract Style"
+      "Vanilla Extract",
+      "Zustand",
+      "SWR"
     ],
     "path": "ollacare",
     "featured": true,
     "link": "https://ollacare.com/",
     "github": "#",
+    "badge": "실무",
+    "cardLabel": "퍼블리싱",
+    "thumbnail": "/images/projects/ollacare.png",
     "developmentScope": "프론트엔드 개발 담당",
+    "problem": "기존 홈페이지와 상담예약 플로우가 기획 요구사항과 이벤트 운영 속도에 맞춰 빠르게 개선되어야 했습니다.",
+    "solution": "Next.js 13 마이그레이션과 이벤트·상담예약 UI를 구현하며 기획 요구사항을 반영했습니다.",
     "keyFeatures": [
-      "모바일 앱 기반의 디지털 헬스케어 서비스 플랫폼",
-      "올라케어 홈페이지 Next.js 12 버전으로 개선",
+      "Next.js 12 → 13 마이그레이션",
       "매달 진행되는 이벤트 페이지 퍼블리싱",
-      "심리/해석 상담 예약 서비스 v2 버전 개선",
-      "기획팀 요구사항에 맞는 기능 구현"
+      "심리/해석 상담 예약 서비스 개선",
+      "반응형 UI 및 크로스 브라우징 대응"
     ],
     "achievements": [
-      "프론트엔드 팀 기존 코드 활용 및 개선",
-      "Next.js 12 버전 업그레이드 경험",
-      "의료 서비스 플랫폼 개발 경험",
-      "기획팀과의 협업 및 요구사항 구현 경험"
+      "프론트엔드 기반 코드를 활용한 단독 구현",
+      "Next.js 마이그레이션 경험",
+      "의료 서비스 플랫폼 프론트엔드 개발 경험",
+      "기획팀과의 협업 및 빠른 요구사항 반영"
     ]
   },
   {
@@ -172,7 +228,11 @@
     "featured": true,
     "link": "https://with-chu-forever.vercel.app/",
     "github": "https://github.com/hyonie-Kim/with-chu-forever",
+    "badge": "개인",
+    "thumbnail": "/images/projects/wedding_mo.png",
     "developmentScope": "100% 개인 개발",
+    "problem": "모바일에서 읽기 쉽고 공유하기 편한 청첩장 경험이 필요했습니다.",
+    "solution": "반응형 UI와 카카오 지도·공유 API를 연동해 실사용 가능한 모바일 청첩장을 구현했습니다.",
     "keyFeatures": [
       "반응형 웨딩 청첩장 디자인",
       "카카오 지도 API 연동",
@@ -185,18 +245,21 @@
       "모바일 우선 반응형 디자인 구현"
     ]
   },
-
   {
     "title": "cobooki 코부기",
-    "description": "개발공부를 하고 있는 입문자들에게 IT 개발 도서를 추천 해주는 웹사이트입니다. ",
+    "description": "개발공부를 하고 있는 입문자들에게 IT 개발 도서를 추천 해주는 웹사이트입니다.",
     "participant": "2023년 7월 3일~ 2023년 7월 14일 (5인 팀프로젝트)",
-    "date": "2023-01-01",
+    "date": "2023-07-03",
     "category": ["React", "Redux", "Express", "MongoDB"],
     "path": "cobooki",
     "featured": true,
     "link": "#",
     "github": "https://github.com/hyonie-Kim/cobooki",
+    "badge": "팀 프로젝트",
+    "thumbnail": "/images/projects/cobooki.png",
     "developmentScope": "프론트엔드 & 백엔드 개발 담당",
+    "problem": "입문 개발자가 어떤 도서를 선택해야 할지 기준이 부족한 상황이었습니다.",
+    "solution": "도서 추천·검색·리뷰 기능을 갖춘 웹 서비스를 팀 단위로 구현했습니다.",
     "keyFeatures": [
       "도서 추천 시스템",
       "사용자 리뷰 기능",
@@ -207,6 +270,42 @@
       "팀 프로젝트에서 프론트엔드 역할 수행",
       "Redux를 활용한 상태 관리 학습",
       "실용적인 도서 추천 서비스 구현"
+    ]
+  },
+  {
+    "title": "Resumates (이력서 작성 플랫폼)",
+    "description": "3가지 템플릿을 제공하고 개인 맞춤형 이력서를 쉽고 빠르게 작성할 수 있는 온라인 플랫폼입니다.",
+    "date": "2024-06-20",
+    "participant": "2024년 6월 20일 ~ 2024년 7월 24일 (2인 팀프로젝트)",
+    "category": [
+      "React 18",
+      "Styled Components",
+      "Axios",
+      "Node.js",
+      "Express.js",
+      "MongoDB + Mongoose",
+      "Nodemailer"
+    ],
+    "path": "Resumates",
+    "featured": true,
+    "link": "https://resumates.vercel.app/",
+    "github": "https://github.com/Resumates/Resumates",
+    "badge": "팀 프로젝트",
+    "cardLabel": "2인 프로젝트",
+    "thumbnail": "/images/projects/Resumates.png",
+    "developmentScope": "풀스택 개발 담당 (프론트엔드 · 백엔드)",
+    "problem": "이력서 작성이 템플릿 선택부터 출력까지 분산되어 있어, 초보자도 빠르게 완성하기 어려웠습니다.",
+    "solution": "템플릿 기반 작성 UI와 실시간 미리보기, PDF 다운로드·이메일 발송까지 이어지는 풀스택 플로우를 구현했습니다.",
+    "keyFeatures": [
+      "3가지 이력서 템플릿 제공",
+      "실시간 이력서 미리보기",
+      "PDF 다운로드 기능",
+      "이메일 발송 기능"
+    ],
+    "achievements": [
+      "2인 팀 프로젝트에서 풀스택 개발 담당",
+      "Styled Components를 활용한 컴포넌트 기반 개발",
+      "실용적인 이력서 작성 도구 구현"
     ]
   }
 ]
