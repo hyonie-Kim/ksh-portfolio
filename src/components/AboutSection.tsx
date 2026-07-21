@@ -53,9 +53,9 @@ export default function AboutSection() {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-white rounded-xl shadow-md border border-gray-100 p-5 md:p-6 hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-xl shadow-md border border-gray-200 p-5 md:p-6 hover:border-teal-300 hover:shadow-lg transition-all duration-300"
             >
-              <h2 className="flex items-center gap-2 text-lg font-bold text-gray-800 mb-4 pb-3 border-b border-teal-100">
+              <h2 className="flex items-center gap-2 text-lg font-bold text-gray-800 mb-4 pb-3 border-b border-gray-200">
                 <span aria-hidden="true">{category.emoji}</span>
                 {category.title}
               </h2>
@@ -63,7 +63,7 @@ export default function AboutSection() {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 bg-gray-50 border border-teal-100 hover:border-teal-300 hover:text-teal-800 transition-colors"
+                    className="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-medium text-gray-700 bg-gray-50 border border-gray-200 hover:border-teal-300 hover:text-teal-800 transition-colors"
                   >
                     {skill}
                   </span>
