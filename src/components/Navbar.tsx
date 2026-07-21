@@ -10,11 +10,11 @@ interface NavItem {
   page: string;
 }
 const NAV_ITEMS: Array<NavItem> = [
-  { title: 'Home', page: 'home' },
-  { title: 'Dev Life', page: 'dev-life' },
-  { title: 'Skills', page: 'about' },
-  { title: 'Projects', page: 'projects' },
-  { title: 'Contact', page: 'contact' },
+  { title: '소개', page: 'home' },
+  { title: '개발 여정', page: 'dev-life' },
+  { title: '보유 기술', page: 'about' },
+  { title: '프로젝트', page: 'projects' },
+  { title: '연락하기', page: 'contact' },
 ];
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
