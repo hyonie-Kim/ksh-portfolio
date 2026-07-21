@@ -50,12 +50,12 @@ export default function ContactForm() {
     <section id='contact'>
       <div className='my-12 pb-12 md:pt-16'>
         <h1 className='text-center font-bold text-3xl'>
-          Contact
+        연락하기
           <hr className='w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded' />
         </h1>
         <div className='flex flex-col items-center mb-8'>
           <p className='text-lg text-teal-600 font-medium mb-2'>dev.hyonie@gmail.com</p>
-          <p className='text-sm text-gray-500'>궁금한 점이나 문의사항이 있으시면 언제든 연락주세요! ✨</p>
+          <p className='text-sm text-gray-500'>함께 성장할 새로운 기회를 기다립니다. ✨</p>
         </div>
         <div className='flex flex-col space-y-6'>
           {banner && <Banner banner={banner} />}
