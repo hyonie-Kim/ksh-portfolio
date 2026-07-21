@@ -26,7 +26,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'Infrastructure',
     emoji: '☁',
-    skills: ['AWS', 'CloudFront', 'Apache', 'Linux'],
+    skills: ['AWS', 'CloudFront','WAF', 'Apache', 'Linux'],
   },
   {
     title: 'CMS',
@@ -36,7 +36,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'Tools',
     emoji: '🛠',
-    skills: ['Git', 'GitHub', 'Cursor', 'ChatGPT', 'Gemini'],
+    skills: ['Git', 'GitHub','Jira', 'Cursor', 'ChatGPT', 'Gemini'],
   },
 ];
 
