@@ -24,8 +24,7 @@ export default function ContactForm() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
-    sendContactEmail(form) //
+    sendContactEmail(form)
       .then(() => {
         setBanner({
           message: '메일을 성공적으로 발송하였습니다.',

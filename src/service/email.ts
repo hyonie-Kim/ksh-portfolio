@@ -1,25 +1,40 @@
 import nodemailer from 'nodemailer';
+
 export type EmailData = {
   from: string;
   subject: string;
   message: string;
 };
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.AUTH_USER, // generated ethereal user
-    pass: process.env.AUTH_PASS, // generated ethereal password
-  },
-});
+function getTransporter() {
+  const user = process.env.AUTH_USER;
+  const pass = process.env.AUTH_PASS?.replace(/\s/g, '');
+
+  if (!user || !pass) {
+    throw new Error('메일 발송 환경 변수(AUTH_USER, AUTH_PASS)가 설정되지 않았습니다.');
+  }
+
+  return nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: { user, pass },
+  });
+}
 
 export async function sendEmail({ subject, from, message }: EmailData) {
+  const user = process.env.AUTH_USER;
+  if (!user) {
+    throw new Error('메일 발송 환경 변수(AUTH_USER)가 설정되지 않았습니다.');
+  }
+
+  const transporter = getTransporter();
+
   const mailData = {
-    to: process.env.AUTH_USER,
+    to: user,
+    from: `"Portfolio Contact" <${user}>`,
+    replyTo: from,
     subject: `[PORTFOLIO] ${subject}`,
-    from,
     html: `
       <h1>${subject}</h1>
       <div>${message}</div>
