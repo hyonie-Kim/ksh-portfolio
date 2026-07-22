@@ -189,33 +189,60 @@ Gemini API
     },
     {
       id: 'external-api-automation',
-      title: '외부 API 연동 및 운영 자동화',
+      title: '외부 API 연동 및 콘텐츠 운영 자동화',
       summary:
-        'TikTok·YouTube API를 WordPress 관리자와 연동해 콘텐츠 동기화부터 사용자 사이트 노출까지 운영 자동화를 구현했습니다.',
+        'TikTok Display API와 YouTube API를 WordPress 관리자에 연동해 SNS 콘텐츠 수집·동기화부터 사용자 사이트 노출까지의 운영 과정을 자동화했습니다.',
+      images: [
+        {
+          src: '/images/projects/view_media_youtube.png',
+          alt: 'YouTube API 연동 설정 화면',
+          caption: 'YouTube API 연동 설정 화면',
+        },
+        {
+          src: '/images/projects/view_media_youtube_02.png',
+          alt: 'YouTube 동기화 영상 관리 목록',
+          caption: 'YouTube 동기화 영상 관리 목록',
+        },
+        {
+          src: '/images/projects/view_media_tiktok.png',
+          alt: 'TikTok Display API 연동 상태 화면',
+          caption: 'TikTok Display API 연동 상태 화면',
+        },
+        {
+          src: '/images/projects/view_media_tiktok_02.png',
+          alt: '사용자 사이트 TikTok 채널 노출 화면',
+          caption: '사용자 사이트 TikTok 채널 노출 화면',
+        },
+      ],
+      imageLayout: 'row',
       background:
-        'SNS 콘텐츠를 수동으로 등록하는 업무를 줄이기 위해 TikTok Display API와 YouTube API를 연동했습니다.\n\n관리자에서 동기화를 실행하면 콘텐츠·썸네일이 WordPress에 반영되고, 사용자 사이트에 노출되도록 흐름을 구성했습니다. 동기화 이력·상태·오류도 함께 관리합니다.',
+        'SNS 영상을 사이트에 수동으로 등록하는 반복 업무를 줄이고, 공식 채널의 최신 콘텐츠를 안정적으로 제공할 수 있는 연동 구조가 필요했습니다.\n\nTikTok은 Display API를 통해 공식 계정의 영상 목록을 조회하도록 구현하고, 실제 서비스 연동을 위해 TikTok Developer 앱 생성부터 App Review 제출·보완·승인까지 전 과정을 진행했습니다.\n\nYouTube는 신규 영상을 매일 정오에 자동으로 확인해 WordPress 관리자에 등록하는 Cron 기반 동기화를 적용했습니다. 관리자는 필요할 때 수동 동기화를 실행하고, 동기화 결과와 오류 상태를 확인할 수 있습니다.\n\n동기화된 콘텐츠와 썸네일은 관리자 설정을 거쳐 사용자 사이트의 VIEW TV 및 TikTok 채널 페이지에 노출되도록 구성했습니다.',
       improvements: [
-        'TikTok Display API 연동',
-        'YouTube 콘텐츠 및 썸네일 동기화',
-        '관리자 수동 동기화 기능',
+        'TikTok Display API 연동 및 App Review 대응',
+        'YouTube 신규 영상·썸네일 Cron 자동 동기화',
+        '관리자 수동 동기화 기능 제공',
         '동기화 이력·상태·오류 관리',
-        '콘텐츠 등록 업무 자동화',
+        'VIEW TV·TikTok 채널 페이지 자동 노출',
+        'SNS 콘텐츠 등록 업무 효율화',
       ],
       keyImplementations: [
-        'TikTok·YouTube API → WordPress 관리자 동기화 파이프라인 구축',
-        '동기화 결과의 사용자 사이트 노출 연동',
-        '관리자 수동 동기화 및 실행 이력 관리',
-        '동기화 실패·오류 상태 확인 기능 구현',
+        'TikTok Developer 앱 생성 및 Display API App Review 승인 대응',
+        'TikTok API 영상 데이터를 WordPress 콘텐츠로 동기화',
+        'YouTube API와 Cron을 활용한 매일 정오 신규 영상 수집',
+        '관리자에서 동기화 실행 결과·이력·오류 상태를 확인하는 기능 구현',
+        '대표 영상·목록 노출 여부 등 운영 설정과 사용자 사이트 연동',
+        'API 썸네일 오류 발생 시 대체 이미지를 적용하는 fallback 처리',
       ],
       results: [
-        'SNS 콘텐츠 등록 업무 자동화로 운영 부담 감소',
-        'TikTok·YouTube 콘텐츠를 사이트에 안정적으로 반영',
-        '동기화 상태 추적으로 장애 대응 용이',
+        '공식 TikTok·YouTube 콘텐츠를 병원 사이트에 안정적으로 연동',
+        'YouTube 신규 영상 등록 자동화로 운영팀의 반복 업무 감소',
+        '동기화 상태와 오류 확인 기능을 통해 운영 대응력 향상',
+        '관리자 콘텐츠와 사용자 사이트 노출 흐름을 일원화',
       ],
       code: {
         language: 'text',
         content: `TikTok API ─┐
-            ├──► WordPress 관리자 동기화 ──► 사용자 사이트 노출
+            ├──► WordPress 관리자 동기화 ──► 사용자 사이트 노출(Front)
 YouTube API ┘`,
       },
     },
