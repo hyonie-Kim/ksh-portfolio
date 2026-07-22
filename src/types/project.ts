@@ -20,6 +20,8 @@ export interface ProjectCaseStudy {
   title: string;
   summary?: string;
   images?: ProjectImageData[];
+  /** images 배열 배치. 기본 stack(세로), row는 가로(모바일에서는 세로) */
+  imageLayout?: 'stack' | 'row';
   beforeImage?: ProjectImageData;
   afterImage?: ProjectImageData;
   flowImage?: ProjectImageData;

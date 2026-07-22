@@ -34,11 +34,23 @@ function CaseStudyBlock({
 
       {study.afterImage ? (
         <ProjectImage image={study.afterImage} />
-      ) : (
-        study.images?.map((image) => (
-          <ProjectImage key={image.src} image={image} />
-        ))
-      )}
+      ) : study.images?.length ? (
+        study.imageLayout === 'row' ? (
+          <div className="my-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            {study.images.map((image) => (
+              <ProjectImage
+                key={image.src}
+                image={image}
+                className="!my-0 !max-w-none w-full"
+              />
+            ))}
+          </div>
+        ) : (
+          study.images.map((image) => (
+            <ProjectImage key={image.src} image={image} />
+          ))
+        )
+      ) : null}
 
       {study.flowImage && (
         <div className="my-6">

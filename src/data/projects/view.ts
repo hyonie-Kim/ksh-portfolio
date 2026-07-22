@@ -19,6 +19,9 @@ export const viewDetail: ProjectDetail = {
     'WordPress',
     'PHP',
     'Custom Plugin',
+    'NestJS',
+    'MariaDB',
+    'Gemini API',
     'JavaScript',
     'HTML5',
     'CSS3',
@@ -26,6 +29,8 @@ export const viewDetail: ProjectDetail = {
     'CloudFront',
     'SSL',
     'WAF',
+    'Apache',
+    'PM2',
     'TikTok API',
     'YouTube API',
   ],
@@ -120,6 +125,140 @@ export const viewDetail: ProjectDetail = {
         '상담 신청·콘텐츠 운영 프로세스 효율화',
         '사용자 사이트와 관리자 CMS의 일관된 운영 체계 구축',
       ],
+    },
+    {
+      id: 'ai-search-seo',
+      title: 'AI Search + SEO + GEO + AEO',
+      summary:
+        'WordPress 콘텐츠 기반 NestJS AI Search(RAG)를 구축하고, SEO·GEO·AEO 최적화를 콘텐츠 구조와 관리자 설정으로 분리 구현했습니다.',
+      images: [
+        {
+          src: '/images/projects/view_seo_list.png',
+          alt: 'SEO / GEO / AEO 관리자 목록 화면',
+          caption: '관리자 SEO · GEO · AEO 목록 화면',
+        },
+        {
+          src: '/images/projects/view_seo_edit.png',
+          alt: 'SEO / GEO / AEO 등록·수정 화면',
+          caption: 'SEO · GEO · AEO 등록 및 수정 화면',
+        },
+      ],
+      imageLayout: 'row',
+      background:
+        'WordPress 콘텐츠와 관리자 설정을 기반으로 NestJS AI Search API가 검색 데이터를 처리하고, Gemini API를 통해 임베딩 및 답변을 생성하도록 구성했습니다.\n\nSEO·GEO·AEO는 검색 파이프라인과 분리하여 구현했습니다. 운영자가 관리자 CMS에서 페이지별로 SEO·GEO·AEO를 등록·수정하면, 해당 페이지에 메타데이터와 검색 최적화 설정이 적용됩니다.',
+      improvements: [
+        'NestJS·RAG 기반 AI Search API 구축',
+        'Gemini API 연동(임베딩·답변 생성)',
+        '운영자가 페이지별 SEO·GEO·AEO 등록 시 해당 페이지에 자동 적용',
+        '페이지별 메타데이터 및 구조화 데이터 적용',
+        'FAQ·의료진·시술 콘텐츠의 검색 친화적 구조 설계',
+        '관리자 CMS에서 SEO·GEO·AEO 설정 관리',
+        'AI Search 인덱싱 대상 콘텐츠 연동',
+      ],
+      keyImplementations: [
+        'WordPress(view_theme · view-admin) ↔ MariaDB ↔ AI Search API 연동',
+        'NestJS RAG 파이프라인에서 검색 데이터 처리',
+        'Gemini API를 통한 임베딩·답변 생성',
+        '페이지 URL 단위로 SEO·GEO·AEO를 등록·수정하는 CMS 기능 구현',
+        '등록된 설정을 해당 정적·콘텐츠 페이지에 메타로 적용',
+        'FAQ·의료진·시술 콘텐츠를 검색·인덱싱에 맞게 구조화',
+      ],
+      results: [
+        '콘텐츠 기반 AI 검색으로 상담·정보 탐색 경험 개선',
+        '운영자가 페이지별 SEO·GEO·AEO를 직접 등록·적용할 수 있는 운영 구조 확보',
+        '검색 파이프라인과 검색 최적화를 역할별로 분리해 유지보수성 향상',
+      ],
+      code: {
+        language: 'text',
+        content: `Browser
+   │
+   ▼
+WordPress
+(view_theme · view-admin)
+   │
+   ├───────────────► MariaDB
+   │
+   ▼
+AI Search API
+(NestJS · RAG)
+   │
+   ▼
+Gemini API
+(임베딩 · 답변 생성)`,
+      },
+    },
+    {
+      id: 'external-api-automation',
+      title: '외부 API 연동 및 운영 자동화',
+      summary:
+        'TikTok·YouTube API를 WordPress 관리자와 연동해 콘텐츠 동기화부터 사용자 사이트 노출까지 운영 자동화를 구현했습니다.',
+      background:
+        'SNS 콘텐츠를 수동으로 등록하는 업무를 줄이기 위해 TikTok Display API와 YouTube API를 연동했습니다.\n\n관리자에서 동기화를 실행하면 콘텐츠·썸네일이 WordPress에 반영되고, 사용자 사이트에 노출되도록 흐름을 구성했습니다. 동기화 이력·상태·오류도 함께 관리합니다.',
+      improvements: [
+        'TikTok Display API 연동',
+        'YouTube 콘텐츠 및 썸네일 동기화',
+        '관리자 수동 동기화 기능',
+        '동기화 이력·상태·오류 관리',
+        '콘텐츠 등록 업무 자동화',
+      ],
+      keyImplementations: [
+        'TikTok·YouTube API → WordPress 관리자 동기화 파이프라인 구축',
+        '동기화 결과의 사용자 사이트 노출 연동',
+        '관리자 수동 동기화 및 실행 이력 관리',
+        '동기화 실패·오류 상태 확인 기능 구현',
+      ],
+      results: [
+        'SNS 콘텐츠 등록 업무 자동화로 운영 부담 감소',
+        'TikTok·YouTube 콘텐츠를 사이트에 안정적으로 반영',
+        '동기화 상태 추적으로 장애 대응 용이',
+      ],
+      code: {
+        language: 'text',
+        content: `TikTok API ─┐
+            ├──► WordPress 관리자 동기화 ──► 사용자 사이트 노출
+YouTube API ┘`,
+      },
+    },
+    {
+      id: 'infra-performance',
+      title: '운영 인프라 및 성능 개선',
+      summary:
+        'AWS CloudFront·WAF·SSL과 Apache·WordPress·PM2 운영 구조를 구성하고, 캐시·이미지 최적화로 성능과 보안을 개선했습니다.',
+      background:
+        '외부 요청부터 서버까지 CloudFront(CDN·Cache·WAF·SSL)를 경유해 Apache/WordPress로 전달되는 운영 구조를 구성했습니다.\n\nMariaDB와 AI Search API(PM2)를 함께 운영하며, 캐시 정책·보안 규칙·이미지 최적화·로그 점검으로 안정성과 성능을 관리했습니다.',
+      improvements: [
+        'AWS CloudFront 캐시 정책 운영',
+        'WAF 보안 규칙 설정 및 업로드 차단 이슈 해결',
+        'ACM SSL 인증서 발급·갱신',
+        'Apache·WordPress·PM2 서비스 운영',
+        '이미지 WebP 변환 및 캐시 최적화',
+        '서버 로그와 API 상태 점검',
+      ],
+      keyImplementations: [
+        'Browser → CloudFront → Apache/WordPress 요청 경로 구성',
+        'CloudFront 캐시·WAF·SSL(ACM) 운영',
+        'WordPress와 AI Search API(PM2)·MariaDB 서비스 운영',
+        '이미지 WebP 변환 및 캐시 최적화',
+        '서버 로그·API 상태 점검으로 운영 이슈 대응',
+      ],
+      results: [
+        'CDN·캐시 적용으로 응답 성능 개선',
+        'WAF·SSL로 보안·인증서 운영 안정화',
+        '이미지·캐시 최적화로 트래픽 효율 향상',
+      ],
+      code: {
+        language: 'text',
+        content: `Browser
+   │
+   ▼
+AWS CloudFront
+(CDN · Cache · WAF · SSL)
+   │
+   ▼
+Apache / WordPress
+   ├── MariaDB
+   └── AI Search API (PM2)`,
+      },
     },
   ],
   outcomes: {},
