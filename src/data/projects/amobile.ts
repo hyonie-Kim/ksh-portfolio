@@ -59,7 +59,7 @@ export const amobileDetail: ProjectDetail = {
   caseStudies: [
     {
       id: 'plan-signup-mypage',
-      title: '요금제 가입·마이페이지',
+      title: '요금제 가입·마이페이지(ASP.NET Web Forms)',
       summary:
         'ASP.NET Web Forms 기반 요금제 선택·가입과 마이페이지(내 요금제 조회, 개인정보 관리) 기능을 유지보수·개선했습니다.',
       afterImage: {
@@ -89,7 +89,7 @@ export const amobileDetail: ProjectDetail = {
     },
     {
       id: 'usim-activation',
-      title: 'USIM 개통페이지',
+      title: 'USIM 개통페이지(Next.js/NestJS)',
       summary:
         'Next.js·NestJS 기반 USIM 개통 신청, 개통 상태 조회, 개통 완료 처리 기능을 유지보수·개선했습니다.',
       afterImage: {
@@ -115,6 +115,43 @@ export const amobileDetail: ProjectDetail = {
         '개통 신청·조회·완료 처리 흐름 안정화',
         'Next.js·NestJS 기반 기능 개선 경험',
         '운영 이슈 신속 대응으로 서비스 연속성 확보',
+      ],
+    },
+
+    {
+      id: 'auth-usim-validation',
+      title: '본인인증(Auth) 및 USIM 검증 프로세스 개선(Next.js/NestJS)',
+      summary:
+        '쿠콘(KCB) 본인인증 API와 LG U+ USIM Validation API를 연동하여 온라인·셀프 개통의 본인인증 및 유심 검증 프로세스를 개선했습니다.',
+      afterImage: {
+        src: '/images/projects/auth_amobile.drawio.png',
+        alt: '에이모바일 본인인증·USIM 검증 화면',
+        caption: '본인인증 및 USIM 검증 프로세스 화면',
+      },
+      background:
+        '온라인·셀프 개통 과정에서 주민등록증·운전면허증 진위 확인과 USIM 검증을 통해 고객 인증을 수행하고 있습니다.\n\n기존 운전면허증 인증은 구버전 API를 사용하고 있었으며, 불필요한 고유식별번호 입력이 필요했습니다. 또한 LG U+ USIM은 개통 전에 유효성을 확인하지 않아 잘못된 USIM으로 인해 개통 실패가 발생하는 사례가 있었습니다.\n\n이에 최신 인증 API를 적용하고, 개통 전 USIM Validation 기능을 추가하여 인증 절차와 개통 안정성을 개선했습니다.',
+      improvements: [
+        '쿠콘(KCB) 운전면허증 인증 API V3 적용',
+        '운전면허증 고유식별번호 입력 UI 제거',
+        'LG U+ USIM Validation API(V1) 연동',
+        '온라인/셀프 개통 공통 인증 프로세스 개선',
+        '인증 및 USIM 검증 예외 처리 강화',
+      ],
+      keyImplementations: [
+        'NestJS 기반 본인인증 API 연동 로직 개선',
+        '쿠콘 운전면허증 인증 API V3 적용',
+        'LG U+ ValidateUsim API 연동 및 유심 종류별 분기 처리',
+        'KT 유심은 기존 프로세스를 유지하고 LG U+만 Validation 수행',
+        'API 응답(Result, ResultCd, ResultMsg) 기반 공통 예외 처리',
+        '사전체크(DB 등록) 로직 리팩토링 및 중복 코드 제거',
+        '개인정보(CI, 주민등록번호, 이름 등) 암호화 후 인증 API 호출',
+      ],
+      results: [
+        '운전면허증 인증 절차 단순화로 사용자 입력 부담 감소',
+        '최신 인증 API 적용으로 운영 안정성 향상',
+        '개통 전 LG U+ USIM 검증으로 개통 실패 예방',
+        '인증 오류 메시지 표준화로 장애 대응 효율 향상',
+        '인증 및 개통 프로세스 공통화로 유지보수성 향상',
       ],
     },
   ],
