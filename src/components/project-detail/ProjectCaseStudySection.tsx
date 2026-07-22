@@ -110,6 +110,43 @@ function CaseStudyBlock({
         </div>
       )}
 
+      {study.operationalIssues && study.operationalIssues.length > 0 && (
+        <div className="mb-5">
+          <h4 className="text-sm font-bold text-gray-800 mb-3">
+            운영 이슈 해결 사례
+          </h4>
+          <div className="overflow-x-auto rounded-lg border border-gray-200">
+            <table className="w-full min-w-[32rem] text-sm text-left">
+              <thead className="bg-gray-50 border-b border-gray-200">
+                <tr>
+                  <th className="px-3 py-2.5 font-semibold text-gray-800 w-[38%]">
+                    이슈
+                  </th>
+                  <th className="px-3 py-2.5 font-semibold text-gray-800">
+                    해결 내용
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {study.operationalIssues.map((item) => (
+                  <tr
+                    key={item.issue}
+                    className="border-b border-gray-100 last:border-b-0 align-top"
+                  >
+                    <td className="px-3 py-2.5 text-gray-800 font-medium">
+                      {item.issue}
+                    </td>
+                    <td className="px-3 py-2.5 text-gray-600 leading-relaxed">
+                      {item.resolution}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
+
       {study.results && study.results.length > 0 && (
         <div className="mb-5">
           <h4 className="text-sm font-bold text-gray-800 mb-2">{resultsLabel}</h4>

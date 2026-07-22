@@ -15,6 +15,11 @@ export interface ProjectCodeData {
   content: string;
 }
 
+export interface ProjectOperationalIssue {
+  issue: string;
+  resolution: string;
+}
+
 export interface ProjectCaseStudy {
   id: string;
   title: string;
@@ -30,6 +35,8 @@ export interface ProjectCaseStudy {
   features?: string[];
   keyImplementations?: string[];
   implementation?: string[];
+  /** 운영 중 발생 이슈와 해결 내용 */
+  operationalIssues?: ProjectOperationalIssue[];
   results?: string[];
   code?: ProjectCodeData;
 }

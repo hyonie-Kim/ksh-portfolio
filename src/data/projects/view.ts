@@ -72,7 +72,7 @@ export const viewDetail: ProjectDetail = {
       summary:
         '반응형 퍼블리싱과 페이지 개발을 통해 의료진, Before&After, Review 등 글로벌 병원 콘텐츠를 다국어 환경에서 제공하는 사용자 사이트를 구축했습니다.',
       afterImage: {
-        src: '/images/projects/view.png',
+        src: '/images/projects/view_main.png',
         alt: 'VIEW 글로벌 병원 홈페이지 메인 화면',
         caption: '글로벌 병원 메인 홈페이지',
       },
@@ -250,28 +250,56 @@ YouTube API ┘`,
       id: 'infra-performance',
       title: '운영 인프라 및 성능 개선',
       summary:
-        'AWS CloudFront·WAF·SSL과 Apache·WordPress·PM2 운영 구조를 구성하고, 캐시·이미지 최적화로 성능과 보안을 개선했습니다.',
+        'AWS CloudFront·WAF·SSL과 Apache·WordPress·PM2 운영 구조를 구성하고, 캐시·보안·인증서·API 장애 등 실제 운영 이슈를 분석·해결했습니다.',
       background:
-        '외부 요청부터 서버까지 CloudFront(CDN·Cache·WAF·SSL)를 경유해 Apache/WordPress로 전달되는 운영 구조를 구성했습니다.\n\nMariaDB와 AI Search API(PM2)를 함께 운영하며, 캐시 정책·보안 규칙·이미지 최적화·로그 점검으로 안정성과 성능을 관리했습니다.',
+        '외부 요청부터 서버까지 CloudFront(CDN·Cache·WAF·SSL)를 경유해 Apache/WordPress로 전달되는 운영 구조를 구성했습니다.\n\nMariaDB와 AI Search API(PM2)를 함께 운영하며, 단순 구축을 넘어 캐시 미반영·업로드 차단·인증서 만료·API 장애 등 실제 운영 이슈를 로그 기반으로 분석하고 해결했습니다.',
       improvements: [
-        'AWS CloudFront 캐시 정책 운영',
+        'AWS CloudFront 캐시 정책·Invalidation 운영',
         'WAF 보안 규칙 설정 및 업로드 차단 이슈 해결',
         'ACM SSL 인증서 발급·갱신',
         'Apache·WordPress·PM2 서비스 운영',
-        '이미지 WebP 변환 및 캐시 최적화',
-        '서버 로그와 API 상태 점검',
+        '이미지 WebP 변환 및 CDN 캐시 최적화',
+        '서버 로그·API 상태 기반 장애 대응',
       ],
       keyImplementations: [
-        'Browser → CloudFront → Apache/WordPress 요청 경로 구성',
-        'CloudFront 캐시·WAF·SSL(ACM) 운영',
-        'WordPress와 AI Search API(PM2)·MariaDB 서비스 운영',
-        '이미지 WebP 변환 및 캐시 최적화',
-        '서버 로그·API 상태 점검으로 운영 이슈 대응',
+        'CloudFront Cache Behavior 및 Path Pattern 운영',
+        'Cache Invalidation을 통한 정적 리소스 반영',
+        'WAF Rule 분석 및 이미지 업로드 차단 이슈 해결',
+        'ACM SSL 인증서 발급 및 갱신',
+        'Apache · CloudFront · PM2 로그 기반 장애 분석',
+        'AI Search API 상태 점검 및 서비스 운영',
+        '이미지 WebP 및 CDN 캐시 최적화',
+      ],
+      operationalIssues: [
+        {
+          issue: 'CloudFront 캐시로 이미지가 반영되지 않음',
+          resolution:
+            'Cache Invalidation과 캐시 정책 수정으로 즉시 반영되도록 개선',
+        },
+        {
+          issue: '상담 신청 이미지 업로드 실패',
+          resolution:
+            'WAF Managed Rule이 multipart/form-data 요청을 차단하는 원인을 분석하고 Count 모드로 검증 후 Block 정책 조정',
+        },
+        {
+          issue: '특정 페이지 탭 동작 오류',
+          resolution: 'CloudFront Behavior Path Pattern 수정으로 정상 동작',
+        },
+        {
+          issue: 'SSL 인증서 만료',
+          resolution: 'ACM 인증서 재발급 및 CloudFront 배포에 연결',
+        },
+        {
+          issue: 'YouTube 썸네일 미노출',
+          resolution: 'Fallback 이미지 로직 추가 및 API 응답 예외 처리',
+        },
       ],
       results: [
-        'CDN·캐시 적용으로 응답 성능 개선',
-        'WAF·SSL로 보안·인증서 운영 안정화',
-        '이미지·캐시 최적화로 트래픽 효율 향상',
+        '운영 중 발생하는 캐시·보안 이슈를 빠르게 대응',
+        '이미지 업로드 및 콘텐츠 배포 안정성 향상',
+        'CloudFront와 WAF 운영 경험 확보',
+        '장애 원인 분석 시간을 단축',
+        '안정적인 서비스 운영 환경 구축',
       ],
       code: {
         language: 'text',
@@ -291,17 +319,18 @@ Apache / WordPress
   outcomes: {},
   retrospective: {
     learned: [
-      '사용자 사이트와 관리자 CMS를 함께 설계해야 실제 서비스 운영이 가능하다는 점',
-      'SEO / GEO / AEO와 AI Search를 콘텐츠 구조와 함께 설계하는 경험',
-      'AWS·CloudFront·WAF 등 인프라와 WordPress 운영을 연결하는 실무 경험',
+      'CloudFront는 단순 CDN이 아니라 Cache Behavior 설계가 중요하다는 것을 경험했다.',
+      'WAF는 보안뿐 아니라 정상 요청도 차단할 수 있어 로그 기반 분석이 중요했다.',
+      '운영 환경에서는 코드보다 캐시·인증서·인프라 설정이 서비스 안정성에 더 큰 영향을 줄 수 있다는 것을 배웠다.',
+      '실제 서비스에서는 개발보다 운영과 장애 대응 역량이 더 중요하다는 점을 경험했다.',
     ],
     difficulty: [
-      '글로벌·다국어 유입과 병원 콘텐츠 구조를 CMS에 맞게 모델링하는 과정',
-      'AI Search·외부 API·보안(SSL·WAF)을 운영 안정성과 함께 맞추는 작업',
+      'WAF Block과 정상 multipart 업로드를 구분하기 위해 Count 모드로 원인을 추적하는 과정',
+      'CloudFront 캐시·Path Pattern·Invalidation이 맞물린 이슈를 로그로 좁혀 가는 과정',
     ],
     next: [
-      'AI Search 품질과 상담 전환 지표를 연결한 고도화',
-      '콘텐츠·권한·운영 자동화 범위 확대',
+      '운영 이슈 대응 절차와 캐시·WAF 점검 체크리스트를 문서화',
+      'AI Search API 상태 모니터링과 장애 알림을 고도화',
     ],
   },
 };
