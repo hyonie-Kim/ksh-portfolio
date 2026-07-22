@@ -6,9 +6,11 @@ import { ollacareDetail } from './ollacare';
 import { pisoloErpDetail } from './pisolo-erp';
 import { resumatesDetail } from './resumates';
 import { smartRentalDetail } from './smart-rental';
+import { viewDetail } from './view';
 
 /** slug → 구조화 상세 데이터 매핑. 점진적으로 프로젝트 추가 예정 */
 const projectDetails: Record<string, ProjectDetail> = {
+  view: viewDetail,
   smartRental: smartRentalDetail,
   amobile: amobileDetail,
   amobile_telecom: annexTelecomDetail,

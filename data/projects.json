@@ -1,5 +1,40 @@
 [
   {
+    "title": "VIEW - 글로벌 병원 홈페이지 구축 및 운영",
+    "description": "WordPress 기반 글로벌 병원 홈페이지를 리뉴얼하고, 관리자 CMS, AI Search, SEO 최적화 및 운영 기능을 구축한 프로젝트입니다.",
+    "date": "2025-01-01",
+    "participant": "2025.01 ~ 현재",
+    "category": [
+      "WordPress",
+      "PHP",
+      "Custom Plugin",
+      "AWS",
+      "CloudFront",
+      "JavaScript"
+    ],
+    "path": "view",
+    "featured": true,
+    "link": "https://www.viewplasticsurgery.com/",
+    "github": "#",
+    "badge": "실무",
+    "cardLabel": "구축·운영",
+    "thumbnail": "/images/projects/view.png",
+    "developmentScope": "실무 프로젝트 - 글로벌 병원 홈페이지 리뉴얼 및 CMS·운영 기능 구축",
+    "problem": "글로벌 환자를 위한 병원 사이트와, 운영팀이 콘텐츠·상담을 관리할 수 있는 CMS가 함께 필요했습니다.",
+    "solution": "WordPress 기반 사용자 사이트와 관리자 CMS를 함께 구축하고, SEO·AI Search·AWS 인프라 운영까지 연결했습니다.",
+    "keyFeatures": [
+      "WordPress 기반 글로벌 병원 홈페이지",
+      "관리자 CMS 및 권한(Role) 관리",
+      "SEO / GEO / AEO 최적화",
+      "AI Search(RAG) 및 상담 신청(Custom Forms)"
+    ],
+    "achievements": [
+      "사용자 사이트와 관리자 CMS 동시 구축",
+      "TikTok / YouTube API 및 AWS·CloudFront 운영",
+      "글로벌 병원 콘텐츠·상담 운영 체계 확보"
+    ]
+  },
+  {
     "title": "스마트렌탈",
     "description": "PC·모바일 각각 운영되는 적응형 고객용 렌탈 쇼핑몰. NICE·롯데 신용등급 연동에 따라 렌탈 가능 상품이 달라집니다.",
     "date": "2024-08-01",

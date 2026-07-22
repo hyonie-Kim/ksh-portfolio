@@ -13,6 +13,7 @@ export function getProjectThumbnail(project: Project): string {
     Resumates: '/images/projects/Resumates.png',
     smartRental: '/images/projects/smartRental.png',
     ollacare: '/images/projects/ollacare.png',
+    view: '/images/projects/view.png',
     wedding_mo: '/images/projects/wedding_mo.png',
     cobooki: '/images/projects/cobooki.png',
   };
