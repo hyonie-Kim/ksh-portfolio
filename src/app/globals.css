@@ -19,10 +19,18 @@
 }
 
 @media print {
-  header,
+  .site-header,
   footer,
   .no-print {
     display: none !important;
+  }
+
+  .project-hero {
+    display: none !important;
+  }
+
+  .print-project-cover {
+    display: block !important;
   }
 
   html,
@@ -53,6 +61,18 @@
     border-radius: 0.5rem;
   }
 
+  .project-sidebar-desktop {
+    display: block !important;
+  }
+
+  .project-sidebar-compact {
+    display: none !important;
+  }
+
+  .project-sidebar dl dd {
+    text-align: left !important;
+  }
+
   .project-main {
     width: 100% !important;
   }
@@ -66,8 +86,9 @@
     page-break-inside: avoid;
   }
 
-  .print-cover-meta {
-    display: block !important;
+  .print-project-cover h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.35 !important;
   }
 
   pre,

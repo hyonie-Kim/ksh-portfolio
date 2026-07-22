@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { BsArrowLeft } from 'react-icons/bs';
-import { ProjectDetail } from '@/types/project';
+import { ProjectDetail, PROJECT_TYPE_LABEL } from '@/types/project';
 import { Project } from '@/service/projects';
 import ProjectHero from './ProjectHero';
 import ProjectSidebar from './ProjectSidebar';
@@ -35,9 +35,20 @@ export default function ProjectDetailBody({
 }: ProjectDetailBodyProps) {
   const isModal = variant === 'modal';
   const isCompact = project.layout === 'compact';
+  const typeLabel = PROJECT_TYPE_LABEL[project.type];
 
   return (
     <div className="project-detail-layout grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8 lg:gap-14">
+      <div className="print-project-cover hidden print:block col-span-full mb-6 pb-4 border-b border-gray-300 print-avoid-break">
+        <p className="text-xs text-gray-500 mb-2">김세현 · Full Stack Developer</p>
+        <p className="text-sm font-semibold text-teal-700 mb-1">{typeLabel}</p>
+        <h1 className="text-2xl font-bold text-gray-900 leading-snug">{project.title}</h1>
+        {project.subtitle && (
+          <p className="text-base text-gray-500 mt-1">{project.subtitle}</p>
+        )}
+        <p className="text-sm text-gray-500 mt-2">{project.period}</p>
+      </div>
+
       <ProjectSidebar project={project} />
 
       <div className="project-main min-w-0">

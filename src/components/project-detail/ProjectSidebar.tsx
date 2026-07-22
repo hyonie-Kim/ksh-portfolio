@@ -12,25 +12,14 @@ interface ProjectSidebarProps {
 function InfoRow({
   label,
   value,
-  compact,
 }: {
   label: string;
   value: string;
-  compact?: boolean;
 }) {
-  if (compact) {
-    return (
-      <div className="flex justify-between gap-4 text-sm">
-        <dt className="text-xs text-gray-400 shrink-0">{label}</dt>
-        <dd className="text-sm text-gray-700 text-right">{value}</dd>
-      </div>
-    );
-  }
-
   return (
     <div>
       <dt className="text-xs font-medium text-gray-400 mb-0.5">{label}</dt>
-      <dd className="text-sm text-gray-700">{value}</dd>
+      <dd className="text-sm text-gray-700 whitespace-pre-line">{value}</dd>
     </div>
   );
 }
@@ -47,8 +36,8 @@ export default function ProjectSidebar({
   );
 
   const wrapperClass = compact
-    ? 'rounded-xl border border-gray-200 bg-gray-50 p-4 space-y-3 lg:hidden'
-    : 'hidden lg:block lg:sticky lg:top-28 lg:self-start space-y-6';
+    ? 'project-sidebar-compact rounded-xl border border-gray-200 bg-gray-50 p-4 space-y-3 lg:hidden'
+    : 'project-sidebar-desktop hidden lg:block lg:sticky lg:top-28 lg:self-start space-y-6';
 
   return (
     <aside className={`project-sidebar ${wrapperClass}`}>
@@ -70,17 +59,17 @@ export default function ProjectSidebar({
         </h2>
 
         <dl className="space-y-3">
-          <InfoRow label="유형" value={typeLabel} compact={compact} />
-          <InfoRow label="기간" value={project.period} compact={compact} />
+          <InfoRow label="유형" value={typeLabel} />
+          <InfoRow label="기간" value={project.period} />
           {project.company && (
-            <InfoRow label="소속" value={project.company} compact={compact} />
+            <InfoRow label="소속" value={project.company} />
           )}
-          <InfoRow label="역할" value={project.role} compact={compact} />
+          <InfoRow label="역할" value={project.role} />
           {project.teamSize && (
-            <InfoRow label="팀 규모" value={project.teamSize} compact={compact} />
+            <InfoRow label="팀 규모" value={project.teamSize} />
           )}
           {project.contribution && (
-            <InfoRow label="기여" value={project.contribution} compact={compact} />
+            <InfoRow label="기여" value={project.contribution} />
           )}
         </dl>
 

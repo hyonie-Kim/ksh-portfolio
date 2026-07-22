@@ -13,11 +13,6 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
 
   return (
     <header className="project-hero print-avoid-break mb-10">
-      <div className="print-cover-meta hidden print:block mb-6 pb-4 border-b border-gray-300">
-        <p className="text-sm text-gray-600 mb-1">{typeLabel}</p>
-        <p className="text-xs text-gray-500">김세현 · Full Stack Developer</p>
-      </div>
-
       <span
         className={`inline-block px-2.5 py-1 rounded-md text-xs font-semibold border mb-3 ${getProjectBadgeClass(typeLabel)}`}
       >
@@ -44,7 +39,9 @@ export default function ProjectHero({ project }: ProjectHeroProps) {
         )}
       </div>
 
-      <p className="text-sm font-medium text-gray-700 mb-8">{project.role}</p>
+      <p className="text-sm font-medium text-gray-700 mb-8 whitespace-pre-line">
+        {project.role}
+      </p>
 
       <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-gray-200 bg-gray-50">
         <Image

@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full mx-auto px-4 fixed top-0 z-50 sm:px-20 transition-all duration-300 ${headerBg}`}
+      className={`site-header w-full mx-auto px-4 fixed top-0 z-50 sm:px-20 transition-all duration-300 ${headerBg}`}
     >
       <div className='justify-between md:items-center md:flex'>
         <div>

@@ -7,7 +7,8 @@ export const viewDetail: ProjectDetail = {
   type: 'work',
   layout: 'compact',
   period: '2026.05 ~ 2026.07',
-  role: '글로벌 병원 홈페이지 리뉴얼 및 CMS·운영 기능 구축',
+  role:
+    '• WordPress Theme 개발\n• 관리자 CMS(Custom Plugin) 개발\n• AI Search API 구축\n• TikTok · YouTube API 연동\n• AWS CloudFront 운영\n• 운영 이슈 대응 및 유지보수',
   teamSize: '2명 (개발 1명 · 퍼블리셔 1명)',
   contribution:
     '글로벌 병원 홈페이지 및 CMS 구축',
@@ -44,11 +45,11 @@ export const viewDetail: ProjectDetail = {
   improvements: [
     'WordPress 기반 글로벌 병원 홈페이지 구축',
     '관리자 CMS 개발 및 콘텐츠 관리 기능 구현',
-    'SEO / GEO / AEO 최적화',
-    'AI Search(RAG) 구축',
-    '상담 신청 시스템(Custom Forms)',
-    'TikTok / YouTube API 연동',
-    'AWS + CloudFront 운영',
+    'SEO · AEO · GEO 최적화 적용',
+    'AI Search(RAG) 구축 및 의료 콘텐츠 검색 기능 구현',
+    '상담 신청 시스템(Custom Forms) 및 reCAPTCHA 스팸 방지 적용',
+    'TikTok · YouTube API 자동 동기화 기능 개발',
+    'AWS CloudFront · WAF 기반 운영 환경 관리',
     '권한(Role) 관리 시스템 구축',
   ],
   contributions: [
@@ -59,7 +60,7 @@ export const viewDetail: ProjectDetail = {
     'AWS·CloudFront·SSL·WAF 기반 안정적 서비스 운영',
   ],
   highlights: {
-    role: '홈페이지 리뉴얼 및 CMS·운영 기능 구축',
+    role: 'Theme·CMS·AI Search·API·CloudFront 구축 및 운영',
     challenge: '사용자 사이트와 운영 CMS를 하나의 서비스로 구축',
     outcome: '글로벌 병원 홈페이지·CMS·검색·인프라 운영 체계 확보',
   },
@@ -100,19 +101,20 @@ export const viewDetail: ProjectDetail = {
       id: 'wordpress-admin-cms',
       title: 'WordPress 관리자 CMS 개발',
       summary:
-        'Custom Post Type·Meta Box·Role 기반 권한 관리를 활용해 운영팀이 콘텐츠와 상담 신청을 관리할 수 있는 WordPress 관리자 CMS를 구축했습니다.',
+        'Custom Post Type·Meta Box·Role 기반 권한 관리를 활용해 운영팀이 콘텐츠와 상담 신청을 관리할 수 있는 WordPress 관리자 CMS를 구축하고, reCAPTCHA를 적용해 반복적인 스팸 상담 접수를 방지했습니다.',
       afterImage: {
         src: '/images/projects/VIEW_wordpress.png',
         alt: 'VIEW WordPress 관리자 CMS 화면',
         caption: '온라인 상담·콘텐츠 관리 관리자 페이지',
       },
       background:
-        '홈페이지만 만드는 것이 아니라, 운영팀이 콘텐츠를 등록·수정하고 상담 신청을 처리할 수 있는 CMS가 필요했습니다.\n\nWordPress Custom Post Type과 Meta Box, Role 기반 권한 관리를 중심으로 관리자 기능을 확장하고, 실제 서비스 운영이 가능한 관리 환경을 구축했습니다.',
+        '홈페이지만 만드는 것이 아니라, 운영팀이 콘텐츠를 등록·수정하고 상담 신청을 처리할 수 있는 CMS가 필요했습니다.\n\nWordPress Custom Post Type과 Meta Box, Role 기반 권한 관리를 중심으로 관리자 기능을 확장하고, 실제 서비스 운영이 가능한 관리 환경을 구축했습니다.\n\n운영 과정에서 자동화된 스팸 상담이 반복 접수되어 정상 문의 확인에 불편이 발생했고, 상담 폼에 reCAPTCHA 검증을 적용해 비정상 제출을 차단했습니다.',
       improvements: [
         'Custom Post Type 기반 콘텐츠 구조 설계',
         'Meta Box를 활용한 관리 항목 구성',
         'Role 기반 권한 관리 시스템 구축',
         '상담 신청·콘텐츠 관리 관리자 기능 구현',
+        'reCAPTCHA 적용 및 스팸 상담 접수 방지',
       ],
       keyImplementations: [
         'WordPress Plugin·Custom Post Type 기반 CMS 확장',
