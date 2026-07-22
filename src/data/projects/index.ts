@@ -9,11 +9,11 @@ import { smartRentalDetail } from './smart-rental';
 
 /** slug → 구조화 상세 데이터 매핑. 점진적으로 프로젝트 추가 예정 */
 const projectDetails: Record<string, ProjectDetail> = {
-  internal_systems: internalSystemsDetail,
-  pisolo_erp: pisoloErpDetail,
   smartRental: smartRentalDetail,
   amobile: amobileDetail,
   amobile_telecom: annexTelecomDetail,
+  internal_systems: internalSystemsDetail,
+  pisolo_erp: pisoloErpDetail,
   ollacare: ollacareDetail,
   Resumates: resumatesDetail,
 };
