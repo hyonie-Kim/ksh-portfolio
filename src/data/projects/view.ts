@@ -95,7 +95,7 @@ export const viewDetail: ProjectDetail = {
         'Before & After·Review·VIEW Media 등 콘텐츠 유형별 페이지 및 게시판 연동 구조 개발',
         '메인 페이지 섹션별 배너·이미지·제목·본문 CRUD 및 게시판 콘텐츠 연동',
         '상담 유형별 입력 폼·저장·관리 흐름 구현 및 Omnichat 외부 채팅 서비스 연동',
-        '이미지 지연 로딩, 리소스 최적화, 캐시 적용을 통한 초기 로딩 성능 개선',
+        'WebP 변환, 이미지 Lazy Loading, CDN 캐시 적용을 통해 대용량 이미지 중심 페이지의 초기 로딩 속도 개선',
       ],
       results: [
         '기존 데이터를 유지하면서 신규 디자인 기반 사이트로 안정적으로 전환',
