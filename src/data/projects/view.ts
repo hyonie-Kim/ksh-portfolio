@@ -41,7 +41,7 @@ export const viewDetail: ProjectDetail = {
   },
   overview: {
     background:
-      '글로벌 환자를 대상으로 하는 병원 홈페이지를 WordPress 기반으로 리뉴얼했습니다. 사용자에게 보이는 사이트와 운영팀이 사용하는 관리자 CMS를 함께 구축하는 것이 핵심이었습니다.\n\n아키텍처는 WordPress ↔ Custom Plugin ↔ AI Search API ↔ AWS(CloudFront·SSL·WAF)로 구성되며, 콘텐츠 관리·상담 신청·검색·미디어 연동·인프라 운영까지 서비스가 실제로 돌아갈 수 있는 환경을 만들었습니다.',
+      '기존 WordPress 홈페이지를 운영 중이었으며, 병원에서는 Elementor 기반으로 콘텐츠를 직접 관리할 수 있는 운영 환경과 검색엔진 최적화(SEO)를 유지·강화하는 리뉴얼을 요구했습니다.\n\n이에 기존 데이터베이스를 안전하게 백업·이관한 뒤 WordPress 기반으로 사이트를 다시 구축하고, Elementor를 활용하면서도 운영에 필요한 기능은 커스텀 개발하여 확장성을 확보했습니다.\n\n또한 콘텐츠 관리, 상담 신청, AI 검색, SNS 연동, SEO 구조 개선까지 하나의 운영 플랫폼으로 통합하고, AWS CloudFront·SSL·WAF를 적용하여 실제 서비스 환경에 맞는 인프라를 구성했습니다.',
   },
   improvements: [
     'WordPress 기반 글로벌 병원 홈페이지 구축',
