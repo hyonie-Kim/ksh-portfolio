@@ -64,6 +64,9 @@ export default function ProjectSidebar({
           {project.company && (
             <InfoRow label="소속" value={project.company} />
           )}
+          {project.client && (
+            <InfoRow label="클라이언트" value={project.client} />
+          )}
           <InfoRow label="역할" value={project.role} />
           {project.teamSize && (
             <InfoRow label="팀 규모" value={project.teamSize} />

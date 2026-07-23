@@ -50,6 +50,7 @@ export interface ProjectDetail {
   type: ProjectType;
   layout?: ProjectLayout;
   company?: string;
+  client?: string;
   period: string;
   role: string;
   teamSize?: string;

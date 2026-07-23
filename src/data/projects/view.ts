@@ -6,6 +6,7 @@ export const viewDetail: ProjectDetail = {
   subtitle: 'WordPress · CMS · AI Search',
   type: 'work',
   layout: 'compact',
+  client: '뷰성형외과',
   period: '2026.05 ~ 2026.07',
   role:
     '• WordPress Theme 개발\n• 관리자 CMS(Custom Plugin) 개발\n• AI Search API 구축\n• TikTok · YouTube API 연동\n• AWS CloudFront 운영\n• 운영 이슈 대응 및 유지보수',
