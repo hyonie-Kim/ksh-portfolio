@@ -158,7 +158,6 @@ export const viewDetail: ProjectDetail = {
           caption: 'SEO · GEO · AEO 등록 및 수정 화면',
         },
       ],
-      imageLayout: 'row',
       flowImage: {
         src: '/images/projects/view_ai_search_Architecture.png',
         alt: 'AI Search 실제 서비스 아키텍처',

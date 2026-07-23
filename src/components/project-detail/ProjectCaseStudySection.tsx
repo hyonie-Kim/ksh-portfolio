@@ -54,8 +54,7 @@ function CaseStudyBlock({
 
       {study.flowImage && (
         <div className="my-6">
-          
-          <ProjectImage image={{ ...study.flowImage, type: 'diagram' }} />
+          <ProjectImage image={study.flowImage} />
         </div>
       )}
 
