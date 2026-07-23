@@ -143,9 +143,9 @@ export const viewDetail: ProjectDetail = {
     },
     {
       id: 'ai-search-seo',
-      title: 'AI Search + SEO + GEO + AEO',
+      title: 'AI Search 및 SEO·GEO·AEO 최적화',
       summary:
-        'WordPress 콘텐츠 기반 NestJS AI Search(RAG)를 구축하고, SEO·GEO·AEO 최적화를 콘텐츠 구조와 관리자 설정으로 분리 구현했습니다.',
+        'WordPress 콘텐츠를 기반으로 NestJS AI Search(RAG)를 구축하고, Gemini API를 활용한 임베딩·벡터 검색·답변 생성 파이프라인을 구현했습니다.\n\n운영자가 페이지별 SEO·OG·GEO·AEO 정보를 관리자 CMS에서 직접 관리할 수 있도록 구성했으며, GEO 요약 데이터를 AI Search 인덱싱과 Gemini 답변 생성에 연결하여 검색엔진과 생성형 AI 검색 환경을 함께 고려한 콘텐츠 운영 구조를 구축했습니다.',
       images: [
         {
           src: '/images/projects/view_seo_list.png',
@@ -159,48 +159,41 @@ export const viewDetail: ProjectDetail = {
         },
       ],
       imageLayout: 'row',
+      flowImage: {
+        src: '/images/projects/view_ai_search_Architecture.png',
+        alt: 'AI Search 실제 서비스 아키텍처',
+        caption: '의도 분류 · RAG 검색 · 콘텐츠 인덱싱 흐름',
+        label: 'AI Search 아키텍처',
+      },
       background:
-        'WordPress 콘텐츠와 관리자 설정을 기반으로 NestJS AI Search API가 검색 데이터를 처리하고, Gemini API를 통해 임베딩 및 답변을 생성하도록 구성했습니다.\n\nSEO·GEO·AEO는 검색 파이프라인과 분리하여 구현했습니다. 운영자가 관리자 CMS에서 페이지별로 SEO·GEO·AEO를 등록·수정하면, 해당 페이지에 메타데이터와 검색 최적화 설정이 적용됩니다.',
+        '글로벌 병원 사이트의 콘텐츠가 증가하면서 사용자가 의료진, 시술, FAQ 및 병원 정보를 빠르게 탐색할 수 있는 검색 기능이 필요했습니다.\n\nWordPress에 저장된 콘텐츠와 관리자 설정을 기반으로 NestJS AI Search API가 검색 데이터를 수집하고, Gemini API를 통해 임베딩과 답변을 생성하는 RAG 기반 검색 시스템을 구축했습니다.\n\n운영자가 페이지별 SEO·OG·GEO·AEO 정보를 관리자 CMS에서 직접 관리할 수 있도록 구성했으며, GEO 요약 데이터를 AI Search 인덱싱과 Gemini 답변 생성에 연결하여 검색엔진과 생성형 AI 검색 환경을 함께 고려한 콘텐츠 운영 구조를 구축했습니다.\n\n또한 검색엔진 노출뿐 아니라 생성형 AI 기반 검색 환경에 대응할 수 있도록 SEO·OG·GEO·AEO 관리 기능을 분리했습니다. 운영자가 페이지 URL 단위로 각 설정을 등록·수정하면 SEO와 OG 정보는 페이지 메타데이터에 적용되고, GEO 요약은 AI Search 인덱싱과 Gemini 답변 생성 컨텍스트에 활용되도록 구성했습니다.',
       improvements: [
-        'NestJS·RAG 기반 AI Search API 구축',
-        'Gemini API 연동(임베딩·답변 생성)',
-        '운영자가 페이지별 SEO·GEO·AEO 등록 시 해당 페이지에 자동 적용',
-        '페이지별 메타데이터 및 구조화 데이터 적용',
-        'FAQ·의료진·시술 콘텐츠의 검색 친화적 구조 설계',
-        '관리자 CMS에서 SEO·GEO·AEO 설정 관리',
-        'AI Search 인덱싱 대상 콘텐츠 연동',
+        'NestJS 기반 AI Search(RAG) API 구축',
+        'Gemini API 기반 임베딩 및 답변 생성',
+        'WordPress 콘텐츠와 AI Search 인덱싱 파이프라인 연동',
+        '페이지별 SEO·OG·GEO·AEO 관리자 설정 기능 구현',
+        '페이지별 Title·Description·Keywords·OG 이미지 및 구조화 데이터 적용',
+        'GEO 요약 데이터를 AI Search 임베딩 및 답변 생성에 활용',
+        'FAQ·의료진·시술·정적 페이지 콘텐츠의 검색 친화적 구조 설계',
       ],
       keyImplementations: [
         'WordPress(view_theme · view-admin) ↔ MariaDB ↔ AI Search API 연동',
-        'NestJS RAG 파이프라인에서 검색 데이터 처리',
-        'Gemini API를 통한 임베딩·답변 생성',
-        '페이지 URL 단위로 SEO·GEO·AEO를 등록·수정하는 CMS 기능 구현',
-        '등록된 설정을 해당 정적·콘텐츠 페이지에 메타로 적용',
-        'FAQ·의료진·시술 콘텐츠를 검색·인덱싱에 맞게 구조화',
+        'WordPress 콘텐츠를 검색 Chunk로 변환하고 Gemini Embedding을 통해 벡터 인덱스 생성',
+        '사용자 질문을 벡터 검색하여 관련 콘텐츠를 조회하고 Gemini Prompt에 전달하는 RAG 파이프라인 구현',
+        '페이지 URL 단위로 SEO·OG·GEO·AEO를 등록·수정할 수 있는 관리자 CMS 기능 개발',
+        'SEO Title·Description·Core Keywords와 OG 이미지 정보를 페이지 메타 태그에 자동 적용',
+        'GEO Summary를 정적 페이지 Chunk의 Embedding 텍스트와 Vector Payload에 포함하여 검색 유사도에 반영',
+        '검색된 정적 페이지의 GEO Summary를 Gemini Prompt에 직접 전달하여 답변 생성 컨텍스트로 활용',
+        'FAQ·의료진·시술·정적 페이지 콘텐츠를 AI Search 인덱싱 대상에 맞게 구조화',
+        '검색 결과의 관련 질문 및 페이지 정보 제공 기능 구현',
       ],
       results: [
-        '콘텐츠 기반 AI 검색으로 상담·정보 탐색 경험 개선',
-        '운영자가 페이지별 SEO·GEO·AEO를 직접 등록·적용할 수 있는 운영 구조 확보',
-        '검색 파이프라인과 검색 최적화를 역할별로 분리해 유지보수성 향상',
+        '콘텐츠 기반 AI 검색을 통해 사용자의 의료 정보 및 병원 콘텐츠 탐색 경험 향상',
+        'GEO 요약을 검색과 답변 생성에 활용하여 정적 페이지 콘텐츠의 검색 정확도와 답변 품질 개선',
+        '운영자가 페이지별 SEO·OG·GEO·AEO 설정을 직접 관리할 수 있는 운영 환경 확보',
+        '검색엔진 노출, SNS 공유, 생성형 AI 검색을 하나의 콘텐츠 관리 구조에서 운영 가능',
+        'WordPress 콘텐츠 관리 영역과 AI Search API를 분리하여 유지보수성과 확장성 향상',
       ],
-      code: {
-        language: 'text',
-        content: `Browser
-   │
-   ▼
-WordPress
-(view_theme · view-admin)
-   │
-   ├───────────────► MariaDB
-   │
-   ▼
-AI Search API
-(NestJS · RAG)
-   │
-   ▼
-Gemini API
-(임베딩 · 답변 생성)`,
-      },
     },
     {
       id: 'external-api-automation',
