@@ -106,19 +106,34 @@ export const viewDetail: ProjectDetail = {
     },
     {
       id: 'wordpress-admin-cms',
-      title: 'WordPress 관리자 CMS 개발',
+      title: 'WordPress 관리자 CMS 및 페이지별 콘텐츠 관리',
       summary:
-        'Custom Post Type·Meta Box·Role 기반 권한 관리를 활용해 운영팀이 콘텐츠와 상담 신청을 관리할 수 있는 WordPress 관리자 CMS를 구축했습니다. Google Search Console 연동을 통해 접속 경로·환경·검색 키워드 분석 기능을 제공하고, reCAPTCHA를 적용해 반복적인 스팸 상담 접수를 방지했습니다.',
-      afterImage: {
-        src: '/images/projects/VIEW_wordpress.png',
-        alt: 'VIEW WordPress 관리자 CMS 화면',
-        caption: '온라인 상담·콘텐츠 관리 관리자 페이지',
-      },
+        'Custom Post Type·Meta Box·커스텀 테이블·Role 기반 권한 관리를 활용해 운영팀이 의료진, 시술, 모델형·비교형 B&A, 상담 신청 등 주요 콘텐츠를 직접 관리할 수 있는 WordPress 관리자 CMS를 구축했습니다.\n\n페이지별 콘텐츠는 진료 분야와 페이지 키를 기준으로 분리하고, 관리자에서 등록한 데이터가 사용자 페이지의 지정 영역에 자동 노출되도록 연동했습니다. Google Search Console 기반 접속 분석과 reCAPTCHA 검증도 적용해 콘텐츠 운영과 상담 관리 기능을 함께 제공했습니다.',
+      images: [
+        {
+          src: '/images/projects/VIEW_wordpress.png',
+          alt: 'VIEW WordPress 관리자 CMS 화면',
+          caption: '온라인 상담·콘텐츠 관리 관리자 페이지',
+        },
+        {
+          src: '/images/projects/view_B&A.png',
+          alt: '모델형·비교형 B&A 관리자 화면',
+          caption: '페이지별 모델형·비교형 B&A 관리 화면목록',
+          label: '모델형·비교형 B&A 관리자 화면',
+        },
+        {
+          src: '/images/projects/view_Anti-Aging.png',
+          alt: 'Anti Aging 사용자 페이지',
+          caption: '관리자 B&A 데이터의 시술 페이지 자동 노출',
+          label: 'Anti Aging 사용자 페이지',
+        },
+      ],
       background:
         '홈페이지만 구축하는 것이 아니라, 운영팀이 콘텐츠를 직접 등록·수정하고 상담 신청을 처리할 수 있는 CMS가 필요했습니다.\n\nWordPress Custom Post Type과 Meta Box, Role 기반 권한 관리를 중심으로 관리자 기능을 확장하고, 콘텐츠 관리부터 상담 접수 및 접속자 분석까지 실제 서비스 운영에 필요한 관리 환경을 구축했습니다.\n\n또한 운영 과정에서 자동화된 스팸 상담이 반복 접수되어 정상 문의 확인에 불편이 발생했고, 상담 폼에 reCAPTCHA 검증을 적용해 비정상 제출을 차단했습니다.',
       improvements: [
         'Custom Post Type 기반 콘텐츠 구조 설계',
-        'Meta Box를 활용한 관리 항목 구성',
+        '모델형·비교형 B&A 페이지별 관리 기능 구현',
+        '진료 분야·페이지·콘텐츠 유형 기반 데이터 분리',
         'Role 기반 권한 관리 시스템 구축',
         '상담 신청·콘텐츠 관리 관리자 기능 구현',
         'Google Search Console 기반 접속자 분석 메뉴 구축',
@@ -126,7 +141,7 @@ export const viewDetail: ProjectDetail = {
       ],
       keyImplementations: [
         'WordPress Plugin·Custom Post Type 기반 CMS 확장',
-        'Meta Box를 활용한 시술·의료진·병원 콘텐츠 및 상담 데이터 관리',
+        '모델형·비교형 B&A 데이터를 커스텀 테이블에 저장하고 ba_type·department_key·page_key 기준으로 분리 조회',
         '관리자 Role에 따른 메뉴 노출과 등록·수정·삭제 권한 제어',
         '온라인 상담 신청 목록·상세 조회·처리 상태 관리 UI 구현',
         'Google Search Console API 연동을 통한 접속 경로·접속 환경·검색 키워드 분석 기능 구현',
